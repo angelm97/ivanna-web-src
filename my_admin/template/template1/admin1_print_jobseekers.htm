@@ -1,0 +1,70 @@
+{ADMIN_HEADER_HTML}
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<script>
+function page_submit()
+{
+ document.page.print.value='print';
+ document.page.submit();
+}
+</script>
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="2">
+    <tr>
+     <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td class="pageHeading">{HEADING_TITLE}</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">{update_message}<br>
+      <table border="0" width="100%" cellspacing="1" cellpadding="0" class="middle_table1">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="1" cellpadding="4" class="middle_table2">
+         <form method="get" name="page">
+          <tr class="dataTableHeadingRow">
+           {HEADER_ROW}           
+          </tr>
+          {HEADER_VALUE}
+       {hidden_fields}
+       </form>
+         </table>
+         <table border="0" width="100%" cellspacing="0" cellpadding="2" class="show_page">
+          <tr>
+           <td class="small" colspan="3">{count_rows}</td>
+           <td align="right" class="small" colspan="2">{no_of_pages}</td>
+          </tr>
+          <tr>
+           <td colspan="5" align="right">{new_button}</td>
+          </tr>
+         </table>
+   					</td>
+       </tr>
+       </form>
+      </table>
+					</td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

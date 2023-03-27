@@ -1,0 +1,189 @@
+{HEADER_HTML}
+
+{HEADER_MIDDLE_HTML}  
+        <div class="container for-mobile" style="margin-top:15px;">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+				<div class="card-deck">
+				  <div class="card theme8-card-border">
+					<img src="themes/theme8/images/candidate.jpg" alt="Candidate" class="card-img-top img-hover theme8-img-height">
+					<div class="card-body">
+					  <h5 class="card-title mb-1">Candidate</h5>
+					  <p class="card-text">Register Today. It's Free.</p>
+					  {CAND_REG}
+					</div>
+				  </div>
+				</div>
+                </div>
+				
+                <div class="col-md-4 mb-3">
+				<div class="card-deck">
+				  <div class="card theme8-card-border">
+					<img src="themes/theme8/images/employer.jpg" alt="Candidate" class="card-img-top img-hover theme8-img-height">
+					<div class="card-body">
+					  <h5 class="card-title mb-1">Employer</h5>
+					  <p class="card-text">It's Free to post jobs. Post today!</p>
+					  {EMP_REG}
+					</div>
+				  </div>
+				</div>
+                </div>				
+
+                <div class="col-md-4 mb-3">
+				<div class="card-deck">
+				  <div class="card theme8-card-border">
+					<img src="themes/theme8/images/advertiser.jpg" alt="Candidate" class="card-img-top img-hover theme8-img-height">
+					<div class="card-body">
+					  <h5 class="card-title mb-1">Advertiser</h5>
+					  <p class="card-text">Advertise on our site</p>
+					  {CONTACT_US}
+					</div>
+				  </div>
+				</div>
+                </div>	
+        </div>
+</div>
+
+        <div class="container">
+        <div class="row">
+        <div class="col-md-8">
+                <div class="card mb-3 theme8-card-border">
+				<div class="card-body">
+                    <!-- BEGIN banner -->
+					{banner.banner1}
+					{banner.banner2}
+					{banner.banner3}
+					{banner.banner4}
+					{banner.banner5}
+					{banner.banner6}
+					{banner.banner7}
+					{banner.banner8}
+					{banner.banner9}
+					{banner.banner10}
+					{banner.banner11}
+					{banner.banner12}
+					{banner.banner13}
+					{banner.banner14}
+					{banner.banner15}
+					{banner.banner16}
+					{banner.banner17}
+					{banner.banner18}
+					<!-- END banner -->
+					
+	
+                </div>
+                <!--/well-->
+            </div>
+		</div>
+		
+		<div class="col-md-4">
+					<div class="card for-mobile mb-3 theme8-card-border">
+						<h5 class="card-header mb-1 theme8-card-header">Job alerts by email</h5>
+						<div class="card-body pt-2">
+                        <p>Get daily emails in your inbox with jobs that match your sector</p>
+							{CREATE_ALERT}
+                        <!-- /input-group -->
+						</div>
+                    </div>
+		</div>		
+
+			
+			</div>
+        </div>
+		
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                
+				<ul class="nav nav-tabs theme8-nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item nav-link for-mobile" role="presentation">
+					Jobs by
+				  </li>
+				  
+				  <li class="nav-item" role="presentation">
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Category</a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a class="nav-link" id="skill-tab" data-toggle="tab" href="#skill" role="tab" aria-controls="skill" aria-selected="true">Skills</a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Company</a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Location</a>
+				  </li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  
+				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+					<div class="card theme8-card theme8-card-border">
+						<div class="card-body">{JOB_CATEGORY}</div>
+					</div>
+				  </div>
+					<div class="tab-pane fade show" id="skill" role="tabpanel" aria-labelledby="skill-tab">
+					<div class="card theme8-card theme8-card-border">
+						<div class="card-body">{JOB_SKILL}</div>
+					</div>
+				  </div>
+				  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="card theme8-card theme8-card-border">
+						<div class="card-body">{JOB_COMPANY}</div>
+					</div>
+				  </div>
+				  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+					<div class="card theme8-card theme8-card-border">
+						<div class="card-body">{JOB_LOCATION}</div>
+					</div>
+				  </div>
+				</div>
+
+                <div class="card mt-3 mobile-margin-bottom theme8-card-border">
+				<h5 class="card-header theme8-card-header">Latest jobs</h5>
+				<div class="card-body p-0">
+					<!-- BEGIN latest_jobs -->
+                            {latest_jobs.job}
+
+				</div>
+				</div>
+					<!-- END latest_jobs -->
+					
+				</div>	
+            </div>
+		</div>		
+				
+                <div class="col-sm-4">
+					<div class="card mb-3 theme8-card-border">
+					<h5 class="card-header theme8-card-header">Quick search</h5>
+					<div class="card-body">
+					{job_search_form}
+                        <p>What are you looking for?</p>
+                            {INFO_TEXT_KEYWORD}
+							{industry_sector}
+							{location}
+							{search_button}
+					</form>
+                        <!-- /input-group -->
+                    </div>
+					</div>					
+	
+					
+					<div class="card mb-3 theme8-card-border">
+					<h5 class="card-header theme8-card-header">Career articles</h5>
+                    <div class="card-body p-0">
+					<!-- BEGIN career_tools -->
+					<div class="media theme8-media">
+					  {career_tools.image}
+					  <div class="media-body">
+						<p class="m-0 font-weight-bold">{career_tools.title}</p>
+						<!--<p>{career_tools.description}</p>-->
+					  </div>
+					</div>
+					<!-- END career_tools -->
+                    </div>
+					</div>
+					
+					
+                </div>
+            </div>
+        </div>
+{FOOTER_HTML}

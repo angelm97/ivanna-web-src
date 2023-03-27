@@ -1,0 +1,102 @@
+{ADMIN_HEADER_HTML}
+{update_message}
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}sdfsdfd</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+		<script language="javascript" type="text/javascript" src="../tinymce2/tinymce.js"></script>
+		<script language="javascript" type="text/javascript">
+			tinyMCE.init({
+theme : "modern",
+plugins: [
+    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+    'searchreplace wordcount visualblocks visualchars code fullscreen',
+    'insertdatetime media nonbreaking save table contextmenu directionality',
+    'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc help'
+  ],
+  toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+  toolbar2: 'print preview media | forecolor backcolor emoticons | codesample help code',
+  menubar:false,
+  image_advtab: true,
+  
+	relative_urls : false,
+	remove_script_host : false,
+	mode : "exact",
+ 	elements : "description2,es_description2",
+    theme_advanced_toolbar_location : "top",
+	theme_advanced_toolbar_align : "center",
+
+	document_base_url : "{HOST_NAME}",
+	relative_urls : "false",
+    remove_script_host : "false",
+	plugin_insertdate_dateFormat : "%Y-%m-%d",
+	plugin_insertdate_timeFormat : "%H:%M:%S",
+
+			});
+		</script>
+
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="1" cellpadding="0" class="middle_table1">
+    <tr>
+     <td valign="top">
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" class="middle_table2">
+       <tr>
+        <td valign="top">
+         <table border="0" cellspacing="3" cellpadding="5">
+          <tr>
+           <td class="pageHeading">{HEADING_TITLE}</td>
+          </tr>
+         </table>
+         <table border="0" width="98%" cellspacing="3" cellpadding="10" class="middle_table22">
+       {form}
+        <tr>
+         <td class="label" align="right">{INFO_TEXT_ORDER_TEMPLATE_NAME}</td>
+         <td>{INFO_TEXT_ORDER_TEMPLATE_NAME1}</td>
+        </tr>
+        <tr>
+         <td class="label" align="right">{INFO_TEXT_RECRUITER_ORDER_TEMPLATE_PRIORITY}</td>
+         <td>{INFO_TEXT_RECRUITER_ORDER_TEMPLATE_PRIORITY1}</td>
+        </tr>
+        <tr>
+         <td class="label" align="left" colspan="2">{INFO_TEXT_RECRUITER_ORDER_TEMPLATE_DESCRIPTION}</td>
+        </tr>
+        <tr>
+         <td colspan="2">{INFO_TEXT_RECRUITER_ORDER_TEMPLATE_DESCRIPTION1}
+         </td>
+        </tr>
+        <tr>
+         <td class="label" align="left" colspan="2">{INFO_TEXT_FR_RECRUITER_ORDER_TEMPLATE_DESCRIPTION}</td>
+        </tr>
+        <tr>
+         <td colspan="2">{INFO_TEXT_FR_RECRUITER_ORDER_TEMPLATE_DESCRIPTION1}
+         </td>
+        </tr>
+        <tr>
+         <td class="label" align="left">{TEXT_MESSAGE}</td>
+         <td>{TEXT_MESSAGE1}
+         </td>
+        </tr>
+        <tr>
+         <td align="center" colspan="2">{buttons}</td>
+        </tr>
+        </form>
+       </table>
+      </td>
+     </tr>
+    </table>
+   </td>
+<!-- Middle Ends -->
+	</tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

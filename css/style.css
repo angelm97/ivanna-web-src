@@ -1,0 +1,565 @@
+@font-face{
+	font-family: mulish_black;
+	src: url(font/Mulish_Black.woff2);
+}
+
+@font-face{
+	font-family: mulish_bold;
+	src: url(font/Mulish_Bold.woff2);
+
+}
+
+@font-face{
+	font-family: mulish_regular;
+	src: url(font/mulish_regular.woff2);
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+/*.mainLeft{
+	padding-right: 20px;
+}*/
+
+.mainLeft .head{
+	width: 85%;
+	margin: auto;
+}
+
+.mainLeft .head .face{
+	width: 88%;
+	margin: auto;
+}
+
+.mainLeft .head .face img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+.mainLeft .head .htxt{
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+
+
+/*possioning*/
+
+.mainLeft .downt{
+	margin-top: 30px;
+	background-color: #FAC9C4;
+}
+.mainLeft .downt .downMid {
+
+	position: absolute;
+	background-color: #FAC9C4;
+	width: 315px;
+	height: 814px;
+}
+.mainLeft .downMid .down{
+	position: absolute;
+	top: -17px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+
+/*left down text css*/
+
+.mainLeft .downMid .down .txts{
+	width: 90%;
+	margin: auto;
+}
+
+.mainLeft .downMid .down .txts h4{
+	display: table;
+	margin: auto;
+	color: white;
+	background: black;
+	padding: 5px;
+	width: 100%;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 21px;
+
+}
+.mainLeft .downMid .down .txts p{
+	text-align: left;
+	padding: 0px 10px;
+	line-height: 25px;
+}
+
+.mainLeft .downMid .down .txts table img{
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	margin: 0px 5px 0px 5px;
+}
+
+.mainLeft .downMid .down .txts .lastBox{
+
+}
+
+
+
+
+/*right*/
+.mainRight{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*about*/
+
+.mainRight .about .top{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.mainRight .about .top img{
+	border-radius: 50%;
+	height: 28px;
+	width: 28px;
+}
+
+.mainRight .about .top div{
+	display: inline-block;
+	width: 94%;
+	border-bottom: 3px solid black;
+}
+
+.mainRight .about .top span{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.mainRight .about p{
+	text-align: justify;
+	color: grey;
+}
+
+
+
+/*education*/
+
+.mainRight .education .top{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+.mainRight .education .top img{
+	border-radius: 50%;
+	height: 28px;
+	width: 28px;
+}
+
+.mainRight .education .top div{
+	display: inline-block;
+	width: 94%;
+	border-bottom: 3px solid black;
+}
+
+.mainRight .education .top span{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.mainRight .education p{
+	text-align: justify;
+	color: grey;
+}
+
+.mainRight .education .name1{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0;!important;
+	padding-bottom: 0;!important;
+}
+
+.mainRight .education .name1 span{
+	font-size: 18px;
+	text-transform: uppercase;
+}
+/*
+.mainRight .education .name1 img{
+	height: 13px;
+	width: 9px;
+}*/
+
+
+
+/*experience*/
+
+.mainRight .experience .top{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+.mainRight .experience .top img{
+	border-radius: 50%;
+	height: 28px;
+	width: 28px;
+}
+
+.mainRight .experience .top div{
+	display: inline-block;
+	width: 94%;
+	border-bottom: 3px solid black;
+}
+
+.mainRight .experience .top span{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.mainRight .experience p{
+	text-align: justify;
+	color: grey;
+}
+
+.mainRight .experience .name1{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0;!important;
+	padding-bottom: 0;!important;
+}
+
+.mainRight .experience .name1 span{
+	font-size: 18px;
+	text-transform: uppercase;
+}
+/*
+.mainRight .education .name1 img{
+	height: 13px;
+	width: 9px;
+}*/
+
+
+/*skill*/
+
+.skill .left{
+	display: flex;
+	justify-content: space-between;
+}
+
+.skill .left table img{
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	margin: 0px 5px 0px 5px;
+}
+
+.img-user img{
+	width: 150px
+		!important;
+		height: 150px
+		!important;
+		margin-top: -33px
+		!important;
+		margin-left: 37px
+		!important;
+}
+
+.bg-morado p{
+	margin: 0px !important;
+	padding: 0px !important;
+	
+}
+
+.post_title{
+	line-height: 29px !important;
+	
+}
+
+.btn-bot {
+    position: fixed;
+    right: 22px;
+    bottom: 40px;
+    height: 20px;
+    z-index: 111111;
+}
+
+.btn-bot button{
+     border-radius: 20px;
+}
+
+.btn-bot svg{
+	border-radius: 50px;
+	font-size: 30px;
+}
+
+.chat-bot {
+	position: fixed;
+    right: 22px;
+    bottom: 21px;
+    height: 20px;
+    z-index: 111111;
+    width: 23%;
+    height: 71%;
+    background-color: white;
+    border-radius: 10px;
+	display: none;
+}
+
+.chat{
+	height: 100%;
+}
+
+.chat-bot .chat-top{
+	display: flex;
+	flex-flow: row;
+	height: 15%;
+
+	background-color: #44c7e0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	
+}
+
+.chat-bot .chat-top .chat-img{
+	width: 20%;
+}
+
+.chat-bot .chat-top .chat-img img{
+	border-radius: 50px;
+	margin: 9px;
+	width: 50px;
+	height: 50px;
+	background-color: honeydew;
+}
+
+.chat-bot .chat-top .chat-info{
+	width: 60%;
+}
+
+.chat-bot .chat-top .chat-info div{
+	text-align: center;
+	margin: 5% 0px;
+	color: white;
+	font-size: 20px;
+	
+} 
+
+.chat-bot .chat-top .chat-info div p{
+	color: #ccc;
+	font-size: 13px;
+	
+} 
+
+.chat-bot .chat-top .chat-opts{
+	width: 20%;
+}
+
+.chat-bot .chat-middle{
+	height: 76% !important;
+	overflow-y: scroll !important;
+	
+}
+
+.chat-bot .chat-top .chat-opts svg{
+	width: 20%;
+	cursor: pointer;
+}
+
+
+
+
+.green-btb{
+	background-color: greenyellow;
+	border-radius: 50px;
+	width: 10px;
+	height: 10px;
+}
+
+.chat-bot .chat-bottom input{
+	border: none;
+	margin: 0px 15px;
+	width: 70%;
+}
+
+.chat-bot .chat-bottom svg{
+	cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+	.btn-bot {
+		position: fixed;
+		right: 22px;
+		bottom: 53px;
+		height: 20px;
+		z-index: 111111;
+	}
+	
+	.btn-bot button{
+		 border-radius: 20px;
+	}
+	
+	.btn-bot svg{
+		border-radius: 50px;
+		font-size: 30px;
+	}
+	
+	.chat-bot {
+		position: fixed;
+		right: 22px;
+		bottom: 27px;
+		height: 20px;
+		z-index: 111111;
+		width: 93%;
+		height: 71%;
+		background-color: white;
+		border-radius: 10px;
+		display: none;
+	}
+	
+	.chat{
+		height: 100%;
+	}
+	
+	.chat-bot .chat-top{
+		display: flex;
+		flex-flow: row;
+		height: 15%;
+	
+		background-color: #44c7e0;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		
+	}
+	
+	.chat-bot .chat-top .chat-img{
+		width: 20%;
+	}
+	
+	.chat-bot .chat-top .chat-img img{
+		border-radius: 50px;
+		margin: 9px;
+		width: 50px;
+		height: 50px;
+		background-color: honeydew;
+	}
+	
+	.chat-bot .chat-top .chat-info{
+		width: 60%;
+	}
+	
+	.chat-bot .chat-top .chat-info div{
+		text-align: center;
+		margin: 5% 0px;
+		color: white;
+		font-size: 20px;
+		
+	} 
+	
+	.chat-bot .chat-top .chat-info div p{
+		color: #ccc;
+		font-size: 13px;
+		
+	} 
+	
+	.chat-bot .chat-top .chat-opts{
+		width: 20%;
+	}
+	
+	.chat-bot .chat-middle{
+		height: 76% !important;
+		overflow-y: scroll !important;
+		
+	}
+	
+	.chat-bot .chat-top .chat-opts svg{
+		width: 20%;
+		cursor: pointer;
+	}
+	
+	
+	
+	
+	.green-btb{
+		background-color: greenyellow;
+		border-radius: 50px;
+		width: 10px;
+		height: 10px;
+	}
+	
+	.chat-bot .chat-bottom input{
+		border: none;
+		margin: 0px 15px;
+		width: 80%;
+	}
+	
+	.chat-bot .chat-bottom svg{
+		cursor: pointer;
+	}
+  }
+
+  #send-btn{
+	  cursor: pointer;
+  }
+
+  .user{
+	  margin:5px 20px;
+	  max-width: 75%;
+	  float: right;
+	  
+  }
+
+  .user p{
+	float: right;
+	background-color: #58daf1d5;
+	border-radius: 20px;
+	padding: 15px;
+	color: white !important;
+	
+}
+
+  .bot {
+	margin:0px 20px;
+	max-width: 75%;
+}
+
+.bot p{
+	background-color: #eb6bb3d7;
+	border-radius: 20px;
+	padding: 15px;
+	color: white !important;
+}
+
+.clear{
+	clear: both;
+	float: none;
+}
+
+
+
+/*
+.skill .left table{
+	display: table;
+}
+*/
+

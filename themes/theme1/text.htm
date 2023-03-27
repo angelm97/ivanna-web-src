@@ -1,0 +1,189 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}  
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Job Section -->
+        <div class="row text-center">
+            <div class="col-lg-12 mb-3">
+                <h1 class="display-4 heading-theme1">
+                    {LATEST_JOBS}
+                </h1>
+                <p class="text-muted for-mobile mt-2 para-theme1">{INFO_MESSAGE1}</p>
+            </div>
+ <!-- BEGIN latest_jobs -->
+            <div class="col-md-3 mb-4 pr-0">
+                <div class="card card-theme1" style="height:170px;">
+                    <div class="card-body pt-2 px-0">
+                    {latest_jobs.logo}
+                    <h5 class="job-title-theme1 mb-1">{latest_jobs.title}</h5>
+		<span class="para-theme1">{latest_jobs.company}</span><span class="para-theme1 before">{latest_jobs.location}</span>
+                    <!--<p class="text-muted mt-2 para-theme1">{latest_jobs.summary}</p>-->
+                    </div>
+                </div>
+            </div>
+ <!-- END latest_jobs -->
+
+			<div class="col-md-12">{ALL_JOBS}</div>
+			
+		</div>
+        <!-- /.row -->
+	</div>
+      
+		<div class="container">
+		<!-- Categories Section -->
+        <div class="row mt-5 mobile-margin-top">
+            <div class="col-lg-12 mb-3 mt-5 text-center">
+                <h1 class="display-4 heading-theme1">
+                    Jobs by Categories
+                </h1>
+                <p class="text-muted for-mobile mt-2 para-theme1">{JOB_CATEGORY_TEXT}</p>
+            </div>
+           {JOB_CATEGORY}
+		   <div class="col-lg-12 text-center mt-3">{ALL_CATEGORY}</div>
+		</div>
+		</div>
+        <!-- /.row -->
+		
+
+        
+		<div class="container mb-5">
+		<!-- Featured Logos Section -->
+        <div class="row text-center mt-5 mobile-margin-top">
+            <div class="col-lg-12 mb-3 mt-5">
+                <h1 class="display-4 heading-theme1">
+                    {FEATURED_RECRUITERS}
+                </h1>
+                <p class="text-muted for-mobile mt-2 para-theme1">{FEATURED_RECRUITERS_TEXT}</p>
+            </div>
+           
+			<!-- BEGIN featured -->
+            <div class="col-md-2 col-sm-3 mobile-featured-recruiter">
+                {featured.employer}
+            </div>
+			<!-- END featured -->
+           
+			<div class="col-lg-12 mt-4">{ALL_RECRUITERS}</div>
+        </div>
+		</div>
+        <!-- /.row -->
+		
+		<div class="container mt-5">
+        <!-- Career Article Section -->
+        <div class="text-center mt-5">
+            <div class="col-lg-12 mb-4 mt-5 mobile-margin-top">
+                <h1 class="display-4 heading-theme1">
+                    {LATEST_ARTICLES}
+                </h1>
+                <p class="text-muted for-mobile mt-2">{LATEST_ARTICLES_TEXT}</p>
+            </div>
+			<div class="row">
+				
+            {ARTICLE_HOME}
+			</div>
+		<div class="col-lg-12">{ALL_ARTICLES}</div>
+		</div>
+		</div>
+        <!-- /.row -->
+		
+		<div class="container for-mobile">
+		<!-- Welcome Section -->
+        <div class="row text-center mt-5 mobile-margin-top">
+            <div class="col-lg-12 mb-3 mt-5">
+                <h1 class="display-4 heading-theme1">
+                    {WELCOME_MESSAGE}
+                </h1>
+                <p class="text-muted for-mobile mt-2 para-theme1">{WELCOME_MESSAGE_TEXT}</p>
+            </div>
+            <div class="col-md-4 mb-4 mobile-margin-bottom">
+					<div class="card card-default card-theme1">
+                    <div class="card-body">
+                    <img src="themes/theme1/images/jobseeker.jpg" class="img-circle img-responsive img-hover img-circle-custom">
+                    <h5 class="card-title mt-2 card-title-theme1">
+                    	{INFO_JOBSEEKER}
+                	</h5>
+                    <p class="card-text para-theme1">{SUBMIT_RESUME_TEXT}</p>
+					{JOBSEEKER_SIGN_UP}
+                    </div>
+					</div>
+            </div>
+            <div class="col-md-4 mb-4 mobile-margin-bottom">
+					<div class="card card-default card-theme1">
+                    <div class="card-body">
+                    <img src="themes/theme1/images/employer.jpg" class="img-circle img-responsive img-hover img-circle-custom">
+                    <h5 class="card-title mt-2 card-title-theme1">
+                    	{INFO_EMPLOYER}
+                	</h5>
+                    <p class="card-text para-theme1">{EMPLOYER_TEXT}</p>
+					
+					{RECRUITER_SIGN_UP}
+					
+                    </div>
+					</div>
+            </div>
+            <div class="col-md-4">
+				<div class="card card-default card-theme1">
+                <div class="card-body">
+                    <img src="themes/theme1/images/advertiser.jpg" class="img-circle img-responsive img-hover img-circle-custom">
+                    <h5 class="card-title mt-2 card-title-theme1">
+                    	{INFO_ADVERTISER}
+                	</h5>
+                    <p class="card-text para-theme1">{ADVERTISER_TEXT}</p>
+					
+					{ADVERTISER_SIGN_UP}
+					
+                    </div>
+					</div>
+            </div>
+		</div>
+		</div>
+        <!-- /.row -->
+		
+		<div class="container for-mobile">
+        <!-- About Us Section -->
+        <div class="row mobile-margin-top">
+			<div class="col-lg-12 text-center mb-3 mt-5 mobile-margin-top">
+                <h1 class="display-4 heading-theme1">
+                    {ABOUT_US_HEADING}
+                </h1>
+                <p class="text-muted for-mobile mt-2 para-theme1">{ABOUT_US_HEADING2} </p>
+            </div>
+
+            <div class="col-md-9 mx-auto">
+				<img class="img-fluid mr-5 mobile-img-full-width" src="themes/theme1/images/career1.jpg" alt="" align="left" style="width:300px;">
+                <p class="about text-left mt-0 mobile-margin-top">{ABOUT_US_TEXT}</p>
+            </div>
+		</div>	
+        </div>
+        <!-- /.row -->
+
+
+        <!-- Call to Action Section -->
+        <div class="container for-mobile">
+		<div class="mt-5 mobile-margin-top">
+            <div class="card col-md-12 alert-gray">
+			<div class="card-body">
+			<div class="row">
+			<div class="col-md-12">
+			<div class="row">
+			<div class="col-md-7 text-left">
+             <span class="alert-text">{GET_EMAIL_TEXT}</span>
+            </div>
+            <div class="col-md-5 float-right text-right">
+               <div class="input-group">
+				  {CREATE_ALERT}
+				</div>
+
+  
+            </div>
+			</div>
+			</div>
+			</div>
+			</div>
+            </div>
+        </div>
+		</div>
+        
+
+    
+    <!-- /.container -->
+{FOOTER_HTML}

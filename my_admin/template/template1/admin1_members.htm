@@ -1,0 +1,84 @@
+{ADMIN_HEADER_HTML}
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-lock fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+	   <tr>
+        <td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="top-select-bar">
+		  <tr>
+			<td align="right">{new_button}</td>
+		  </tr>
+		</table>
+		</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">{update_message}<br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0"  class="admin-second-data-table">
+          <tr class="admin-table-head-bar">
+          <td class="dataTableHeadingContent">{TABLE_HEADING_NAME}</td>
+          <td class="dataTableHeadingContent">{TABLE_HEADING_EMAIL}</td>
+          <td class="dataTableHeadingContent">{TABLE_HEADING_GROUPS}</td>
+          <td class="dataTableHeadingContent" align="center">{TABLE_HEADING_LOG_NUM}</td>
+          <td class="dataTableHeadingContent" align="right">{TABLE_HEADING_ACTION}&nbsp;</td>
+        </tr>
+        <!-- BEGIN member -->
+        <tr{member.row_selected}>
+         <td valign="top" class="dataTableContent">{member.name}</td>
+         <td valign="top" class="dataTableContent">{member.email}</td>
+         <td valign="top" class="dataTableContent">{member.group}</td>
+         <td valign="top" class="dataTableContent" align="center">{member.log_num}</td>
+         <td valign="top" class="dataTableContent" align="right">{member.action}</td>
+        </tr>
+        <!-- END member -->
+        </table>
+        <table border="0" width="100%" cellspacing="0" cellpadding="0" class="bottom-select-bar">
+            <tr>
+             <td align="left">{count_rows}</td>
+             <td align="right">{no_of_pages}</td>
+            </tr>
+        </table>
+   					</td>
+       </tr>
+      </table>
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+     <td width="{RIGHT_BOX_WIDTH}" valign="top">
+      <table border="0" width="{RIGHT_BOX_WIDTH}" cellspacing="0" cellpadding="0" id="admin-right-table2">
+       <tr>
+        <td valign="top">{ADMIN_RIGHT_HTML}</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

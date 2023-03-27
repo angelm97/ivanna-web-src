@@ -1,0 +1,88 @@
+{ADMIN_HEADER_HTML}
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function test_authentication()
+{
+ document.linkedin_form.action.value='test_authentication';
+ document.linkedin_form.submit();
+}
+//-->
+</SCRIPT>
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-link fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top"><br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+       <tr>
+        <td valign="top">
+        {update_message}<br>
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+          <tr>
+           <td valign="top">
+            <table border="0" width="100%" cellspacing="0" cellpadding="4" >
+             <tr >
+              <td >{social_footer_form}
+               <table border="0" width="100%" cellspacing="10" cellpadding="4" >
+                <tr >
+                 <td class="label" width="20%"><nobr><i class="fab fa-facebook" style="color:#3a559f;font-size:28px;"></i> {INFO_TEXT_FACEBOOK_FOOTER_LINK}</nobr></td>
+				 <td class="dataTableContent">{INFO_TEXT_FACEBOOK_FOOTER_LINK1}<br><span style="font-size:11px;">Eg: https://www.facebook.com/ejobsitesoftware/</span></td>
+                </tr>
+                <tr>
+                 <td class="label" valign="top"><nobr><i class="fab fa-linkedin" style="color:#007bb5;font-size:28px;"></i> {INFO_TEXT_LINKEDIN_FOOTER_LINK}</nobr></td>
+                 <td class="label">{INFO_TEXT_LINKEDIN_FOOTER_LINK1}</td>
+                </tr>                
+                <tr>
+                 <td class="label" valign="top"><nobr><i class="fab fa-twitter" style="color:#03a9f4;font-size:28px;"></i> {INFO_TEXT_TWITTER_FOOTER_LINK}</nobr></td>
+                 <td class="label">{INFO_TEXT_TWITTER_FOOTER_LINK1} </td>
+                </tr>
+                <tr >
+                 <td class="label" width="20%"><nobr><i class="fab fa-google-plus-square" style="color:#d80505;font-size:28px;"></i> {INFO_TEXT_GOOGLEPLUS_FOOTER_LINK}</nobr></td>
+                 <td class="dataTableContent">{INFO_TEXT_GOOGLEPLUS_FOOTER_LINK1}</td>
+                </tr>
+                <tr>
+                 <td></td>
+                 <td class="label" valign="top" >{button}</td>
+                </tr></form>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

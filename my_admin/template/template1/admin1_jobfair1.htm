@@ -1,0 +1,135 @@
+{ADMIN_HEADER_HTML}
+<script language="JavaScript">
+<!--
+function set_action(action)
+{
+ document.jobfair.action1.value=action;
+ document.jobfair.submit();
+}
+//-->
+</script>
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="2">
+    <tr>
+     <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td class="pageHeading">{HEADING_TITLE}</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+      <table border="0" width="100%" cellspacing="1" cellpadding="0" class="middle_table1">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="4" class="middle_table2">
+          <tr>
+           <td valign="top">
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr> 
+             <td width="80"></td>
+             <td><font color="#CC0000" size="2">*Required Field<br>&nbsp;</font></td>
+            </tr>
+            </table>
+            <table width="100%" border="0" align="center" cellpadding="4" cellspacing="0">
+            {form}
+             <tr> 
+              <td class="label" width="20%">{INFO_TEXT_JF_TITLE}</td>
+              <td>{INFO_TEXT_JF_TITLE1}</td>
+             </tr>
+             <tr> 
+              <td class="label" valign="top">{INFO_TEXT_JOBFAIR_LOGO}</td>
+              <td>{INFO_TEXT_JOBFAIR_LOGO1}</td>
+             </tr>
+             <tr> 
+              <td class="label" valign="top">{INFO_TEXT_JOBFAIR_PDF}</td>
+              <td>{INFO_TEXT_JOBFAIR_PDF1}</td>
+             </tr>
+             <tr> 
+              <td class="label">{INFO_TEXT_JF_VIDEO}</td>
+              <td>{INFO_TEXT_JF_VIDEO1}</td>
+             </tr>
+             <tr> 
+              <td class="label">{INFO_TEXT_JOBFAIR_BEGINDATE}</td>
+              <td>{INFO_TEXT_JOBFAIR_BEGINDATE1}</td>
+             </tr>
+             <tr> 
+              <td class="label">{INFO_TEXT_JOBFAIR_ENDDATE}</td>
+              <td>{INFO_TEXT_JOBFAIR_ENDDATE1}</td>
+             </tr>
+        <!--     <tr> 
+              <td class="label">{INFO_TEXT_JOBFAIR_REGISTRATION_BEGINDATE}</td>
+              <td>{INFO_TEXT_JOBFAIR_REGISTRATION_BEGINDATE1}</td>
+             </tr>
+             <tr> 
+              <td class="label">{INFO_TEXT_JOBFAIR_REGISTRATION_ENDDATE}</td>
+              <td>{INFO_TEXT_JOBFAIR_REGISTRATION_ENDDATE1}</td>
+             </tr>
+			 -->
+             <tr> 
+              <td class="label">{INFO_TEXT_JOBFAIR_STATUS}</td>
+              <td>{INFO_TEXT_JOBFAIR_STATUS1}</td>
+             </tr>
+             <tr> 
+              <td class="label" width="20%">{INFO_TEXT_JF_LOCATION}</td>
+              <td>{INFO_TEXT_JF_LOCATION1}</td>
+             </tr>
+             <tr> 
+              <td class="label" width="20%">{INFO_TEXT_JF_VENUE}</td>
+              <td>{INFO_TEXT_JF_VENUE1}</td>
+             </tr>
+			 <tr> 
+              <td class="label" colspan="2">{INFO_TEXT_JF_GOOGLEMAP_URL}</td>
+             </tr>
+             <tr> 
+              <td colspan="2" style="word-break:break-all;">{INFO_TEXT_JF_GOOGLEMAP_URL1}</td>
+             </tr>
+			 <tr> 
+              <td class="label" colspan="2">{INFO_TEXT_SHORT_DESCRIPTION}</td>
+             </tr>
+             <tr> 
+              <td colspan="2">{INFO_TEXT_SHORT_DESCRIPTION1}</td>
+             </tr>
+             <tr> 
+              <td class="label">{INFO_TEXT_DESCRIPTION}</td>
+             </tr>
+             <tr> 
+              <td colspan="2">{INFO_TEXT_DESCRIPTION1}</td>
+             </tr>
+
+            
+{hidden_fields}
+             <tr>
+              <td align="middle" colspan="2">{button}</td>
+             </tr>
+            </form>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+{ADMIN_FOOTER_HTML}

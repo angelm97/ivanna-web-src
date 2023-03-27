@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	overflow-x: hidden;
+}
+
+a:hover {color:#DF9504!important;}
+.navbar-brand>img {
+display: block;
+    height: 45px;
+    /* width: 200px; */
+    object-fit: contain;
+    object-position: left;
+    /* background: #fff; */
+    /* border-radius: 3px; */
+    /* padding: 0 10px; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+.footer-logo {
+	height: 50px;
+    width: 200px;
+    object-fit: contain;
+    object-position: left;
+}
+.nav-item {
+	font-size:18px;
+}
+.bg-transparent {
+    background: transparent!important;
+    border-bottom: 0px!important;
+}
+
+.theme10-mini-profile-img {
+width: 55px;
+    height: 55px;
+}
+.theme10-carousel {
+    height: 300px!important;
+}
+.theme10-form-control {
+	border-radius: 0px;
+	height: 50px;
+    padding-left: 25px;
+}
+.theme10-btn {
+	border-radius: 0px;
+}
+
+.carousel-caption h2, .carousel-caption p {
+    
+    display: table;
+    margin: 0 0 5px 0;
+}
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 4rem;
+      left: 13rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 17rem;
+}
+.theme10-featured-logo {
+    width: 100%;
+    height: 50px;
+    object-fit: contain;
+}
+.navbar-light .navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: .5rem 1rem;
+    font-weight: 600;
+	color: #ffffff!important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: .5rem 1rem;
+    font-weight: 600;
+	color: #DF9504!important;
+}
+
+.margin-top-minus {
+    margin-top: -105px;
+    margin-left: 3px;
+    margin-bottom: 50px;  
+}
+
+.theme10-apply-btn  a{
+	    margin: 9px -20px 0 0;
+    border-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 25px;
+}
+.theme10_internalClass {
+	border-bottom:1px solid #ddd!important;
+}
+.theme10_internalClass a {}
+
+
+
+@media screen and (max-width:900px) {
+.mobile-col-md-3 {
+	width:50%!important;
+}
+}
+
+@media screen and (max-width:900px) {
+.footer-logo {
+	width:100%;
+}
+}
+
+@media screen and (max-width:900px) {
+.mobile-d-block {
+	display:block;
+}
+}
+
+@media screen and (max-width:900px) {
+.mobile-margin-bottom {
+	margin-bottom:50px!important;
+}
+}
+
+@media screen and (max-width:900px) {
+.theme10-margin-top-minus {
+	margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+}
+@media screen and (max-width:900px) {
+.navbar-light .navbar-nav .nav-link {
+    color: #404040;
+	padding: 12px 25px;
+}
+}
+@media screen and (max-width:900px) {
+.theme10-btn {
+	padding-left:20px!important;
+	padding-right:20px!important;
+}
+}
+
+.theme10-btn-danger {
+    background: #BE8006;
+    border-color: #BE8006;
+    padding: 14px 0;
+    color: #fff;
+}
+.theme10-btn-danger:hover {
+    background: #DF9504;
+    border-color: #DF9504;
+    padding: 14px 0;
+    color: #fff;
+}
+
+.theme10-btn-purple {
+	background: #384664;
+    border-color: #384664;
+    padding: 7px 15px;
+    color: #fff!important;
+}
+
+.theme10-btn-purple:hover {
+	background: #7B859B;
+    border-color: #7B859B;
+    padding: 7px 15px;
+    color: #fff!important;
+}
+
+
+.theme10-btn-orange {
+	background: #DF9504;
+    border-color: #DF9504;
+    padding: 7px 15px;
+    color: #fff!important;
+}
+
+.theme10-btn-orange:hover {
+	background: #BE8006;
+    border-color: #BE8006;
+    padding: 7px 15px;
+    color: #fff!important;
+}
+
+
+
+.theme10-bg-gray {
+	background:#F4F5F9!important;
+}
+.theme10-bg-gray2 {
+	background:#384664!important;
+	color:#fff!important;
+}
+.theme10-bg-gray2 a{
+	color:#fff!important;
+}
+
+.theme10-border-top {
+	border-top:1px solid #435271!important;
+}
+
+.bg-grays {
+    background: #EDEFF5;
+    border-radius: 7px;
+    padding: 15px 25px 10px 25px;
+}
+
+.theme10-navbar-brand {
+	background: #fff;
+    padding: 0 5px;
+    border-radius: 3px;
+    margin: 10px 0 0 0;
+}
+.theme10_internalClass {
+	background: #384664!important;
+}
+.mpr-0 {
+	padding-right:0!important;
+}
+
+@media screen and (max-width:900px) {
+.mpr-0 {
+	padding-right:15px!important;
+	margin-bottom:10px;
+}
+}
+
+@media screen and (max-width:900px) {
+.theme10-form-control {
+    border: 1px solid;
+}
+}
+
+@media screen and (max-width:900px) {
+.theme10-nav-bg {
+    background:#384664!important;
+}
+}
+
+@media screen and (max-width:900px) {
+.dropdown {
+    padding: 0;
+}
+}
+
+

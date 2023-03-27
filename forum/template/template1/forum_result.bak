@@ -1,0 +1,98 @@
+{page_title}{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<tr>
+	<td valign="top">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+      <td class="heading_bar_internal">
+       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         <td width="15" valign="middle"><img src="../img/red_bullet_internal.gif" width="9" height="8" alt="red_bullet"></td>
+          <td valign="middle" class="heading_bar_internal_content">{HEADING_TITLE}</td>
+          <td valign="middle"width="10%" align="right" class="heading_bar_internal_content">{INFO_TEXT_HEADING_SEARCH}</td>
+         </tr>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td class="block_with_heading_bar">
+       <!---->
+       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         <td>{update_message}
+          <table width="100%"  border="0" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+           <tr>
+            <td bgcolor="#FFFFFF"> 
+             <table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#FFFFFF">
+              <tr bgcolor="#eeeeee">
+               <td colspan="5" class="forum_sub_heading">
+                <table width="100%" border="0" cellpadding="0" cellspacing="1" >
+                 <tr>
+                  <td>{INFO_TEXT_FORUM_HEADER_LINK}</td>
+                  <td></td>
+                  <td>
+                   <table width="95%" align="center" cellspacing="2"  cellpadding="2" border="0" >   
+                    <tr><form name="page" method="post" > {hidden_fields}
+                     <td valign="top" class="label">{total}</td>
+                     <td valign="top" align="right" class="label">{list_page}&nbsp;{page}&nbsp;</td>
+                    </tr>
+                   </table>
+                  </td>
+                 </tr>
+                 </table>
+               </td>
+              </tr>
+              {INFO_TEXT_HIDE_START}
+              <tr class="forum_header_bar">
+               <td colspan="2"  class="forum_heading">{TABLE_HEADING_TOPICS}</td>
+               <td width="86"  class="forum_heading">{TABLE_HEADING_REPLIES}</td>
+               <td width="86"  class="forum_heading">{TABLE_HEADING_AUTHOR} </td>
+               <td width="80" class="forum_heading">{TABLE_HEADING_VIEW}</span></td>
+              </tr>
+              <!-- BEGIN search_result -->
+              <tr {search_result.row_selected}>
+              <td width="35" class="forum_row_content" ><div align="right"><img src="../img/topics2.png"></div></td>
+              <td  valign="top" class="forum_row_content">
+               <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                 <td class="forum_title" valign="top">{search_result.title}</td>
+                </tr>
+                <tr>
+                 <td class="forum_content">{search_result.description} {search_result.more_link}</td>
+                </tr>
+               </table>
+              </td>
+              <td class="forum_row_content1" valign="top">{search_result.reply}</td>
+              <td class="forum_row_content1" valign="top"><nobr>{search_result.inserted}</nobr> <span class="forum_author">{search_result.posted_by}</span></td>
+              <td class="forum_row_content1" valign="top">{search_result.view}</td>
+             </tr>
+            <!-- END forum_result -->
+            {INFO_TEXT_HIDE_END}
+             </table>
+            </td>
+           </tr>
+          </table>
+         {INFO_TEXT_HIDE_START}
+          <table width="95%" align="center" cellspacing="2"  cellpadding="2" border="0" >   
+           <tr>
+            <td valign="top" class="label">{total}</td>
+            <td valign="top" align="right" class="label">{list_page}&nbsp;{page}&nbsp;</td>
+           </tr></form>
+          </table>
+         {INFO_TEXT_HIDE_END}
+         </td>
+        </tr>
+        <tr>
+          <td></td>
+          </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+       </table>
+       <!---->
+      </td>
+     </tr>
+  </table>
+ </td>
+</tr>
+{FOOTER_HTML}

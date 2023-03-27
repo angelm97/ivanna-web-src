@@ -1,0 +1,83 @@
+{ADMIN_HEADER_HTML}
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+     <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+	 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-file fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+	   <tr>
+        <td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="top-select-bar">
+		  <tr>
+			<td align="left"><i class="fa fa-trash-o" aria-hidden="true"></i> {TEXT_DELETE_IDLE_USERS}</td>
+		  </tr>
+		</table>
+		</td>
+       </tr>
+      </table>
+	  
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">{update_message}<br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table">
+          <tr class="admin-table-head-bar">
+           <td>{TABLE_HEADING_ONLINE}</td>
+           <td>{TABLE_HEADING_USER}</td>
+           <td>{TABLE_HEADING_FULL_NAME}</td>
+           <td>{TABLE_HEADING_IP_ADDRESS}</td>
+           <td>{TABLE_HEADING_ENTRY_TIME}</td>
+           <td>{TABLE_HEADING_LAST_CLICK}</td>
+           <td>{TABLE_HEADING_LAST_PAGE_URL}&nbsp;</td>
+          </tr>
+          <!-- BEGIN online -->
+          <tr{online.row_selected}>
+           <td>{online.online}</td>
+           <td>{online.user}</td>
+           <td>{online.name}</td>
+           <td>{online.ip_address}</td>
+           <td>{online.entry_time}</td>
+           <td>{online.last_click}</td>
+           <td>{online.last_url}</td>
+          </tr>
+          <!-- END online -->
+         </table>
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="bottom-select-bar">
+          <tr>
+           <td align="left">{count_rows}</td>
+           <td align="right">{no_of_pages}</td>
+          </tr>
+         
+         </table>
+   					</td>
+       </tr>
+      </table>
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+    </tr>
+   </table>
+	 </td>
+	</tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

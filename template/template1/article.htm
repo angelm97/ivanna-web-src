@@ -1,0 +1,93 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+
+<script LANGUAGE="JavaScript">
+    function popUp(URL) {
+        day = new Date();
+        id = day.getTime();
+        eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=800,height=600,left = 0,top = 0');");
+    }
+</script>
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function () {
+        $(".alert").fadeTo(500, 0).slideUp(500, function () {
+            $(this).remove();
+            $(".messageStackSuccess").addClass("displayNone");
+            // $messageStackSuccess
+        });
+    }, 50000););
+</script>
+<div class="container-lg">
+    <div class="row">
+        <div class="col-md-9 mb-3">
+            <!-- Below Alert message File path is class/message_stack.php -->
+            {update_message}
+            <div class="card">
+                
+                <div class="card-body mobile-body-img">
+                    <div class="d-md-none d-lg-none d-xl-none" style="width: 100%;">
+                        <button   style="float: right; width: 100%; margin-bottom: 10px;" class="btn btn-success btn_download_article">Descargar</button>
+                    </div>
+                    <div class="d-none d-md-block d-lg-block d-xl-block" style="width: 100%;">
+                        <button   style="float: right;" class="btn btn-success btn_download_article">Descargar</button>
+                    </div>
+                    <div id="article">
+                        <div style="clear: both; float: none;"></div>
+                        <h1>{title}</h1>
+                        <p><i class="fa fa-user" aria-hidden="true"></i> {INFO_TEXT_BY}: {author}</p>
+                        <hr>
+                        <p>{description}</p>
+                    </div>
+                </div>
+				<div class="card-footer">
+                    
+                    <div class="float-right mobile-float-left"> <span class="mr-3"><i class="fa fa-print" aria-hidden="true"></i>
+                            {print}</span> <span><i class="fa fa-envelope" aria-hidden="true"></i> {email}</span>
+                        {email_article} </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col-md-3">
+            <div class="card card-custom-left-nav mb-3">
+                <div class="card-header card-header-custom-left-nav">
+                    {INFO_TEXT_CATEGORY}
+                </div>
+                <div class="list-group">
+                    {tabletext}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{FOOTER_HTML}
+
+<script>
+    $(document).ready(function(){
+
+        $(".btn_download_article").click(()=>{
+            var element = document.getElementById("article");
+            var opt = {
+            margin:       0.2,
+            filename:     'myarticle.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            // New Promise-based usage:
+            html2pdf().set(opt).from(element).save();
+
+            // Old monolithic-style usage:
+            html2pdf(element, opt);
+
+        })
+
+    });
+</script>

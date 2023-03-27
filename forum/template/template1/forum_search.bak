@@ -1,0 +1,105 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}{INFO_TEXT_JSCRIPT_FILE}
+<SCRIPT LANGUAGE="JavaScript">
+function show_custom_search()
+{
+ var object1=document.getElementById('search_time');
+ var object2=document.getElementById('custom_search_block');
+ if(object1.value=='custom')
+  object2.style.display='block';
+  else
+  object2.style.display='none';
+}
+</SCRIPT>
+<tr>
+	<td valign="top">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+      <td class="heading_bar_internal">
+       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         <td width="15" valign="middle"><img src="../img/red_bullet_internal.gif" width="9" height="8" alt="red_bullet"></td>
+          <td valign="middle" class="heading_bar_internal_content">{HEADING_TITLE}</td>
+          <td valign="middle"width="10%" align="right" class="heading_bar_internal_content">{INFO_TEXT_HEADING_SEARCH}</td>
+         </tr>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td class="block_with_heading_bar">
+       <!---->
+       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         <td>
+          <table width="100%"  border="0" cellpadding="0" cellspacing="1" >
+           <tr>
+            <td > 
+             {update_message}
+             <table width="100%"  border="0" cellpadding="0" cellspacing="10" style="border:1px solid #d7d7d7;" >
+             <tr>
+              <td class="forum_sub_heading">{INFO_TEXT_FORUM_HEADER_LINK}</td>
+             </tr>
+             </table>
+             <br>
+             <table width="100%"  border="0" cellpadding="4" cellspacing="1" >
+              <tr valign="top" >
+               <td colspan="3" style="border:1px solid #d7d7d7" class="">
+                <table width="100%" border="0" cellpadding="4" cellspacing="0">
+                 <tr> {form}
+                  <td class="label" align="right">{INFO_TEXT_KEAYWORD}</td>
+                  <td class="label">{INFO_TEXT_KEAYWORD1}<br> {INFO_TEXT_KEYWORD_CRITERIA} {INFO_TEXT_KEYWORD_CRITERIA1}</td>
+                 </tr>
+                 <tr>
+                  <td class="label" align="right">{INFO_TEXT_SEARCH_WITHIN}</td>
+                  <td>{INFO_TEXT_SEARCH_WITHIN1}</td>
+                 </tr>
+                 <tr>
+                  <td class="label" align="right">{INFO_TEXT_SEARCH_CATEGORY}</td>
+                  <td>{INFO_TEXT_SEARCH_CATEGORY1}</td>
+                 </tr>
+                 <tr>
+                  <td class="label" align="right">{INFO_TEXT_SEARCH_FORUM}</td>
+                  <td>{INFO_TEXT_SEARCH_FORUM1}</td>
+                 </tr>
+                 <tr>
+                  <td class="label" align="right">{INFO_TEXT_FORUM_POSTED}</td>
+                  <td class="label">{INFO_TEXT_FORUM_POSTED1}  
+                  <div id="custom_search_block"><nobr> Between {INFO_TEXT_SEARCH_FROM_DATE} and {INFO_TEXT_SEARCH_TO_DATE}</nobr></div></td>
+                 </tr>{INFO_TEXT_CAPTCHA_HIDE}
+                 <tr>
+                  <td  class="label" valign="top" align="right">{INFO_TEXT_SECURITY_CODE}</td>
+                  <td  class="label" >{INFO_TEXT_SECURITY_CODE1}<br><span style="color:#ff0000;font-size:10px;">{INFO_TEXT_TYPE_CODE}</span></td>
+                 </tr>{INFO_TEXT_CAPTCHA_HIDE1}
+                 <tr>
+                  <td>&nbsp;</td>
+                  <td align="left">{button}</td>
+                 </tr></form>              
+                </table>
+                 <SCRIPT LANGUAGE="JavaScript">
+                  <!--
+                  show_custom_search();
+                  //-->
+                  </SCRIPT>
+               </td>
+              </tr>
+             </table>
+
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+        <tr>
+          <td></td>
+          </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+       </table>
+       <!---->
+      </td>
+     </tr>
+  </table>
+ </td>
+</tr>
+{FOOTER_HTML}

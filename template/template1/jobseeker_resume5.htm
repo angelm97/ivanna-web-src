@@ -1,0 +1,117 @@
+{HEADER_HTML}
+<script src="{INFO_TEXT_JSCRIPT_FILE}"></script>
+{HEADER_MIDDLE_HTML}
+ </td>
+</tr>
+<SCRIPT LANGUAGE="JavaScript">
+function popUp(URL) {
+day = new Date();
+id = day.getTime();
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=270,left = 100,top = 100');");
+}
+</script>
+<script language="javascript" type="text/javascript" src="tinymce2/tinymce.js"></script>
+<script type="text/javascript">
+	tinyMCE.init({
+		theme : "modern",
+		plugins: [
+		'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+		'searchreplace wordcount visualblocks visualchars code fullscreen',
+		'insertdatetime media nonbreaking save table contextmenu directionality',
+		'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc help'
+		],
+		toolbar1: 'styleselect | bold italic | forecolor | alignleft aligncenter alignright alignjustify | bullist numlist | link |image',
+		// toolbar2: 'print preview media | forecolor backcolor emoticons | codesample help',
+		menubar:false,
+		image_advtab: true,
+		
+		relative_urls : false,
+		remove_script_host : false,
+		mode : "exact",
+		elements : "resume_text",
+		theme_advanced_toolbar_location : "top",
+		theme_advanced_toolbar_align : "center",
+		force_br_newlines : true,
+		force_p_newlines : false,
+		forced_root_block : '' 
+		
+	});
+</script>
+<!-- Below Script for auto close -->
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container">
+    <div class="row">
+		<div class="col-md-3">
+		{JOBSEEKER_RESUME_LEFT}
+		</div>			
+					
+        <div class="col-md-9">
+		<!-- Below Alert message File path is class/message_stack.php -->
+		{update_message} 
+            <div class="card card-custom">
+                <div class="card-header card-header-custom">
+                    <h1 class="display-6 p-0 m-0 float-left">{HEADING_TITLE}</h1>
+					<h2 class="display-6 float-right">{INFO_TEXT_RESUME_NAME1}</h2>
+                </div>
+                <div class="card-body card-body-custom">
+{registration_form}
+
+<!--<div class="alert alert-warning alert-warning-custom" role="alert">{SECTION_ACCOUNT_RESUME_NAME} {REQUIRED_INFO}</div>
+<div>{INFO_TEXT_RESUME_NAME} {INFO_TEXT_RESUME_NAME1}</div>
+<div class="small text-danger mb-2">{SECTION_DOCUMENT_UPLOAD}</div>-->
+
+{upload_form}
+
+  <div class="form-group row border-bottom pb-3">
+    <label for="staticEmail" class="col-sm-12 col-form-label col-form-label-custom mb-2 font-weight-bold text-left">{INFO_TEXT_UPLOAD_RESUME}</label>
+    <div class="col-sm-12">
+     {INFO_TEXT_UPLOAD_RESUME1}
+    </div>
+  </div>
+   <div class="form-group row border-bottom pb-3">
+    <label for="staticEmail" class="col-sm-12 col-form-label col-form-label-custom mb-2 font-weight-bold text-left">{INFO_TEXT_UPLOAD_PHOTO}</label>
+    <div class="col-sm-12">
+     {INFO_TEXT_PHOTO1}
+    </div>
+  </div> 
+   <div class="form-group row border-bottom pb-3">
+    <label for="staticEmail" class="col-sm-12 col-form-label col-form-label-custom mb-2 font-weight-bold text-left">{INFO_TEXT_ADD_VIDEO} <a class="ml-3" href='http://www.youtube.com/signup' target="_blank" >[ Go to YouTube for Video ]</a></label> 
+    <div class="col-sm-12">
+     {INFO_TEXT_ADD_VIDEO1}
+    </div>
+  </div>
+   <div class="form-group row">
+    <label for="staticEmail" class="col-sm-12 col-form-label col-form-label-custom mb-2 font-weight-bold text-left">{INFO_TEXT_CUT_PASTE_CV}</label>
+    <div class="col-sm-12">
+     {INFO_TEXT_CUT_PASTE_CV1}
+    </div>
+  </div>
+   <div class="form-group row">
+    <label for="staticEmail" class="col-sm-12 col-form-label col-form-label-custom"></label>
+    <div class="col-sm-12">
+     {upload_button}
+    </div>
+  </div>
+
+</form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{FOOTER_HTML}

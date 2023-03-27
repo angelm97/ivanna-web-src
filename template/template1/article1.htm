@@ -1,0 +1,56 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+
+<div class="container-lg">
+
+	<div class="row">
+		<div class="col-md-9 mb-3">
+			<div class="card card-custom">
+				<div class="card-header card-header-custom">
+					<h1 class="display-6 p-0 m-0">{category_name}</h1>
+				</div>
+				<div class="card-body card-body-custom">
+
+					<!-- BEGIN article -->
+				   <div class="media mb-4 mobile-line-break">
+                        {article.article_image}
+                        <div class="media-body">
+                            {article.article_name}
+                            {article.more_article}
+                        </div>
+                    </div>
+					<!-- END article -->					
+				</div>
+
+				<div class="card-footer">
+					<div class="float-left">{count_rows} {no_of_pages}</div>
+				</div>	
+				
+			</div>
+		</div>
+
+		<div class="col-md-3">
+
+			<div class="card card-custom-left-nav mb-3">
+
+				<div class="card-header card-header-custom-left-nav">
+
+					{INFO_TEXT_CATEGORY}
+
+				</div>
+
+				<div class="list-group">
+
+					{tabletext}
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+{FOOTER_HTML}

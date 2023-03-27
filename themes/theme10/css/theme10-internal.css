@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {font-family: 'Noto Sans', sans-serif; font-size:14px; color:#232129; margin:0;}
+
+	a {color:#232129!important;}
+	a:hover {color:#DF9504; text-decoration:underline;}
+
+.internal-logo {
+    display: block;
+    margin-top: -3px;
+    height: 65px;
+    width: 200px;
+    object-fit: contain;
+    object-position: left;
+}
+.footer-logo {
+	display: block;
+    margin-top: 4px;
+    height: 30px;
+}
+.header {width:100%; left:0; position:fixed;
+    background-color: #fff;
+    border-bottom: 1px solid #d8dbde;
+    padding: 8px 0;
+	z-index:1000000;
+
+}
+a.social {float:right; color:#647585; font-size:18px;  margin:0 10px;}
+a.social:hover {color:#ff4181;}
+.footer {width:100%; left:0;  position:absolute; background-color:#ffffff; padding:20px 0; border-top:1px solid #efefef;}
+.sub-footer {width:100%; left:0;  position:absolute; background-color:#ffffff; padding:15px 0;margin:260px 0 0 0; border-top:1px solid #efefef;}
+
+ul.footer-content {list-style-type:none; font-size:14px;}
+ul.footer-content li a {line-height:30px;}
+
+.middle-container {padding:0px 25px; margin:100px 0 0 0;}
+.footer-internal {
+	background-color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 25px 0 0 0;
+}
+h1.head-bar {    font-size: 26px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    border-bottom: 5px solid #d8dbde;
+    float: left;}
+.spacer {height:100px;}
+
+p {font-size:16px; line-height:24px;}
+/*.active {
+	color: #000;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin: 6px 0 0 0;
+	display:block;
+}*/
+a.social .fa-linkedin {
+    color: #0075b8;
+    border: 1px solid #0075b8;
+}
+a.social .fa-twitter {
+    color: #00b5ea;
+    border: 1px solid #00b5ea;
+}
+a.social .fa-facebook {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+}
+.pad .fa {
+padding: 10px;
+    border-radius: 5px;
+    width: 23px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.dropbtn {
+    background: none;
+    padding: 0px;
+    margin: 0 0 0 0;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;    margin: 0 0px 0 0; padding:0 25px;}
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 175px;
+	text-align:left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+	
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color:none;
+}
+
+
+.footer-container {
+	background-color: white;
+}
+img.jobseeker-profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+img.jobseeker-profile2 {
+    width: 31px;
+    border: 1px solid #4c5661;
+    margin: -8px 0 0 15px;
+    border-radius: 50%;
+}
+.dropdown-content-custom a {
+	    text-transform: capitalize;
+    border-top: 1px solid #eee;
+}
+.jprofile img {
+    width: 70px;
+    border-radius:3px;
+    display: -webkit-inline-box;
+    vertical-align: text-bottom;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p.jname {
+    margin: 10px 0 0 0;
+    padding: 0;
+	font-weight: 600;
+}
+p.jemail a.em {
+    color: #2cc4df;
+    margin: 0 5px 30px 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    word-wrap: break-word;
+    text-transform: lowercase;
+	}
+.dropdown a{font-weight: 400;}
+.dropdown-content-custom {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 250px;
+    text-align: left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-transform: capitalize;
+    margin: 0px 0 0 -10px;
+    border-radius: 5px;
+    padding-top: 5px;
+	right: 0;
+    left: auto;
+}
+.dropdown-content a {
+    color: #404040;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: 400!important;
+	clear:left;
+	
+}
+
+.profile-inner img {
+	    border-radius: 5px;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+	border: 1px solid #ccc;
+    object-fit: unset;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.logo-dashboard img {border-radius:5px;}
+
+.orloginwith2 {
+    text-align: left;
+    color: #808080;
+    padding: 7px 0 0 0;
+    position: absolute;
+    top: 58px;
+    right: 22px;	
+}
+.orloginwith2 span {
+    margin: 2px 10px 0 0;
+    float: left;
+}
+@media screen and (max-width:900px) {
+.dropdown {
+    padding: 0;
+}
+}
+.orloginwith {text-align:left; color:#808080;padding:0;}

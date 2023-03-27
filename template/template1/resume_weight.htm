@@ -1,0 +1,119 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<script language="javascript">
+  // <!--
+    function calculate_total()
+    {
+      var total;
+      total=document.weighting.IN_location_weight.value * 1 +
+      document.weighting.IN_industry_weight.value * 1 +
+      document.weighting.IN_job_type_weight.value * 1 +
+      document.weighting.IN_experience_weight.value * 1 +
+      document.weighting.IN_job_skill_weight.value * 1 ;
+      document.weighting.total.value =total;
+    }
+    //-->
+  </script>
+  <!-- Below Script for auto close -->
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+	  <!-- Below Alert message File path is class/message_stack.php -->
+      {update_message}
+        <div class="card">
+          <div class="card-header">
+            <h1 class="display-6 p-0 m-0 float-left">{HEADING_TITLE}</h1>
+			<button style="float: right; border: none;">
+				<svg type="button"  data-toggle="tooltip" data-placement="bottom" title="Aqui tendras la oportunidad de asignar puntajes para esta vacante, basados en tu criterio de importancia. Estos seran utilzados para coincidir y filtrar perfiles adecuados a tu oportunidad." xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
+					<path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+					<path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+				  </svg>
+			</button>
+          </div>
+          <div class="card-body">
+			{form}
+		  <div class="form-group row">
+			<label for="inputPassword" class="col-sm-3 col-form-label">{INFO_TEXT_FIELDS}</label>
+			<div class="col-sm-9">
+			  {INFO_TEXT_WEIGHTS}
+			</div>
+		  </div>
+
+		  <div class="form-group row">
+			<label for="inputPassword" class="col-sm-3 col-form-label">{INFO_TEXT_LOCATION}</label>
+			<div class="col-sm-9">
+			  {INFO_TEXT_LOCATION1}
+			</div>
+		  </div>
+
+		  <div class="form-group row">
+			<label for="inputPassword" class="col-sm-3 col-form-label">{INFO_TEXT_INDUSTRY}</label>
+			<div class="col-sm-9">
+			  {INFO_TEXT_INDUSTRY1}
+			</div>
+		  </div>
+
+		  <div class="form-group row">
+			<label for="inputPassword" class="col-sm-3 col-form-label">{INFO_TEXT_EXPERIENCE}</label>
+			<div class="col-sm-9">
+			  {INFO_TEXT_EXPERIENCE1}
+			</div>
+		  </div>
+
+		  <div class="form-group row">
+			<label for="inputPassword" class="col-sm-3 col-form-label">Habilidades</label>
+			<div class="col-sm-9">
+			  {INFO_TEXT_skill_TYPE1}
+			</div>
+		  </div>
+
+		  <div class="form-group row">
+			<label for="inputPassword" class="col-sm-3 col-form-label">{INFO_TEXT_JOB_TYPE}</label>
+			<div class="col-sm-9">
+			  {INFO_TEXT_JOB_TYPE1}
+			</div>
+		  </div>
+
+		  <div class="form-group row">
+			<label for="inputPassword" class="col-sm-3 col-form-label">{INFO_TEXT_TOTAL}</label>
+			<div class="col-sm-9">
+			   {INFO_TEXT_TOTAL1}
+			</div>
+		  </div>
+
+		  <div class="form-group row">
+			<label for="inputPassword" class="col-sm-3 col-form-label"></label>
+			<div class="col-sm-9">
+			  {save_button}
+			</div>
+		  </div>
+	    </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{FOOTER_HTML}
+
+<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip();
+		//$('[data-toggle="tooltip"]').css('margin', '5px');
+	})
+</script>

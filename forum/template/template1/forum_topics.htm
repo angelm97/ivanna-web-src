@@ -1,0 +1,117 @@
+<title>{page_title}</title>
+<META NAME="Keywords" CONTENT=" {meta_title}">
+<meta NAME="Description" CONTENT=" {meta_description} ">
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<script>
+  window.setTimeout(function () {
+    $(".alert").fadeTo(500, 0).slideUp(500, function () {
+      $(this).remove();
+    });
+  }, 4000);
+</script>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+	{update_message}
+      <div class="card">
+        <div class="card-header d-flex justify-content-between">
+          <h1 class="display-6 p-0 m-0">{HEADING_TITLE}</h1>
+          <span>
+            {INFO_TEXT_HEADING_SEARCH}
+          </span>
+        </div>
+		
+        <div class="card-header">
+          <div class="float-left text-left">{INFO_TEXT_FORUM_HEADER_LINK}</div>
+          <div class="float-right text-right">
+            {new_button}
+          </div>
+        </div>
+
+        <div class="card-header">
+          <h1 class="display-6 p-0 m-0 float-left">{form}{hidden_fields1} {forum_title}</h1>
+          <div class="float-right text-right">
+            {total} {list_page} {page}
+          </div>
+        </div>
+		
+        <div class="card-body p-0">          
+          <div class="row">
+
+              <section class="col-md-12 mb-2">
+                <div class="row">
+                  
+                  <span class="mb-3 ml-3"></span>
+                  <div class="col-md-12">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Topic</th>
+                          <th>Replies</th>
+                          <th>Author</th>
+                          <th>Last Post</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- BEGIN topic -->
+                        <tr {topic.row_selected}>
+
+                          <td class="forum_row_content">
+                           
+						 <div class="media">
+						  <i class="fa fa-comments forum-icon-bg p-3 mr-3" aria-hidden="true"></i>
+						  <div class="media-body">
+							<h5 class="mt-0">{topic.topic}</h5>
+							{topic.description}
+						  </div>
+						</div>  
+
+                          </td>
+
+                          <td class="forum_row_content1">
+                            {topic.replies}
+                          </td>
+
+                          <td class="forum_row_content1">
+                            <span class="forum_author">
+                              {topic.author}
+                            </span>
+                          </td>
+
+                          <td class="forum_row_content1">
+                            <span class="forum_author">
+                              {topic.last_reply_author}
+                            </span>
+                            <br />
+                            <nobr>{topic.last_post}</nobr>
+                          </td>
+
+                        </tr>
+                        <!-- END topic -->
+                      </tbody>
+                      {INFO_TEXT_HIDE_START}
+                      <tfoot>
+                        <tr>
+                          <td class="label">{total}</td>
+                          <td class="label" colspan="4">{list_page}&nbsp;{page}&nbsp;</td>
+                        </tr>
+                      </tfoot>
+                      {INFO_TEXT_HIDE_END}
+                    </table>
+                  </div>
+                </div>
+              </section>
+          </div>
+          </form>
+          <!--row-end here-->
+        </div>
+        <!--card body end here-->
+      </div>
+      <!--card end here-->
+
+    </div>
+  </div>
+</div>
+<!--container end here-->
+{FOOTER_HTML}

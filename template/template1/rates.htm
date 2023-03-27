@@ -1,0 +1,252 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+ function check_submit(objFrm)
+ {
+  var radio_check;
+  radio_check=false;
+  for( var i =0; i< objFrm.length;i++)
+  {
+   if(objFrm[i].type=='radio')
+   {
+    if(objFrm[i].checked==true)
+    {
+     radio_check=true;
+    }
+   }
+  }
+  if(radio_check)
+  {   
+   return true;
+  }
+  else
+  {
+   alert('Please select product.');
+   return false;
+  }
+ }
+//-->
+</SCRIPT>
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" 
+
+);
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 mx-auto">
+            <div class="card card-custom">
+                <div class="card-header card-header-custom">
+                    <h1 class="display-6 p-0 m-0">{HEADING_TITLE}</h1>
+                </div>
+                <div class="card-body card-body-custom">
+<div class="small text-muted font-weight-bold">
+  {INFO_TEXT_QUOT1}
+</div>
+<!--<div class="small text-muted mb-4">
+{INFO_TEXT_QUOT2}
+</div>-->
+
+{order_form}
+<div id="max_rates" {INFO_TEXT_BLOCK3}>
+<h2 class="display-6 font-weight-bold p-1 mb-2" role="alert">
+ {INFO_TEXT_POST_SEARCH}</h2>
+			<div class="table-responsive-sm scrollmenu">
+              <table class="table table-hover table-sm mb-4">
+				<thead>
+			   <tr class="alert-primary">
+                <th class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NAME}</th>
+                <th class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NO_OF_JOBS}</th>
+                <th class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NO_OF_CVS}</th>
+                <th class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_TIME_PERIOD}</th>
+                <th class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_FEE}</th>
+               </tr>
+			   </thead>
+               <!-- BEGIN rates3 -->
+               <tr {rates3.row_selected} class="job-tr">
+                <td class="rate_content2"><span style="font-size:14px!important;line-height: 36px;" class="ml-1">{rates3.radio}</span> <span class="ml-2"> {rates3.name}</span></td>
+                <td class="rate_content2" style="font-size:15px!important;">{rates3.job}</td>
+                <td class="rate_content2" style="font-size:15px!important;">{rates3.cv}</td>
+                <td class="rate_content2" style="font-size:15px!important;">{rates3.time}</td>
+                <td class="rate_content2" style="font-size:15px!important;"><nobr>{rates3.fee}</nobr></td>
+               </tr>
+               <!-- END rates3 -->
+               <thead>
+			   <tr bgcolor="#FFFFFF">
+                <th colspan="5" align="right"><span class="float-right text-right">{BUY_BUTTON}</span></th>
+               </tr>
+			   </thead>
+              </table>
+            </div>
+</div>
+
+<div id="max_rates" {INFO_TEXT_BLOCK5}>			 
+<h2 class="display-6 font-weight-bold p-1 mb-2" role="alert">
+ {INFO_TEXT_F_POST_SEARCH}</h2>
+
+			<div class="table-responsive-sm scrollmenu">
+              <table class="table table-hover table-sm mb-4">
+               <thead>
+			   <tr class="alert-primary">
+                <th width="36%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NAME}</th>
+                <th width="15%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NO_OF_JOBS}</th>
+                <th width="15%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NO_OF_CVS}</th>
+                <th width="24%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_TIME_PERIOD}</th>
+                <th width="25%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_FEE}</th>
+               </tr>
+			   </thead>
+               <!-- BEGIN rates5 -->
+               <tr {rates5.row_selected}>
+                <td class="rate_content2"><span style="font-size:14px!important;line-height: 36px;" class="ml-1">{rates5.radio}</span> <span class="ml-2"> {rates5.name}</span></td>
+                <td class="rate_content2">{rates5.job}</td>
+                <td class="rate_content2">{rates5.cv}</td>
+                <td class="rate_content2">{rates5.time}</td>
+                <td class="rate_content2"><nobr>{rates5.fee}</nobr></td>
+               </tr>
+               <!-- END rates5 -->
+               <thead>
+			   <tr bgcolor="#FFFFFF">
+                <th colspan="5" align="right"><span class="float-right text-right">{BUY_BUTTON}</span></th>
+               </tr>
+			   </thead>
+              </table>
+			  </div>
+ </div>            
+			 
+<div id="max_rates" {INFO_TEXT_BLOCK1}>
+			 
+<h2 class="display-6 font-weight-bold p-1 mb-2" role="alert">
+ {INFO_TEXT_POST_JOBS}</h2>
+			 
+				<div class="table-responsive-sm scrollmenu">
+                  <table class="table table-hover table-sm mb-4">
+                   <thead>
+				   <tr class="alert-primary">
+                    <th width="36%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NAME}</th>
+                    <th width="15%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NO_OF_JOBS}</th>
+                    <th width="24%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_TIME_PERIOD}</th>
+                    <th width="25%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_FEE}</th>
+                   </tr>
+				   </thead>
+                   <!-- BEGIN rates1 -->
+                   <tr {rates1.row_selected}>
+                    <td class="rate_content2"><span style="font-size:14px!important;line-height: 36px;" class="ml-1">{rates1.radio}</span> <span class="ml-2">{rates1.name}</span></td>
+                    <td class="rate_content2">{rates1.job}</td>
+                    <td class="rate_content2">{rates1.time}</td>
+                    <td class="rate_content2"><nobr>{rates1.fee}</nobr></td>
+                   </tr>
+                   <!-- END rates1 -->
+                   <thead>
+			   <tr bgcolor="#FFFFFF">
+                <th colspan="5" align="right"><span class="float-right text-right">{BUY_BUTTON}</span></th>
+               </tr>
+			   </thead>
+                  </table>
+				</div>
+ </div>                
+				 
+<div id="max_rates" {INFO_TEXT_BLOCK2}>
+				<h2 class="display-6 font-weight-bold p-1 mb-2" role="alert">
+				 {INFO_TEXT_SEARCH_RESUMES}</h2>
+				 <div class="table-responsive-sm scrollmenu">
+                  <table class="table table-hover table-sm mb-4">
+                   <thead>
+				   <tr class="alert-primary">
+                    <th width="36%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NAME}</th>
+                    <th width="15%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NO_OF_CVS}</th>
+                    <th width="24%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_TIME_PERIOD}</th>
+                    <th width="25%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_FEE}</th>
+                   </tr>
+				   </thead>
+                   <!-- BEGIN rates2 -->
+                   <tr {rates2.row_selected}>
+                    <td class="rate_content2"><span style="font-size:14px!important;line-height: 36px;" class="ml-1">{rates2.radio}</span> <span class="ml-2">{rates2.name}</span></td>
+                    <td class="rate_content2">{rates2.cv}</td>
+                    <td class="rate_content2">{rates2.time}</td>
+                    <td class="rate_content2"><nobr>{rates2.fee}</nobr></td>
+                   </tr>
+                   <!-- END rates2 -->
+                   <thead>
+			   <tr bgcolor="#FFFFFF">
+                <th colspan="5" align="right"><span class="float-right text-right">{BUY_BUTTON}</span></th>
+               </tr>
+			   </thead>
+                  </table>
+				</div>
+                 
+</div>				 
+<div id="max_rates" {INFO_TEXT_BLOCK4}>
+				<h2 class="display-6 font-weight-bold p-1 mb-2" role="alert">
+				 {INFO_TEXT_POST_F_JOBS}</h2>
+				 <div class="table-responsive-sm scrollmenu">
+                  <table class="table table-hover table-sm mb-4">
+                   <thead>
+				   <tr class="alert-primary">
+                    <th width="36%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NAME}</th>
+                    <th width="15%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_NO_OF_JOBS}</th>
+                    <th width="24%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_TIME_PERIOD}</th>
+                    <th width="25%" class="rate_content1" style="font-size: 14px!important;">{TABLE_HEADING_PLAN_TYPE_FEE}</th>
+                   </tr>
+				   </thead>
+                   <!-- BEGIN rates4 -->
+                   <tr {rates4.row_selected}>
+                    <td class="rate_content2"><span style="font-size:14px!important;line-height: 36px;" class="ml-1">{rates4.radio}</span> <span class="ml-2">{rates4.name}</span></td>
+                    <td class="rate_content2">{rates4.job}</td>
+                    <td class="rate_content2">{rates4.time}</td>
+                    <td class="rate_content2"><nobr>{rates4.fee}</nobr></td>
+                   </tr>
+                   <!-- END rates4 -->
+                   <thead>
+			   <tr bgcolor="#FFFFFF">
+                <th colspan="5" align="right"><span class="float-right text-right">{BUY_BUTTON}</span></th>
+               </tr>
+			   </thead>
+                  </table>
+				</div>
+</div>                 
+				 </form>
+
+          <h2 class="display-6 font-weight-bold p-1 mb-2" role="alert">{INFO_TEXT_KEY_FEATURES}</h2>
+		  
+	
+<div class="row small text-muted mb-3">
+	<div class="col-md-6">
+	<div class="font-weight-bold">{INFO_TEXT_POST_JOBS}</div>
+	<li>{INFO_TEXT_POST_JOB_INSTANTLY}</li>
+	<li>{INFO_TEXT_MANAGE_MONITOR}</li>
+	<li>{INFO_TEXT_TRACK_APPLICATION}</li>
+	<li>{INFO_TEXT_GET_RESUMES}</li>
+	</div>
+	
+	<div class="col-md-6">
+	<div class="font-weight-bold">{INFO_TEXT_SEARCH_RESUMES}</div>
+	<li>{INFO_TEXT_SEARCH_QUALIFIED}</li>
+	<li>{INFO_TEXT_VIEW_SAVE_ORGANISATION}</li>
+	<li>{INFO_TEXT_GET_ACCESS_TO_RESUME}</li>
+	<li>{INFO_TEXT_USE_APPLICANT_TRACKING}</li>
+	</div>
+</div>	
+	
+	<span class="text-danger">*</span> <span class="small text-muted">{INFO_TEXT_FOR_OTHER_OPTIONS} <a href="contact_us.php" class="blue">{INFO_TEXT_CONTACT_US}</a>.</span>
+											
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{FOOTER_HTML}

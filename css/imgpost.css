@@ -1,0 +1,512 @@
+
+        @font-face {
+            font-family: "League Spartan" !important;
+            src: url("../fonts/LeagueSpartan-Bold.otf") !important;
+        }
+
+        @font-face {
+            font-family: "montserrat" !important;
+            src: url("../fonts/Montserrat-Regular.ttf") !important;
+        }
+
+        @font-face {
+            font-family: "hkgrotesk" !important;
+            src: url("../fonts/HKGrotesk-Light.woff") !important;
+        }
+
+        @font-face {
+            font-family: "hkgrotesk-bold" !important;
+            src: url("../fonts/HKGrotesk-Bold.woff") !important;
+        }
+
+
+        body{
+            font-family: system-ui !important;
+        }
+
+        header{
+            width: 100%;
+            text-align: center;
+        }
+
+        .btns{
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: center;
+            justify-content: space-between;
+        }
+
+        .btns button{
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+ 
+
+        .contenedor{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        #page8{
+            padding-left: 40px !important;
+            height: 684px !important;
+            width: 345px !important;
+            background-image: url('../img2/page8.png') !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            margin: 40px 0px !important;
+        }
+
+        .img img{
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 50% !important;
+            margin-top: 65px !important;
+        }
+
+        .empname{
+            color: #ffe43f !important;
+            font-size: 27px !important;
+            font-weight: 700 !important;
+        }
+
+        .empname p {
+            margin-top: 25px !important;
+            margin-bottom: 23px !important;
+            font-family:"montserrat";
+        }
+
+        .trabajocn{
+            color: #ca138c !important;
+            font-size: 44px !important;
+            font-weight: 800 !important;
+            max-width: 201px !important;
+            margin-bottom: 0px  !important;
+            line-height: 48px !important;
+        }
+
+        .trabajocn p{
+            margin: 0px 0px  !important;
+        }
+
+        .np{
+            font-family: 'montserrat' !important;
+            color: #22bbdb !important;
+            font-size: 17px !important;
+            font-weight: bold !important;
+            max-width: 235px !important;
+            margin: 9px 0px !important;
+        }
+
+        .dp{
+            font-family: 'montserrat' !important;
+            color:#22bbdb !important;
+            font-size: 17px !important;
+            max-width: 201px !important;
+            margin: 9px 0px !important;
+        }
+
+        .visitwao{
+            font-family: 'montserrat' !important;
+            font-size: 12px !important;
+            margin-top: 42px !important;
+            max-width: 287px !important;
+            color: #c4138a !important;
+        }
+
+        .wj p{
+            margin-top: 26px !important;
+            color: #ffe43f !important;
+            font-weight: bold !important;
+            font-size: 14px !important;
+        }
+
+
+
+        #page7{
+            padding-left: 40px !important;
+            height: 684px !important;
+            width: 345px !important;
+            background-image: url('../img2/page7.png') !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            margin: 40px 0px !important;
+        }
+
+
+        .img2 img{
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 50% !important;
+            margin-top: 65px !important;
+        }
+
+        .empname2{
+            color: #ffe43f !important;
+            font-size: 20px !important;
+            font-weight: 700 !important;
+        }
+
+        .empname2 p {
+            margin-top: 20px !important;
+            margin-bottom: 18px !important;
+        }
+
+        .trabajocn2{
+            color: #ca138c !important;
+            font-size: 44px !important;
+            font-weight: 1000 !important;
+            max-width: 201px !important;
+            margin-bottom: 20px  !important;
+            line-height: 49px !important;
+        }
+
+        .trabajocn2 p{
+            margin-bottom: 0px  !important;
+            margin-top: 0px  !important;
+        }
+
+        .np2{
+            font-family: 'montserrat' !important;
+            color: #22bbdb !important;
+            font-size: 18px !important;
+            font-weight: bold !important;
+            max-width: 210px !important;
+            margin: 9px 0px !important;
+        }
+
+        .dp2{
+            font-family: 'montserrat' !important;
+            color:#22bbdb !important;
+            font-size: 18px !important;
+            max-width: 201px !important;
+            margin: 9px 0px !important;
+            margin-bottom: 49px !important;
+        }
+
+        .visitwao2{
+            font-size: 11px !important;
+            margin-top: 20px !important;
+            max-width: 296px !important;
+            color: #c4138a !important;
+
+        }
+
+        .visitwao2 p{
+            font-weight: bold !important;
+        }
+
+        .wj2 p{
+            color: #ffe43f !important;
+            font-weight: bold !important;
+            font-size: 32px !important;
+            margin-left: 37px !important;
+            margin-top: 50px !important;
+        }
+
+        #page6{
+            padding-left: 40px !important;
+            height: 684px !important;
+            width: 345px !important;
+            background-image: url('../img2/page6.png') !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            margin: 40px 0px !important;
+        }
+
+        .name6 p {
+            color: #11054c !important;
+            font-size: 32px !important;
+            font-weight: 1000 !important;
+            max-width: 100px !important;
+            padding-top: 40px !important;
+        }
+
+        .imguser6 img{
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 50% !important;
+            margin-top: 50px !important;
+            margin-left: 90px !important;
+        }
+
+        .nombrepusto{
+            margin-top: 30px !important;
+        }
+
+        .np6{
+            font-size: 54px !important;
+            color: white !important;
+            font-weight: bold !important;
+            margin-top: 85px !important;
+            margin-bottom: 0px  !important;
+            width: 298px !important;
+            line-height: 56px !important;
+        }
+
+        .dp6{
+            font-family: 'hkgrotesk' !important;
+            font-size: 34px !important;
+            color: #fddd42 !important;
+            font-weight: 500 !important;
+            margin-top: 0px  !important;
+        }
+
+        .visitwao6{
+            font-family: 'montserrat' !important;
+            color: #d34ea7 !important;
+            font-size: 12px !important;
+            width: 166px !important;
+            margin-left: 159px !important;
+            margin-top: 118px !important;
+            font-weight: 900 !important;
+            line-height: 18px !important;
+        }
+
+        .wao6{
+            width: 153px !important;
+            margin-left: 92px !important;
+        }
+
+        .bg6{
+            font-family: 'montserrat' !important;
+            padding: 10px 0px !important;
+            background-color: #11054c !important;
+            border-radius: 20px !important;
+            color: white !important;
+            text-align: center !important;
+            font-size: 16px !important;
+            margin-top: 30px !important;
+        }
+
+        .bg6 p {
+            margin: 0px auto !important;
+        }
+
+
+        #page1{
+            padding-left: 40px !important;
+            height: auto !important;
+            width: 345px !important;
+            background-image: url('../img2/page1.png') !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            margin: 40px 0px !important;
+            background-color: yellow !important;
+        }
+
+        .ne1{
+            color: #ffe43f !important;
+            font-size: 38px !important;
+            font-weight: 1000 !important;
+            max-width: 100px !important;
+            padding-top: 20px !important;
+            margin-left: 123px !important;
+        }
+
+        .cuandro1{
+            background-color: white !important;
+            opacity: 0.8 !important;
+            width: 307px !important;
+            padding-top: 20px !important;
+        }
+
+        .frase1{
+            text-transform: uppercase !important;
+            text-align: center !important;
+            margin: 0px auto !important;
+            color: #ca138c !important;
+            font-size: 30px !important;
+            font-weight: 1000 !important;
+            max-width: 241px !important;
+            margin-top: 70px !important;
+            margin-bottom: -15px  !important;
+            line-height: 38px !important;
+        }
+
+        .frase2{
+            text-transform: uppercase !important;
+            color: #ca138c !important;
+            font-size: 42px !important;
+            font-weight: 1000 !important;
+            max-width: 223px !important;
+            margin-top: -18px !important;
+            margin-bottom: -15px  !important;
+            margin-left: 5px !important;
+            line-height: 49px !important;
+        }
+
+        .frase2 p{
+            margin-bottom: 15px !important;
+        }
+
+        .line1{
+            max-width: 80px !important;
+            border-bottom: 6px solid #ffe43f !important;
+            margin-bottom: 20px !important;
+            margin-left: 5px !important;
+        }
+
+        .job1{
+            line-height: 16px !important;
+            margin-left: 5px !important;
+        }
+
+        .np1{
+            font-family: 'montserrat' !important;
+            color: #22bbdb !important;
+            font-size: 18px !important;
+            font-weight: bold !important;
+            max-width: 210px !important;
+            margin: 9px 0px !important;
+        }
+
+        .dp1{
+            font-family: 'montserrat' !important;
+            color:#22bbdb !important;
+            font-size: 18px !important;
+            max-width: 201px !important;
+            margin: 9px 0px !important;
+            margin-bottom: 32px !important;
+        }
+
+        .visitwao1{
+            font-size: 10px !important;
+            margin-top: 20px !important;
+            max-width: 262px !important;
+            color: #c4138a !important;
+            margin: 10px !important;
+        }
+
+        .wj1 {
+            margin-top: 20px !important;
+            margin-left: 38px !important;
+        }
+
+        .wj1 p{
+            color: #ffe43f !important;
+            font-weight: bold !important;
+            font-size: 32px !important;
+            margin: 0px  !important;
+            margin-left: 37px !important;
+        }
+
+        #page2{
+            padding-left: 40px !important;
+            height: auto !important;
+            width: 345px !important;
+            background-image: url('../img2/page1.png') !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            margin: 40px 0px !important;
+        }
+
+        .nrow{
+            display: flex !important;
+            flex-flow: row wrap !important;
+            width: 305px !important;
+        }
+
+        .name1{
+            color: #ffe43f !important;
+            font-size: 38px !important;
+            font-weight: 1000 !important;
+            max-width: 100px !important;
+            padding-top: 20px !important;
+        }
+
+        .imguser1 img{
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 50% !important;
+            margin-top: 50px !important;
+            margin-left: 90px !important;
+        }
+
+        #page3{
+            padding-left: 40px !important;
+            height: auto !important;
+            width: 345px !important;
+            background-image: url('../img2/page1.png') !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            margin: 40px 0px !important;
+        }
+
+        .nrow3{
+            display: flex !important;
+            flex-flow: column wrap !important;
+            width: 305px !important;
+            text-align: center !important;
+        }
+
+        .name3{
+            color: #ffe43f !important;
+            font-size: 27px !important;
+            font-weight: 1000 !important;
+            margin: 0px  !important;
+            margin-bottom: 20px  !important;
+
+        }
+
+        .imguser3 img{
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 50% !important;
+            margin-top: 50px !important;
+            margin-left: 0px !important;
+        }
+
+        .name3 p{
+            margin: 0px  !important;
+        }
+
+        #page5{
+            padding-left: 40px !important;
+            height: auto !important;
+            width: 345px !important;
+            background-image: url('../img2/page5.png') !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            margin: 40px 0px !important;
+        }
+
+        .dp5{
+            font-family: 'hkgrotesk' !important;
+            font-size: 34px !important;
+            color: #1bbbd7 !important;
+            font-weight: 500 !important;
+            margin-top: 0px  !important;
+        }
+
+        .bg5{
+            margin-top: 20px !important;
+            padding: 10px 0px !important;
+            background-color:  #ffe43f !important;
+            border-radius: 20px !important;
+            color: #271a4c !important;
+            text-align: center !important;
+            font-size: 17px !important;
+        }
+
+        .bg5 p {
+            font-family: 'hkgrotesk-bold' !important;
+            font-weight: bold !important;
+            margin: 0px auto !important;
+        }

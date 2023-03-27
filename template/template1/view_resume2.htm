@@ -1,0 +1,207 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+    <SCRIPT LANGUAGE="JavaScript">
+        function popUp(URL) {
+            day = new Date();
+            id = day.getTime();
+            eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=800,height=600,left = 0,top = 0');");
+        }
+    </script>
+    <SCRIPT LANGUAGE="JavaScript">
+        function popUp1(URL) {
+            day = new Date();
+            id = day.getTime();
+            eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=270,left = 100,top = 100');");
+        }
+    </script>
+    <script>
+        function addClassName() {
+            const selectField = document.querySelector("[name='rate_it']").classList;
+
+            selectField.add('form-control');
+
+            const textAreat = document.querySelector('[name="private_notes"]').classList;
+
+            textAreat.add('form-control');
+
+        }
+        window.addEventListener("load", addClassName);
+    </script>
+
+    <!-- Below Script for auto close -->
+    <style>
+        .displayNone {
+            display: none;
+        }
+		body {
+		background:#eee;
+		}
+    </style>
+    <script>
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+                $(".messageStackSuccess").addClass("displayNone");
+                // $messageStackSuccess
+            });
+        }, 50000););
+    </script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            {update_message}
+
+            <!--<div class="card card-custom mb-2">
+                <div class="card-header card-header-custom">
+                    <h1 class="display-6 p-0 m-0 float-left mt-1">View Resume</h1>
+                    
+                </div>
+            </div>-->
+	<div class="btn-group float-right" role="group" aria-label="Button group with nested dropdown">{add_button}</div>	
+	
+	<div class="card1 card-custom1 for-mobile">
+    <div class="card-header1 card-header-custom1">
+	<!--Start comment is used to hide the card if jobseeker logged in
+    This below card is viewed when recuriter logged in otherwise not-->
+{RATE_RESUME_BUTTON_FOR_REC}	
+	<div class="collapse" id="collapseExample">
+	{comment_start} 
+            <div class="card mb-3">
+                <div class="card-header card-header-custom">
+                    <h6 class="p-0 m-0 float-left">{SECTION_RATE_RESUME}</h6>
+                    <div class="float-right">
+                        {INFO_TEXT_CURRENT_RATING}
+                        {INFO_TEXT_CURRENT_RATING1}
+                    </div>
+                </div>
+                {rate_form}
+                <div class="card-body card-body-custom">
+                    {INFO_TEXT_CURRENT_RATE_IT1}
+                </div>
+            </form>
+            </div>
+			{comment_end}
+	</div>
+	<!--End comment-->
+</div>
+</div>
+
+<!-- 
+<div class="border d-block" style="background:#fff;border-radius: 7px;padding:15px 20px 25px 20px;box-shadow:0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)">
+    <div class="media mb-3">
+        <div class="resume-pic resume-pic-view">{photo}</div>
+        <div class="media-body">
+            <h4 class="mt-0" style="font-size:36px;">{INFO_TEXT_FULL_NAME1}</h4>
+            <div class="mb-2">{INFO_TEXT_TARGET_JOB}</div>
+            <div><i class="fa fa-at faicons" aria-hidden="true"></i> {INFO_TEXT_EMAIL_ADDRESS1}</div>
+            <div><i class="fa fa-phone faicons" aria-hidden="true"></i> {INFO_TEXT_ALL_PHONE}</div>
+            <div><i class="fa fa-map-marker faicons" aria-hidden="true"></i> {INFO_TEXT_ADDRESS1}</div>
+            <div><i class="fa fa-star faicons" aria-hidden="true"></i> {INFO_TEXT_CURRENT_RATING} {INFO_TEXT_CURRENT_RATING1}</div>
+
+        </div>
+    </div>
+    <div>
+    {SECTION_TARGET_JOB}
+    {SECTION_OBJECTIVE}
+    {SECTION_WORK_HISTORY_DETAIL}
+    {SECTION_REFERENCE_DETAILS}
+    {SECTION_EDUCATION_DETAILS}
+    {SECTION_SKILLS}
+    {SECTION_LANGUAGES}
+    {SECTION_DOCUMENT_VIDEO}
+    {SECTION_SOCIAL_ACCOUNT}
+    {SECTION_DOCUMENT_UPLOAD_PRINT}
+</div>
+</div>
+
+-->
+
+
+
+			
+			    <div class="border d-block" style="background:#fff;border-radius: 7px;padding:15px 20px 25px 20px;box-shadow:0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)">
+                    <div id="cv" class="contenedor" style="display: flex; flex-flow: row wrap !important;">
+                        <div class="leftside">
+                            <div class="menuleft">
+                                <div class="perfil">
+                                    <img src="img/Azul_oscuro2.png" style="position: absolute; width: 250px; height: 250px; left: 15px; top: -48px;" alt="">
+                                    <div class="imgperfil">
+                                        {photo}
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="name">
+                                        <h3 class="fname">{INFO_TEXT_FULL_NAME1}</h3>
+ 
+                                       <!--  <p class="ocupacion">Web design & developer</p> -->                                    </div>
+                                </div>
+                                <div class="infoperfil">
+                                    <div class="prueba">
+                                        <div class="contact">
+                                            <div class="titleinfo">
+                                                <h3 style="font-size:24px">Contacto</h3>
+                                            </div>
+                                            <div class="p">
+                                                <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                                  </svg>
+                                                <p class="contactp" style="color:white !important;" style="color:white !important;">{INFO_TEXT_ADDRESS1}.</p>
+                                            </div>
+                                            <div class="p">
+                                                <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                                  </svg>
+                                                <p class="contactp" style="color:white !important;">{INFO_TEXT_ALL_PHONE}</p>
+                                            </div>
+                                            <div class="p">
+                                                <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                                                  </svg>
+                                                <p class="contactp" style="color:white !important;">{INFO_TEXT_EMAIL_ADDRESS1}</p>
+                                            </div>
+                                            <!-- 
+                                            <div class="p">
+                                                <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                                  </svg>
+                                                <p class="contactp" style="color:white !important;">Henrysilly.com</p>
+                                            </div>
+                                            -->
+                                
+                                        </div>
+
+                                            {view_certification}
+                                        
+                                            {SECTION_LANGUAGES2}
+
+                                            
+                                            {SECTION_SKILLS2}
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                                  
+                        </div>
+
+                        <div class="rigthside">
+                            {SECTION_OBJECTIVE2}
+
+                            {SECTION_WORK_HISTORY_DETAIL2}
+    
+                            {SECTION_EDUCATION_DETAILS2}
+    
+                           
+                            
+                        </div>
+
+                        
+                    </div>
+			</div>
+
+        </div>
+    </div>
+</div>
+
+{FOOTER_HTML}

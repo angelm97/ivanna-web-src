@@ -1,0 +1,86 @@
+{HEADER_HTML}
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+{HEADER_MIDDLE_HTML}
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-3">
+            {JOB_SEARCH_LEFT}
+        </div>
+
+        <div class="col-md-9">
+		{update_message}
+            <div class="card">
+                <div class="card-header">				<div class="media">				  {company_logo}				  <div class="media-body">					<h4 class="mt-2">{job_title}</h4>					<span class="text-muted small mr-3"><i class="fa fa-building-o resume-view-icon" aria-hidden="true"></i> {company}</span>					<span class="text-muted small"><i class="fa fa-map-marker resume-view-icon" aria-hidden="true"></i> {job_location}</span>				  </div>				</div>                </div>
+                <div class="card-body">								<div class="form-group">                        <div class="row">                            <div class="col-md-3 col-form-label">                            </div>                            <div class="col-md-9">							<h6 class="badge badge-secondary">{HEADING_TITLE}</h6>                            </div>                        </div>                    </div>								
+                    {form}
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-form-label">
+                                {INFO_TEXT_NAME}                                
+                            </div>
+                            <div class="col-md-9">
+                                {INFO_TEXT_NAME1}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-form-label">
+                                {INFO_TEXT_EMAIL}
+                            </div>
+                            <div class="col-md-9">
+                                {INFO_TEXT_EMAIL1}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-form-label">
+                                {INFO_TEXT_MESSAGE}
+                            </div>
+                            <div class="col-md-9">
+                                {INFO_TEXT_MESSAGE1}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-form-label">
+                                {INFO_TEXT_UPLOAD_RESUME}
+                            </div>
+                            <div class="col-md-9 small">
+                                {INFO_TEXT_UPLOAD_RESUME1}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        {google_captcha}
+                    </div>
+					<div class="form-group">                        <div class="row">                            <div class="col-md-3 col-form-label">                                                           </div>                            <div class="col-md-9">                               {button}                            </div>                        </div>                    </div>										
+               
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{FOOTER_HTML}

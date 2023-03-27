@@ -1,0 +1,101 @@
+{HEADER_HTML}
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="{INFO_TEXT_JSCRIPT_FILE}"></script>
+{HEADER_MIDDLE_HTML}
+<SCRIPT LANGUAGE="JavaScript">
+	function popUp(URL) 
+	{
+		day = new Date();
+		id = day.getTime();
+		eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=600,height=400,left = 0,top = 0');");
+	}
+</script>
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" 
+
+);
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 d-none">
+			{design}
+		</div>
+
+		<!-- <div class="col-md-9"> -->
+		<div class="col-md-7 mx-auto">
+		{update_message}
+			<div class="card card-custom">
+				<div class="card-header card-header-custom">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="display-6 p-0 m-0 float-left">{INFO_TEXT_CREATE_ACCOUNT}</h1>
+							<div class="mobile-float-left">{ALREADY_MEMBER}</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+				<div class="card-body card-body-custom">
+					
+					
+					{COUNTRY_STATE_SCRIPT}
+					{registration_form}
+					{INFO_TEXT_SOCIAL_BUTTON}
+					
+					<p class="label-text">{SECTION_ACCOUNT_DETAILS}</p>
+					
+					{INFO_TEXT_EMAIL_ADDRESS1}
+					{password_data}
+					
+					<p class="label-text">{SECTION_CONTACT_DETAILS}</p>
+					<div class="row">
+						<div class="col-md-6">{INFO_TEXT_FIRST_NAME1}</div>
+						<div class="col-md-6">{INFO_TEXT_LAST_NAME1}</div>
+						<div class="col-md-6">{INFO_TEXT_CEDULA}</div>
+					</div>
+					
+					{INFO_TEXT_FULL_ADDRESS1}
+					
+					<div class="row">
+						<div class="col-md-6">{INFO_TEXT_CITY1}</div>
+						<div class="col-md-6">{INFO_TEXT_ZIP1}</div>
+						<div class="col-md-6">{INFO_TEXT_COUNTRY1}</div>
+						<div class="col-md-6">{INFO_TEXT_STATE1}</div>
+						<div class="col-md-6">{INFO_TEXT_HOME_PHONE1}</div>
+						<div class="col-md-6">{INFO_TEXT_MOBILE1}</div>
+					</div>
+					{resume_data}
+					<p class="label-text">{SECTION_ACCOUNT_PRIVACY}</p>
+					{INFO_TEXT_PRIVACY1}
+					
+					<p class="label-text mt-3">{RESUME_SEARCHABLE}</p>
+					{INFO_TEXT_RESUME_SEARCHEABLE1}
+					
+					<p class="label-text mt-3">{INFO_TEXT_NEWS_LETTER}</p>
+					{INFO_TEXT_NEWS_LETTER1}
+					{google_captcha}
+					<small id="emailHelp" class="form-text text-muted">{INFO_TEXT_AGREEMENT}</small>
+				</div>
+				
+				<div class="card-footer card-footer-custom">
+					{add_save_button}
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+{FOOTER_HTML}

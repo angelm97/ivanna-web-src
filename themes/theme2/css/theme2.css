@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+background-color:#ffffff;
+}
+
+.job-img img{
+	width:60px;
+	margin-left:10px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.nav-item {
+	    font-size: 16px;
+}
+.container {
+	max-width:1270px;
+}
+
+.white-bg {
+	background-color:#fff;
+	padding:5px 0 0 0;
+}
+
+.article-img {
+	width: 75px;
+    height: 75px;
+    object-fit: cover;
+	border-radius:5px;
+}
+.featured {
+    width: 100%;
+    height: 75px;
+    object-fit: contain;
+}
+
+.navbar-brand>img {
+    height: 40px;
+    padding: 0;
+    width: 250px;
+    border-radius: 0;
+    object-fit: contain;
+    object-position: left;
+}
+
+ocial:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+ 
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
+
+
+/* Video Slider */
+
+.header {
+	position: relative;
+	background-color: black;
+	height: 44vh;
+	min-height: 9rem;
+	width: 100%;
+	overflow: hidden;
+	margin:-16px 0 0 0!important;
+}
+.theme2-title {
+	font-size:16px;
+	color: #1d4354;
+}
+.border-none {
+	border:0;
+}
+.list-group-item {
+    border-width: 0 0 1px 0;
+}
+.header video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.header .container {
+	position: relative;
+	z-index: 2;
+}
+.badge-info {
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 50px;
+    border: 1px solid #fff!important;
+}
+.text-white {
+    color: #37a000!important;
+}
+.header .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 1;
+	background-color:#1d4354;
+}
+.btn-info {
+    background:transparent;
+	border-color:#1d4354;
+	color:#1d4354;
+}
+.btn-info:hover {
+    background:#EAF6F8;
+	border-color:#1d4354;
+	color:#1d4354;
+}
+.btn-info2 {
+    background:transparent;
+	border-color:#098A9F;
+	color:#098A9F;
+}
+.btn-info2:hover {
+    background:#023D46;
+	border-color:#0B6675;
+	color:#37a000;
+}
+.btn-outline-secondary {
+    color: #008329;
+    border: 0px solid #d1d1d1;
+    font-weight: 600;
+}
+@media (pointer: coarse) and (hover: none) {
+	.header {
+		background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+	}
+	.header video {
+		display: none;
+	}
+}
+.mpr-0 {
+	padding-right:0!important;
+}
+/* Overlay * /
+/* Container needed to position the overlay. Adjust the width as needed */
+.containers {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+ 
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.containers:hover .overlay {
+  opacity: 0.7;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #1d4354;
+}
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
+}
+.border-top {
+	border-top: 1px solid #2b5468!important;
+}
+.bg-white {
+	background-color:#f1f6f8!important;
+}
+.bg-white2 {
+	background-color:#ffffff!important;
+}
+.card {
+	border-color:#e0e9ed;
+}
+.bg-gray {
+	background-color:#1d4354;
+	color:#fff;
+}
+.list-group-item-action {
+    color: #1d4354;
+}
+.bg-gray a{
+	color:#fff;
+}
+.theme10-btn-success {
+    background:#37a000;
+    border: 1px solid #37a000;
+	color:#fff;
+	padding:13px;
+}
+
+.theme10-btn-success:hover {
+    background:#008329;
+    border: 1px solid #008329;
+	color:#fff;
+	padding:13px;
+}
+
+@media screen and (max-width:900px) {
+.input-group-append {
+    width: 100%;
+}
+}
+@media screen and (max-width:900px) {
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
+    width: 100%;
+    margin-bottom: 5px;
+}
+}
+
+@media screen and (max-width:900px) {
+.mobile-font-24px {
+	font-size: 24px;
+}
+}
+
+@media screen and (max-width:900px) {
+.y-padding-2 {
+	padding:20px 0px;
+}
+}
+
+@media screen and (max-width:900px) {
+.mobile-center-align {
+	text-align:center;
+}
+}
+
+@media screen and (max-width:900px) {
+.mobile-padding-right {
+	padding-right:15px!important;
+}
+}
+@media screen and (max-width:900px) {
+.mobile-col-md-3 {
+	width:50%!important;
+}
+}
+@media screen and (max-width:900px) {
+.mpr-0 {
+	padding-right:15px!important;
+	margin-bottom:10px;
+}
+}
+

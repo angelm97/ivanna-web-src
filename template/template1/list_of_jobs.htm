@@ -1,0 +1,81 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<!-- Below Script for auto close -->
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+	<!-- Below Alert message File path is class/message_stack.php -->
+		{update_message} 
+      <div class="card card-custom mb-3">
+        <div class="card-header card-header-custom">
+          <h1 class="display-6 p-0 m-0 float-left">{HEADING_TITLE}</h1>
+          <div class="float-right mobile-float-left">{different_jobs}</div>
+        </div>
+        <div class="card-body p-0 card-body-custom">
+          <div class="table-responsive-sm scrollmenu scrollmenu">
+		  <table class="table table-hover table-sm">
+            <thead>
+              <tr class="small">
+                <th style="width:20%;" scope="col">{TABLE_HEADING_TITLE}</th>
+                <th  style="width:15%;" scope="col">{TABLE_HEADING_INSERTED}</th>
+                <th  style="width:200px;" scope="col">{TABLE_HEADING_EXPIRED}</th>
+                <th  style="width:200px;" scope="col">{TABLE_HEADING_STATUS}</th>
+                <th  style="width:15%;" scope="col">{TABLE_HEADING_VIEWED}</th>
+                <th  style="width:200px;" scope="col">{TABLE_HEADING_CLICKED}</th>
+                <th  style="width:15%;" scope="col">{TABLE_HEADING_APPLICATIONS}</th>
+                <th  style="width:200px;" scope="col">{TABLE_HEADING_ACTION}</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <!-- BEGIN jobs -->
+              <tr{jobs.row_selected}>
+              <td style="width:200px;">{jobs.title}</td>
+              <td class="small text-muted">{jobs.inserted}</td>
+              <td class="small text-muted">{jobs.expired}</td>
+              <td>{jobs.status}</td>
+              <td class="small text-muted">{jobs.viewed}</td>
+              <td class="small text-muted">{jobs.clicked}</td>
+              <td class="small text-muted">{jobs.applications}</td>
+              <td>{jobs.action}</td>
+            </tr>
+            <!-- END jobs -->
+          </tbody>
+        </table>
+        </div>
+        
+        <div>{new_button}</div>
+        
+        
+        
+        
+      </div>
+      <div class="card-footer small">
+        <div class="float-left">{count_rows}</div>
+        <div class="float-right">{no_of_pages}</div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card">
+        {RIGHT_HTML}
+    </div>
+  </div>
+</div>
+</div>
+{FOOTER_HTML}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://github.com/niklasvh/html2canvas/releases/download/0.4.1/html2canvas.js"></script>
+</head>
+<style>
+    #clas{
+  display:flex;
+  flex-flow: row wrap;
+}
+p {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 120px;
+  letter-spacing: -6px;
+  margin: 0;
+  display: block;
+  width: 400px;
+  line-height: 85px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  background-color: #13a6f5;
+  float: left;
+  margin-top: 50px;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  visibility: hidden;
+}
+</style>
+<body>
+
+    <div id="clas">
+        <div>
+        <h3>
+          hola
+        </h3>
+      </div>
+        <div>
+        <h3>
+          hola
+        </h3>
+      </div>
+        <div>
+        <h3>
+          hola
+        </h3>
+      </div>
+      </div>
+      
+      
+      <a href="#" onClick="shotit()">shoot it</a> 
+    
+</body>
+<script>
+    var shotit = function() {
+  html2canvas(document.body, {
+  onrendered: function(canvas) {
+      document.body.appendChild(canvas);
+      leCanvas = document.getElementsByTagName("canvas")[0];
+      var img  = leCanvas.toDataURL("image/png");
+      document.write('<img src="'+img+'"/>');
+  },
+  width: 390,
+  height: 220
+});
+}
+</script>
+</html>

@@ -1,0 +1,119 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<SCRIPT LANGUAGE="JavaScript">
+function popUp(URL) 
+{
+ day = new Date();
+ id = day.getTime();
+ eval("page" + id + " = window.open(URL, '" + id + "','toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=300,height=300,left = 0,top = 0');");
+}
+</script>
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<!-- Left Starts -->
+<div class="container">
+    <div class="row">
+		<div class="col-md-3 for-mobile">
+		<div class="card card-custom">
+           <div class="card-header card-header-custom">
+			Búsqueda de Candidatos</div>
+			<div class="card-body card-body-left">
+			{search_resume_form}
+                <div class="search-applicant-box">
+                {INFO_TEXT_APPLICATION1}
+                {INFO_TEXT_FIRST_NAME1}
+                {INFO_TEXT_LAST_NAME1}
+				{INFO_TEXT_EXPERIENCE1}
+                {INFO_TEXT_EMAIL_ADDRESS1}
+                {buttons}
+		</div>
+		</div>
+
+</div>	
+</div>	
+					
+        <div class="col-md-9">
+            <div class="card card-custom">
+                <div class="card-header card-header-custom">
+                    <h1 class="display-6 p-0 m-0 float-left">Lista de candidatos <span class="text-muted">[{no_of_applicants}]</span></h1>
+					<div class="float-right">{direct_applicants}</div>
+                </div>
+				
+                <div class="card-body card-body-custom">
+
+      <!--<table border="0" align="center" cellpadding="0" cellspacing="0" id="table-container-resume-sidebar">
+          <tr>
+            <td class="table-container-resume"><div class="jobseeker-register">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><table width="100%" border="0" align="left"
+                                                        cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td valign="top"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                           <tr>
+                            <td>
+                              <div class="sidebar-heading">
+                                <table width="85%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td> Applicant Tracking</td>
+                                  </tr>
+                                </table>
+                              </div></td>
+                          </tr>
+                         <tr>
+                            <td><ul class="left-panel-menu">
+                            <li>&nbsp;</li>
+                              {applicant_tracking}
+                            </ul></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table>
+            </div></td>
+          </tr>
+        </table>-->
+
+<div class="small text-muted mb-3"> <span class="text-muted font-weight-bold">{no_of_applicants}</span> candidatos han coincidido con tu criterio de búsqueda.</div>
+
+<!-- BEGIN search_applicant -->
+<div class="border-topp">
+<div class="media media py-3 px-4">
+  {search_applicant.photo}
+  <div class="media-body">
+    <h5 class="mt-0">{search_applicant.name}</h5>
+    <div class="small text-muted">{search_applicant.email_address}</div>
+	<div class="small text-muted">{search_applicant.job_title}</div>
+	<div class="small text-muted mb-2">{search_applicant.city}</div>
+	<div class="small text-muted mb-2">{search_applicant.totalexp}</div>
+	<span class="mr-1">{search_applicant.applicant_pipeline}</span>
+	<span class="mr-1">{search_applicant.view_resume}</span>
+	<span class="mr-1">{search_applicant.contact}</span>
+	<span class="">Inserted: {search_applicant.inserted}</span>
+  </div>
+</div>
+</div>
+<!-- <span class="candidate-exp">{search_applicant.experience} Exp.</span>-->
+
+<!-- END search_applicant -->
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{FOOTER_HTML}

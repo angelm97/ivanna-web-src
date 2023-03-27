@@ -1,0 +1,86 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" 
+
+);
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+
+<div class="container">
+    <div class="row">
+		<div class="col-md-3">
+		<!-- Left Starts -->
+					{JOB_SEARCH_LEFT}
+					<!-- Left Ends -->  
+		</div>			
+					
+        <div class="col-md-9">
+		{update_message}
+            <div class="card card-custom">
+                <div class="card-header card-header-custom">
+                    <h1 class="display-6 p-0 m-0 float-left">{HEADING_TITLE}</h1>
+					<div class="float-right">{add_new}</div>
+                </div>
+				<div class="card-header card-header-custom">
+				{INFO_TEXT_GET_DAILY_JOB_ALERTS}
+				</div>
+                <div class="card-body card-body-custom p-0">
+
+<div class="table-responsive-sm scrollmenu">
+<table class="table table-hover">
+								
+			<thead>
+			<tr class="dataTableHeadingRow jobs-table-headbar">
+             <th class="style30">{TABLE_HEADING_TITLE_NAME}</th>
+             <th class="style30">{TABLE_HEADING_INSERT_DATE}</th>
+             <th class="style30">{TABLE_HEADING_UPDATE_DATE}</th>
+             <th class="style30">{TABLE_HEADING_RUN}</th>
+			<th class="style30">{TABLE_HEADING_EDIT}</th>
+			<th class="style30">{TABLE_HEADING_DELETE}</th>
+            </tr>
+			</thead>							
+             <!-- BEGIN list_job_save_result -->
+            <tr{list_job_save_result.row_selected}>
+             <td valign="top" class="style27">{list_job_save_result.title}</td>
+             <td valign="top" class="dataTableContent">{list_job_save_result.inserted}</td>
+             <td valign="top" class="dataTableContent">{list_job_save_result.updated}</td>{list_job_save_result.run_form}
+             <td valign="top" class="dataTableHeadingContent">{list_job_save_result.run}{list_job_save_result.hidden_fields1}</td></form>{list_job_save_result.edit_form}
+			<td valign="top" class="dataTableContent">{list_job_save_result.edit}{list_job_save_result.hidden_fields1}</td></form>
+			<td valign="top" class="dataTableContent">{list_job_save_result.delete}</td>
+            </tr>
+            <!-- END list_job_save_result -->
+			<form name="page" method="post">
+				<tr>{hidden_fields}
+					<td class="style27">{total}</td>
+					<td valign="top" align="right" colspan="5">{list_page}&nbsp;{page}&nbsp;</td>
+				</tr>
+												
+			</form>
+			
+			
+			</table>
+			</div>							
+			</div>
+			
+			<div class="card-footer">
+			<div><strong>{INFO_TEXT_SAVE_SEARCH}</strong> {INFO_TEXT_JOB_SEARCH_CRITERIA} </div>
+			<div><strong>{INFO_TEXT_JOB_ALERT}</strong> {INFO_TEXT_WILL_SEND_EMAIL_NOTIFICATION}</div>
+            
+			</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{FOOTER_HTML}

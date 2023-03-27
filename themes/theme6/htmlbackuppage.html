@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+        <title>Job Board Theme 6</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/half-slider.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link href="css/custom.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <div class="punchline">No#1 career job portal</div>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">job alerts</a></li>
+                        <li><a href="#">pricing</a></li>
+                        <li><a href="#">resources</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container-fluid sub-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-xs-12"><a class="navbar-brand" href="#"><img class="logo" src="images/jobboard-logo.png" alt="Job Board Logo"></a></div>
+                    <div class="col-md-6">
+                        <div class="input-group" id="adv-search">
+                            <input type="text" class="form-control" placeholder="What kind of job you are looking for?"/>
+                            <div class="input-group-btn">
+                                <div class="btn-group" role="group">
+                                    <div class="dropdown dropdown-lg">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="contain">Keyword</label><br>
+                                                    <input class="form-control2" placeholder="What kind of job you are looking for?" type="text" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="filter">Location</label><br>
+                                                    <select name='country' class='form-control2'>
+                                                        <option value=''>All Locations</option>
+                                                        <option value='184'>Saudi Arabia</option>
+                                                        <option value='168'>Philippines</option>
+                                                        <option value='167'>Peru</option>
+                                                        <option value='166'>Paraguay</option>
+                                                        <option value='165'>Papua New Guinea</option>
+                                                        <option value='164'>Panama</option>
+                                                        <option value='163'>Palau</option>
+                                                        <option value='162'>Pakistan</option>
+                                                        <option value='161'>Oman</option>
+                                                        <option value='160'>Norway</option>
+                                                        <option value='159'>Northern Mariana Islands</option>
+                                                        <option value='158'>Norfolk Island</option>
+                                                        <option value='157'>Niue</option>
+                                                        <option value='156'>Nigeria</option>
+                                                        <option value='169'>Pitcairn</option>
+                                                        <option value='170'>Poland</option>
+                                                        <option value='183'>Sao Tome and Principe</option>
+                                                        <option value='182'>San Marino</option>
+                                                        <option value='181'>Samoa</option>
+                                                        <option value='180'>Saint Vincent and the Grenadines</option>
+                                                        <option value='179'>Saint Lucia</option>
+                                                        <option value='178'>Saint Kitts and Nevis</option>
+                                                        <option value='177'>Rwanda</option>
+                                                        <option value='176'>Russian Federation</option>
+                                                        <option value='175'>Romania</option>
+                                                        <option value='174'>Reunion</option>
+                                                        <option value='173'>Qatar</option>
+                                                        <option value='172'>Puerto Rico</option>
+                                                        <option value='171'>Portugal</option>
+                                                        <option value='155'>Niger</option>
+                                                        <option value='154'>Nicaragua</option>
+                                                        <option value='153'>New Zealand</option>
+                                                        <option value='137'>Mayotte</option>
+                                                        <option value='136'>Mauritius</option>
+                                                        <option value='135'>Mauritania</option>
+                                                        <option value='134'>Martinique</option>
+                                                        <option value='133'>Marshall Islands</option>
+                                                        <option value='132'>Malta</option>
+                                                        <option value='131'>Mali</option>
+                                                        <option value='130'>Maldives</option>
+                                                        <option value='129'>Malaysia</option>
+                                                        <option value='128'>Malawi</option>
+                                                        <option value='127'>Madagascar</option>
+                                                        <option value='126'>Macedonia, The Former Yugoslav Republic of</option>
+                                                        <option value='125'>Macau</option>
+                                                        <option value='138'>Mexico</option>
+                                                        <option value='139'>Micronesia(Federated States of)</option>
+                                                        <option value='152'>New Caledonia</option>
+                                                        <option value='151'>Netherlands Antilles</option>
+                                                        <option value='150'>Netherlands</option>
+                                                        <option value='149'>Nepal</option>
+                                                        <option value='148'>Nauru</option>
+                                                        <option value='147'>Namibia</option>
+                                                        <option value='146'>Myanmar</option>
+                                                        <option value='145'>Mozambique</option>
+                                                        <option value='144'>Morocco</option>
+                                                        <option value='143'>Montserrat</option>
+                                                        <option value='142'>Mongolia</option>
+                                                        <option value='141'>Monaco</option>
+                                                        <option value='140'>Moldova, Republic of</option>
+                                                        <option value='124'>Luxembourg</option>
+                                                        <option value='245'>Palestine</option>
+                                                        <option value='229'>Venezuela</option>
+                                                        <option value='228'>Vatican City State (Holy See)</option>
+                                                        <option value='227'>Vanuatu</option>
+                                                        <option value='226'>Uzbekistan</option>
+                                                        <option value='225'>Uruguay</option>
+                                                        <option value='224'>United States Minor Outlying Islands</option>
+                                                        <option value='223'>United States</option>
+                                                        <option value='222'>United Kingdom</option>
+                                                        <option value='221'>United Arab Emirates</option>
+                                                        <option value='220'>Ukraine</option>
+                                                        <option value='219'>Uganda</option>
+                                                        <option value='218'>Tuvalu</option>
+                                                        <option value='217'>Turks and Caicos Islands</option>
+                                                        <option value='230'>Viet Nam</option>
+                                                        <option value='231'>Virgin Islands (British)</option>
+                                                        <option value='244'>Syria</option>
+                                                        <option value='243'>Iran</option>
+                                                        <option value='242'>Timor-Leste</option>
+                                                        <option value='241'>Viet Nam</option>
+                                                        <option value='240'>Laos</option>
+                                                        <option value='239'>Zimbabwe</option>
+                                                        <option value='238'>Zambia</option>
+                                                        <option value='237'>Zaire</option>
+                                                        <option value='236'>Yugoslavia</option>
+                                                        <option value='235'>Yemen</option>
+                                                        <option value='234'>Western Sahara</option>
+                                                        <option value='233'>Wallis and Futuna Islands</option>
+                                                        <option value='232'>Virgin Islands (U.S.)</option>
+                                                        <option value='216'>Turkmenistan</option>
+                                                        <option value='215'>Turkey</option>
+                                                        <option value='214'>Tunisia</option>
+                                                        <option value='198'>St. Pierre and Miquelon</option>
+                                                        <option value='197'>St. Helena</option>
+                                                        <option value='196'>Sri Lanka</option>
+                                                        <option value='195'>Spain</option>
+                                                        <option value='194'>South Georgia and the South Sandwich Islands</option>
+                                                        <option value='193'>South Africa</option>
+                                                        <option value='192'>Somalia</option>
+                                                        <option value='191'>Solomon Islands</option>
+                                                        <option value='190'>Slovenia</option>
+                                                        <option value='189'>Slovakia (Slovak Republic)</option>
+                                                        <option value='188'>Singapore</option>
+                                                        <option value='187'>Sierra Leone</option>
+                                                        <option value='186'>Seychelles</option>
+                                                        <option value='199'>Sudan</option>
+                                                        <option value='200'>Suriname</option>
+                                                        <option value='213'>Trinidad and Tobago</option>
+                                                        <option value='212'>Tonga</option>
+                                                        <option value='211'>Tokelau</option>
+                                                        <option value='210'>Togo</option>
+                                                        <option value='209'>Thailand</option>
+                                                        <option value='208'>Tanzania, United Republic of</option>
+                                                        <option value='207'>Tajikistan</option>
+                                                        <option value='206'>Taiwan</option>
+                                                        <option value='205'>Syrian Arab Republic</option>
+                                                        <option value='204'>Switzerland</option>
+                                                        <option value='203'>Sweden</option>
+                                                        <option value='202'>Swaziland</option>
+                                                        <option value='201'>Svalbard and Jan Mayen Islands</option>
+                                                        <option value='185'>Senegal</option>
+                                                        <option value='123'>Lithuania</option>
+                                                        <option value='61'>East Timor</option>
+                                                        <option value='45'>Christmas Island</option>
+                                                        <option value='44'>China</option>
+                                                        <option value='43'>Chile</option>
+                                                        <option value='42'>Chad</option>
+                                                        <option value='41'>Central African Republic</option>
+                                                        <option value='40'>Cayman Islands</option>
+                                                        <option value='39'>Cape Verde</option>
+                                                        <option value='38'>Canada</option>
+                                                        <option value='37'>Cameroon</option>
+                                                        <option value='36'>Cambodia</option>
+                                                        <option value='35'>Burundi</option>
+                                                        <option value='34'>Burkina Faso</option>
+                                                        <option value='33'>Bulgaria</option>
+                                                        <option value='46'>Cocos (Keeling) Islands</option>
+                                                        <option value='47'>Colombia</option>
+                                                        <option value='60'>Dominican Republic</option>
+                                                        <option value='59'>Dominica</option>
+                                                        <option value='58'>Djibouti</option>
+                                                        <option value='57'>Denmark</option>
+                                                        <option value='56'>Czech Republic</option>
+                                                        <option value='55'>Cyprus</option>
+                                                        <option value='54'>Cuba</option>
+                                                        <option value='53'>Croatia</option>
+                                                        <option value='52'>Cote D'Ivoire</option>
+                                                        <option value='51'>Costa Rica</option>
+                                                        <option value='50'>Cook Islands</option>
+                                                        <option value='49'>Congo</option>
+                                                        <option value='48'>Comoros</option>
+                                                        <option value='32'>Brunei Darussalam</option>
+                                                        <option value='31'>British Indian Ocean Territory</option>
+                                                        <option value='30'>Brazil</option>
+                                                        <option value='14'>Austria</option>
+                                                        <option value='13'>Australia</option>
+                                                        <option value='12'>Aruba</option>
+                                                        <option value='11'>Armenia</option>
+                                                        <option value='10'>Argentina</option>
+                                                        <option value='9'>Antigua and Barbuda</option>
+                                                        <option value='8'>Antarctica</option>
+                                                        <option value='7'>Anguilla</option>
+                                                        <option value='6'>Angola</option>
+                                                        <option value='5'>Andorra</option>
+                                                        <option value='4'>American Samoa</option>
+                                                        <option value='3'>Algeria</option>
+                                                        <option value='2'>Albania</option>
+                                                        <option value='15'>Azerbaijan</option>
+                                                        <option value='16'>Bahamas</option>
+                                                        <option value='29'>Bouvet Island</option>
+                                                        <option value='28'>Botswana</option>
+                                                        <option value='27'>Bosnia and Herzegowina</option>
+                                                        <option value='26'>Bolivia</option>
+                                                        <option value='25'>Bhutan</option>
+                                                        <option value='24'>Bermuda</option>
+                                                        <option value='23'>Benin</option>
+                                                        <option value='22'>Belize</option>
+                                                        <option value='21'>Belgium</option>
+                                                        <option value='20'>Belarus</option>
+                                                        <option value='19'>Barbados</option>
+                                                        <option value='18'>Bangladesh</option>
+                                                        <option value='17'>Bahrain</option>
+                                                        <option value='1'>Afghanistan</option>
+                                                        <option value='122'>Liechtenstein</option>
+                                                        <option value='106'>Jamaica</option>
+                                                        <option value='105'>Italy</option>
+                                                        <option value='104'>Israel</option>
+                                                        <option value='103'>Ireland</option>
+                                                        <option value='102'>Iraq</option>
+                                                        <option value='101'>Iran (Islamic Republic of)</option>
+                                                        <option value='100'>Indonesia</option>
+                                                        <option value='99' selected>India</option>
+                                                        <option value='98'>Iceland</option>
+                                                        <option value='97'>Hungary</option>
+                                                        <option value='96'>Hong Kong</option>
+                                                        <option value='95'>Honduras</option>
+                                                        <option value='94'>Heard and Mc Donald Islands</option>
+                                                        <option value='107'>Japan</option>
+                                                        <option value='108'>Jordan</option>
+                                                        <option value='121'>Libyan Arab Jamahiriya</option>
+                                                        <option value='120'>Liberia</option>
+                                                        <option value='119'>Lesotho</option>
+                                                        <option value='118'>Lebanon</option>
+                                                        <option value='117'>Latvia</option>
+                                                        <option value='116'>Lao People's Democratic Republic</option>
+                                                        <option value='115'>Kyrgyzstan</option>
+                                                        <option value='114'>Kuwait</option>
+                                                        <option value='113'>Korea, Republic of</option>
+                                                        <option value='112'>Korea, Democratic People's Republic of</option>
+                                                        <option value='111'>Kiribati</option>
+                                                        <option value='110'>Kenya</option>
+                                                        <option value='109'>Kazakhstan</option>
+                                                        <option value='93'>Haiti</option>
+                                                        <option value='92'>Guyana</option>
+                                                        <option value='91'>Guinea-bissau</option>
+                                                        <option value='75'>French Guiana</option>
+                                                        <option value='74'>France, Metropolitan</option>
+                                                        <option value='73'>France</option>
+                                                        <option value='72'>Finland</option>
+                                                        <option value='71'>Fiji</option>
+                                                        <option value='70'>Faroe Islands</option>
+                                                        <option value='69'>Falkland Islands (Malvinas)</option>
+                                                        <option value='68'>Ethiopia</option>
+                                                        <option value='67'>Estonia</option>
+                                                        <option value='66'>Eritrea</option>
+                                                        <option value='65'>Equatorial Guinea</option>
+                                                        <option value='64'>El Salvador</option>
+                                                        <option value='63'>Egypt</option>
+                                                        <option value='76'>French Polynesia (Tahiti)</option>
+                                                        <option value='77'>French Southern Territories</option>
+                                                        <option value='90'>Guinea</option>
+                                                        <option value='89'>Guatemala</option>
+                                                        <option value='88'>Guam</option>
+                                                        <option value='87'>Guadeloupe</option>
+                                                        <option value='86'>Grenada</option>
+                                                        <option value='85'>Greenland</option>
+                                                        <option value='84'>Greece</option>
+                                                        <option value='83'>Gibraltar</option>
+                                                        <option value='82'>Ghana</option>
+                                                        <option value='81'>Germany</option>
+                                                        <option value='80'>Georgia</option>
+                                                        <option value='79'>Gambia</option>
+                                                        <option value='78'>Gabon</option>
+                                                        <option value='62'>Ecuador</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="filter">Category</label><br>
+                                                    <select name='job_category[]' class='form-control2'>
+                                                        <option value='' selected>All Category</option>
+                                                        <option value='21'>Accounting/Finance/Banking</option>
+                                                        <option value='1'>Administration/HR/Legal</option>
+                                                        <option value='22'>Advertising/Marketing/PR</option>
+                                                        <option value='3'>Arts & Design</option>
+                                                        <option value='2'>Automotive</option>
+                                                        <option value='14'>Aviation/Airlines</option>
+                                                        <option value='15'>Call Centre/BPO</option>
+                                                        <option value='13'>Construction/Architecture</option>
+                                                        <option value='23'>Consulting Services</option>
+                                                        <option value='4'>Courier/Distribution/Logistics</option>
+                                                        <option value='24'>CustomerSupport/Telemarketing</option>
+                                                        <option value='25'>Education/Training</option>
+                                                        <option value='26'>Engineering/Manufacturing</option>
+                                                        <option value='27'>Entertainment/Media</option>
+                                                        <option value='5'>Environmental</option>
+                                                        <option value='16'>Export/Import</option>
+                                                        <option value='28'>Fashion/Garments</option>
+                                                        <option value='12'>Food Industry</option>
+                                                        <option value='29'>Government Services</option>
+                                                        <option value='30'>HealthCare/Pharma</option>
+                                                        <option value='31'>Hospitality/Travel/Tourism</option>
+                                                        <option value='7'>Insurance</option>
+                                                        <option value='8'>Internet/E-Commerce</option>
+                                                        <option value='32'>IT/Hardware</option>
+                                                        <option value='33'>IT/Software</option>
+                                                        <option value='9'>Legal/Company Secretarial</option>
+                                                        <option value='34'>Maintenance/Repair</option>
+                                                        <option value='10'>Media/Publishing</option>
+                                                        <option value='42'>oil,gas & power</option>
+                                                        <option value='35'>Oil/Gas/Utilities</option>
+                                                        <option value='17'>Others</option>
+                                                        <option value='36'>Production/Operations</option>
+                                                        <option value='18'>Purchase/ Supply Chain</option>
+                                                        <option value='6'>Recruitment/HR</option>
+                                                        <option value='37'>Retail/Wholesale</option>
+                                                        <option value='38'>Sales/Business Development</option>
+                                                        <option value='39'>Science/Research/Development</option>
+                                                        <option value='11'>Sports and Recreation</option>
+                                                        <option value='40'>Supply Chain/Logistics</option>
+                                                        <option value='19'>Telecom/ ISP</option>
+                                                        <option value='41'>Transportation/Warehousing</option>
+                                                        <option value='20'>Travel/ Airlines</option>
+                                                    </select>
+                                                </div>
+                                                <button type="submit" class="btn btn-default button">Find Jobs</button>
+                                                <a href="#" class="pull-right more-advanced"><i class="fa fa-caret-right" aria-hidden="true"></i> Advanced Search</a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 rightside">
+                        <ul class="nav navbar-nav je-btn pull-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle btn btn-danger" data-toggle="dropdown">JOB SEEKER <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">LOGIN</a></li>
+                                    <li><a href="#">REGISTER</a></li>
+                                    <li><a href="#">POST RESUME</a></li>
+                                    <li><a href="#">SEARCH JOB</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav je-btn pull-right">
+                            <li><a href="#" class="btn btn-success" role="button"><i class="fa fa-pencil" aria-hidden="true"></i> post a job</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle btn btn-danger" data-toggle="dropdown">EMPLOYER <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">LOGIN</a></li>
+                                    <li><a href="#">REGISTER</a></li>
+                                    <li><a href="#">POST JOB</a></li>
+                                    <li><a href="#">SEARCH RESUME</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container padding-top">
+            <div class="row">
+                <div class="col-md-2 categories1">
+                    <h2 class="box-title">Job Seeker</h2>
+                    <div class="margin">
+                        <img src="images/jobseeker.png" class="img-hover thumbnail" align="left">
+                        <ul class="jobseeker-employer">
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="#">Login</a></li>
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="#">Post Resume</a></li>
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="#">Find Jobs</a></li>
+                        </ul>
+                    </div>
+                    <p class="jobseeker-txt">Search job openings in jobboard and post your resume</p>
+                    <p class="jobseeker-txt"><a href="#" class="readmore button">Register Now!</a></p>
+                    <hr>
+                    <h2 class="box-title">latest jobs</h2>
+                    <div class="margin">
+                        <ul class="job-list">
+                            <li class="element"><a href="#">PHP Programmer / Developer</a></li>
+                            <li>Microsoft Corp.</li>
+                            <li>Bangalore, India</li>
+                        </ul>
+                        <ul class="job-list">
+                            <li class="element"><a href="#">Senior Product Manager</a></li>
+                            <li>Microsoft Corp.</li>
+                            <li>Bangalore, India</li>
+                        </ul>
+                        <ul class="job-list">
+                            <li class="element"><a href="#">Head of Internal Audit</a></li>
+                            <li>Microsoft Corp.</li>
+                            <li>Bangalore, India</li>
+                        </ul>
+                        <ul class="job-list">
+                            <li class="element"><a href="#">Talent Advisor (Fresher)</a></li>
+                            <li>Microsoft Corp.</li>
+                            <li>Bangalore, India</li>
+                        </ul>
+                        <ul class="job-list">
+                            <li class="element"><a href="#">Marketing Communications</a></li>
+                            <li>Microsoft Corp.</li>
+                            <li>Bangalore, India</li>
+                        </ul>
+                        <ul class="job-list">
+                            <li class="element"><a href="#">Content & Email Marketing</a></li>
+                            <li>Microsoft Corp.</li>
+                            <li>Bangalore, India</li>
+                        </ul>
+                        <ul class="job-list">
+                            <li class="element"><a href="#">Internship - News Coordination</a></li>
+                            <li>Microsoft Corp.</li>
+                            <li>Bangalore, India</li>
+                        </ul>
+                        <ul class="job-list">
+                            <li class="element"><a href="#">Corporate Communications</a></li>
+                            <li>Microsoft Corp.</li>
+                            <li>Bangalore, India</li>
+                        </ul>
+                        <ul class="job-list">
+                            <li class="element"><a href="#">Territory Sales Manager</a></li>
+                            <li>Microsoft Corp.</li>
+                            <li>Bangalore, India</li>
+                        </ul>
+                        <p><a href="#" class="readmore button">view all</a></p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- Half Page Image Background Carousel Header -->
+                    <header id="myCarousel" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <!-- Wrapper for Slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <!-- Set the first background image using inline CSS below. -->
+                                <div class="fill" style="background-image:url('images/slider1.jpg');"></div>
+                                <div class="carousel-caption">
+                                    <h2>The easiest way to build<br>your resume online</h2>
+                                    <p>Search millions of jobs and post your resume today!</p>
+                                    <button type="button" class="btn btn-primary button"><i class="fa fa-file" aria-hidden="true"></i> Post Resume</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- Set the second background image using inline CSS below. -->
+                                <div class="fill" style="background-image:url('images/slider2.jpg');"></div>
+                                <div class="carousel-caption">
+                                    <h2>The easiest way to build<br>your resume online</h2>
+                                    <p>Search millions of jobs and post your resume today!</p>
+                                    <button type="button" class="btn btn-primary button"><i class="fa fa-file" aria-hidden="true"></i> Post Resume</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- Set the third background image using inline CSS below. -->
+                                <div class="fill" style="background-image:url('images/slider3.jpg');"></div>
+                                <div class="carousel-caption">
+                                    <h2>The easiest way to build<br>your resume online</h2>
+                                    <p>Search millions of jobs and post your resume today!</p>
+                                    <button type="button" class="btn btn-primary button"><i class="fa fa-file" aria-hidden="true"></i> Post Resume</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- Set the third background image using inline CSS below. -->
+                                <div class="fill" style="background-image:url('images/slider4.jpg');"></div>
+                                <div class="carousel-caption">
+                                    <h2>The easiest way to build<br>your resume online</h2>
+                                    <p>Search millions of jobs and post your resume today!</p>
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-file" aria-hidden="true"></i> Post Resume</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="icon-next"></span>
+                        </a>
+                    </header>
+                    <div class="white-box">
+                        <div class="row">
+                            <div class="col-md-8 col-xs-8">
+                                <h2 class="box-title-middle">featured employer</h2>
+                            </div>
+                            <div class="col-md-4 col-xs-4"><a href="#" class="readmore pull-right button">view All</a></div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered img-hover">
+                        <tbody>
+                            <tr>
+                                <td class="tborder1"><a href="#" class="img-responsive"><img src="images/featured-jobs1.jpg" width="125" alt="Image" class="img-responsive"></a></td>
+                                <td class="tborder2"><a href="#" class="img-responsive"><img src="images/featured-jobs2.jpg" width="125" alt="Image" class="img-responsive"></a></td>
+                                <td class="tborder3"><a href="#" class="img-responsive"><img src="images/featured-jobs3.jpg" width="125" alt="Image" class="img-responsive"></a></td>
+                                <td class="tborder4"><a href="#" class="img-responsive"><img src="images/featured-jobs4.jpg" width="125" alt="Image" class="img-responsive"></a></td>
+                                <td class="tborder5"><a href="#" class="img-responsive"><img src="images/featured-jobs5.jpg" width="125" alt="Image" class="img-responsive"></a></td>
+                            </tr>
+                            <tr>
+                                <td class="tborder6"><a href="#" class="img-responsive"><img src="images/featured-jobs6.jpg" width="125" alt="Image" class="img-responsive"></a></td>
+                                <td class="tborder7"><a href="#" class="img-responsive"><img src="images/featured-jobs7.jpg" width="125" alt="Image" class="img-responsive"></a></td>
+                                <td class="tborder8"><a href="#" class="img-responsive"><img src="images/featured-jobs8.jpg" width="125" alt="Image" class="img-responsive"></a></td>
+                                <td class="tborder9"><a href="#" class="img-responsive"><img src="images/featured-jobs9.jpg" width="125" alt="Image" class="img-responsive"></a></td>
+                                <td class="tborder10"><a href="#" class="img-responsive"><img src="images/featured-jobs10.jpg" width="125" alt="Image" class="img-responsive"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="categories3">
+                        <div class="row margin">
+                            <div class="col-md-8 col-xs-8">
+                                <h2 class="box-title-middle">popular categories</h2>
+                            </div>
+                            <div class="col-md-4 col-xs-4"><a href="#" class="readmore pull-right button">view All</a></div>
+                        </div>
+                        <div class="row margin2">
+                            <div class="col-md-4">
+                                <p><a href="#">Arts & Design</a> (501)</p>
+                                <p><a href="#">Aviation/Airlines</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                                <p><a href="#">Chief Accounting</a> Officer (501)</p>
+                                <p><a href="#">Consulting Services</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                                <p><a href="#">Chief Accounting Officer</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                                <p><a href="#">Consulting Services</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p><a href="#">Arts & Design</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                                <p><a href="#">Aviation/Airlines</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                                <p><a href="#">Chief Accounting</a> Officer (501)</p>
+                                <p><a href="#">Consulting Services</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                                <p><a href="#">Chief Accounting Officer</a> (501)</p>
+                                <p><a href="#">Consulting Services</a> (501)</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p><a href="#">Arts & Design</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                                <p><a href="#">Aviation/Airlines</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                                <p><a href="#">Chief Accounting</a> Officer (501)</p>
+                                <p><a href="#">Consulting Services</a> (501)</p>
+                                <p><a href="#">Branded Goods</a> (501)</p>
+                                <p><a href="#">Chief Accounting Officer</a> (501)</p>
+                                <p><a href="#">Consulting Services</a> (501)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 categories2">
+                    <h2 class="box-title">employer</h2>
+                    <div class="margin">
+                        <img src="images/employer.png" class="img-hover thumbnail" align="left">
+                        <ul class="jobseeker-employer">
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="#">Login</a></li>
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="#">Post Job</a></li>
+                            <li><i class="fa fa-caret-right" aria-hidden="true"></i> <a href="#">Find Resume</a></li>
+                        </ul>
+                    </div>
+                    <p class="jobseeker-txt">Search resumes in job board and post your jobs</p>
+                    <p class="jobseeker-txt"><a href="#" class="readmore button">Register Now!</a></p>
+                    <hr>
+                    <h2 class="box-title">jobs by company</h2>
+                    <div class="margin">
+                        <ul class="company-list">
+                            <li class="type"><a href="#">Cognizant Technology Solutions</a></li>
+                            <li class="type"><a href="#">Infosys Technologies</a></li>
+                            <li class="type"><a href="#">Hewlett-Packard India</a></li>
+                            <li class="type"><a href="#">HCL Technologies</a></li>
+                            <li class="type"><a href="#">Tech Mahindra</a></li>
+                            <li class="type"><a href="#">Ingram Micro India</a></li>
+                            <li class="type"><a href="#">Redington India</a></li>
+                            <li class="type"><a href="#">Oracle India</a></li>
+                            <li class="type"><a href="#">Cisco Systems India</a></li>
+                            <li class="type"><a href="#">Microsoft India</a></li>
+                        </ul>
+                        <p><a href="#" class="readmore button">view all</a></p>
+                    </div>
+                    <hr>
+                    <h2 class="box-title">career articles</h2>
+                    <div class="margin">
+                        <ul class="company-list">
+                            <li class="element"><a href="#">How to write resume</a></li>
+                            <li class="type">7 Ways You're Holding Yourself Back From Becoming a Huge...</li>
+                        </ul>
+                        <ul class="company-list">
+                            <li class="element"><a href="#">Excellent interview tips</a></li>
+                            <li class="type">7 Ways You're Holding Yourself Back From Becoming a Huge...</li>
+                        </ul>
+                        <ul class="company-list">
+                            <li class="element"><a href="#">How to search jobs</a></li>
+                            <li class="type">7 Ways You're Holding Yourself Back From Becoming a Huge...</li>
+                        </ul>
+                        <p><a href="#" class="readmore button">view all</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div class="container">
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="images/logo-footer.jpg" class="footer-logo">
+                            <p class="copyright">Copyright &copy; Jobboard Software 2017</p>
+                        </div>
+                        <div class="col-md-2">
+                            <ul class="footer-nav">
+                                <li>JOB SEEKER</li>
+                                <li><a href="#">Register Now</a></li>
+                                <li><a href="#">Search Jobs</a></li>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">View Applications</a></li>
+                                <li><a href="#">Job Alerts</a></li>
+                                <li><a href="#">Post Resume</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <ul class="footer-nav">
+                                <li>EMPLOYER</li>
+                                <li><a href="#">Post a Job</a></li>
+                                <li><a href="#">Search Resume</a></li>
+                                <li><a href="#">Sign In</a></li>
+                                <li><a href="#">Register Now</a></li>
+                                <li><a href="#">Resume Alerts</a></li>
+                                <li><a href="#">Applicant Tracking</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <ul class="footer-nav">
+                                <li>INFORMATION</li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="social-network social-circle footer-nav pull-right">
+                                <li>GET SOCIAL</li>
+                                <br>
+                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#" class="icoGoogle-plus" title="Google-plus"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#" class="icoMobile-phone" title="Mobile-phone"><i class="fa fa-mobile-phone"></i></a>
+                                    <a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </footer>
+        </div>
+        <!-- /.container -->
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Script to Activate the Carousel -->
+        <script>
+            $('.carousel').carousel({
+                interval: 5000 //changes the speed
+            })
+            
+            $('ul.nav li.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        </script>
+    </body>
+</html>

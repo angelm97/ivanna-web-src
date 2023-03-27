@@ -1,0 +1,7 @@
+ALTER TABLE applicant_interaction CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE applicant_nologin CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE applicant_status CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE application CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE application_rating CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE application_send_template CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE application_status CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;

@@ -1,0 +1,165 @@
+@media (max-width:1164px) {}
+
+@media (max-width:991px) {
+   .mainLeft .head .face img {
+      width: 80%;
+      border-radius: 50%;
+  }
+  .one{
+   font-size: 20pt !important;
+  }
+  .onee{
+   font-size: 10pt !important;
+  }
+  .mainLeft .downt .downMid {
+   position: absolute;
+   background-color: #FAC9C4;
+   width: 241px;
+   height: 814px;
+   left: 0;
+}
+.mainLeft .downMid .down .txts p {
+   text-align: left;
+   padding: 0px 3px !important;
+   line-height: 12px;
+}
+.mainRight .about .top span {
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+.mainRight .about .top div {
+   display: inline-block;
+   width: 94%;
+   border-bottom: 2px solid black;
+}
+.mainRight .about p {
+   text-align: justify;
+   color: grey;
+   font-size: 11px;
+}
+.mainRight .education .top span {
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+.mainRight .education .top div {
+   display: inline-block;
+   width: 94%;
+   border-bottom: 2px solid black;
+}
+.education{
+   margin-top: -62px;
+}
+.mainRight .education .name1 span {
+   font-size: 13px;
+   text-transform: uppercase;
+}
+.mainRight .education p {
+   text-align: justify;
+   color: grey;
+   font-size: 11px;
+}
+.mainRight .experience .top span {
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+.experience{
+   margin-top: -62px;
+}
+.mainRight .experience .name1 span {
+   font-size: 13px;
+   text-transform: uppercase;
+}
+.mainRight .experience p {
+   text-align: justify;
+   color: grey;
+   font-size: 11px;
+}
+.mainRight .experience .top div {
+   display: inline-block;
+   width: 94%;
+   border-bottom: 2px solid black;
+}
+.two{
+   font-size: 11px !important;
+}
+.skill .left table img {
+   height: 5px;
+   width: 5px;
+   border-radius: 50%;
+   margin: 0px 5px 0px 2px;
+}
+.about{
+   margin-top: 53px;
+}
+.mainLeft .downMid .down .txts p {
+   text-align: left;
+   padding: 0px 8px;
+   line-height: 12px;
+}
+}
+
+@media (max-width:767px) {}
+
+@media(max-width:576px) {
+  
+  .mainLeft .head .face img {
+   width: 190px;
+   border-radius: 50%;
+   margin-left: 22px;
+}
+.mainLeft .head .htxt {
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+   margin-top: 30px;
+   margin-left: 0 !important;
+}
+.col-4 {
+   flex: 0 0 auto;
+   width: 90% !important;
+}
+.mainLeft .downt .downMid {
+   position: absolute;
+   background-color: #FAC9C4;
+   width: 100%;
+   height: 814px;
+   left: 0;
+}
+.abb {
+   margin-top: 309%;
+   margin-bottom: 0%;
+}
+.col-8 {
+   flex: 0 0 auto;
+   width: 100% !important;
+}
+.mainRight .education p {
+   text-align: justify;
+   color: grey;
+   font-size: 11px;
+   margin-top: 5px;
+}
+.mainRight .experience p {
+   text-align: justify;
+   color: grey;
+   font-size: 11px;
+   margin-top: 5px;
+}
+.skill .left table img {
+   height: 5px;
+   width: 5px;
+   border-radius: 50%;
+   margin: 0px -4px 0px 2px;
+}
+.mainLeft .head .face img {
+   width: 100% !important;
+   border-radius: 50%;
+   margin-left: 0 !important;
+}
+
+}

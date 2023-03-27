@@ -1,0 +1,408 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background-color: #ffffff;
+	overflow-x: hidden;
+}
+header.carousel {
+	height: 343px;}
+
+.theme4-nav-link {
+    color: #718096!important;
+    font-weight: 300;
+}
+.theme4-nav-link:hover {
+    color: #000!important;
+    font-weight: 300;
+}
+}
+.btn-outline-secondary-white {
+	color: #fff;
+    border-color: #fff;
+	border:2px solid #fff;
+	font-weight:600;
+}
+.nav-item a {
+	font-size: 14px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.footer-logo {
+    width: 200px;
+    height: 55px;
+    object-fit: contain;
+    object-position: left;
+}
+
+.navbar-brand>img {
+display: block;
+    margin-top: 0;
+    height: 50px;
+    width: 175px;
+    padding: 0;
+    border-radius: 0;
+    object-fit: contain;
+    object-position: left;
+}
+
+.home-banner-bg {
+    width: 100%;
+    margin-top: -16px;
+    /* color: #fff; */
+    border-radius: 0;
+}
+
+.home-banner-bg {
+    width: 100%;
+    margin-top: -16px;
+    /* color: #fff; */
+    border-radius: 0;
+}
+
+@media screen and (max-width:900px) {
+.home-banner-bg {
+	background: #ebf4ff;
+}
+}
+
+.theme4-home-banner-bg {
+    background: #ebf4ff;
+}
+
+
+
+.social-circle a.icoFacebook {
+    background-color: #3B5998;
+}
+.social-circle a.icoTwitter {
+    background-color: #33ccff;
+}
+.social-circle a.icoGoogle-plus {
+    background-color: #dd4b38;
+}
+.social-circle a.icoMobile-phone {
+    background-color: #373737;
+}
+.social-circle a.icoLinkedin {
+    background-color: #007bb7;
+}
+/* footer social icons */
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+ul.social-network li {
+    display: inline;
+    margin: 0 1px;
+}
+/* footer social icons */
+
+.social-network a.icoRss:hover {
+    background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+.social-network a.icoGoogle:hover {
+    background-color: #BD3518;
+}
+.social-network a.icoVimeo:hover {
+    background-color: #0590B8;
+}
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+.social-network a.icoMobile-phone:hover {
+    background-color: #373737;
+}
+.social-network a.icoGoogle-plus:hover {
+    background-color: #dd4b38;
+}
+.social-network a.icoRss:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoMobile-phone:hover i,
+.social-network a.icoGoogle-plus:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+.social-circle ul {
+    float: right;
+}
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+.social-circle li i {
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+}
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.mpr-0 {
+	padding-right:0!important;
+}
+@media screen and (max-width:900px) {
+.mobile-featured-recruiter {
+	width:33%;
+	margin-bottom:10px;
+}
+ } 
+ 
+@media screen and (max-width:900px) {
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
+    width: 100%;
+    margin-bottom: 5px;
+}
+}
+
+@media screen and (max-width:900px) {
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+}
+
+@media screen and (max-width:900px) {
+.input-group-append {
+    width: 100%;
+}
+}
+
+@media screen and (max-width:900px) {
+.mobile-featured-recruiter {
+	width:33%;
+	margin-bottom:10px;
+}
+ }
+
+@media screen and (max-width:900px) { 
+ .text-color-blue {
+	font-size:22px;
+}
+ }
+ 
+@media screen and (max-width:900px) {
+.mobile-col-md-3 {
+	width:50%!important;
+}
+}
+
+@media screen and (max-width:900px) {
+.mobile-padding-top {
+	padding-top:10px!important;
+}
+}
+
+@media screen and (max-width:900px) {
+.mobile-padding {
+	padding:5px 15px!important;
+	margin:10px!important;
+}
+}
+
+@media screen and (max-width:900px) {
+.mpr-0 {
+	padding-right:15px!important;
+	margin-bottom:10px;
+}
+}
+.theme4-btn {
+	color: #fff!important;
+    border-color: #30BCED;
+    border: 2px solid #30BCED;
+    background: #30BCED;
+    font-weight: 300;
+    border-radius: .5rem;
+	transition-duration: .3s;
+}
+
+.theme4-btn:hover {
+	color: #70d8fd!important;
+    border-color: #1ea6d5;
+    border: 2px solid #1ea6d5;
+    background: #1ea6d5;
+    font-weight: 300;
+    border-radius: .5rem;
+	transition-duration: .3s;
+}
+
+.theme4-btn2 {
+	color: #fff!important;
+    border-color: #48bb78;
+    border: 2px solid #48bb78;
+    background: #48bb78;
+    font-weight: 300;
+    border-radius: .5rem;
+	transition-duration: .3s;
+}
+
+.theme4-btn2:hover {
+	color: #48bb78!important;
+    border-color: #2f855a;
+    border: 2px solid #2f855a;
+    background: #2f855a;
+    font-weight: 300;
+    border-radius: .5rem;
+	transition-duration: .3s;
+}
+.theme4-btn3 {
+	color: #fff!important;
+    border-color: #f56565;
+    border: 2px solid #f56565;
+    background: #f56565;
+    font-weight: 300;
+    border-radius: .5rem;
+	transition-duration: .3s;
+}
+
+.theme4-btn3:hover {
+	color: #fd8080!important;
+    border-color: #df3434;
+    border: 2px solid #df3434;
+    background: #df3434;
+    font-weight: 300;
+    border-radius: .5rem;
+	transition-duration: .3s;
+}
+
+.text-color-blue {
+	color:#000;
+}
+
+.theme4-btn-outline {
+	color: #30BCED!important;
+    border-color: #30BCED;
+    border: 2px solid #30BCED;
+    background:transparent;
+    font-weight: 300;
+    border-radius: .5rem;
+	transition-duration: .3s;
+
+}
+
+.theme4-btn-outline:hover {
+	color: #70d8fd!important;
+    border-color: #1ea6d5;
+    border: 2px solid #1ea6d5;
+    background: #1ea6d5;
+    font-weight: 300;
+    border-radius: .5rem;
+	transition-duration: .3s;
+}
+
+.theme4-btn-outline2 {
+	color: #818fa1!important;
+    border-color: #e2e8f0;
+    border: 1px solid #9da7b3;
+    background: transparent;
+    font-weight: 300;
+    border-radius: .5rem;
+    transition-duration: .3s;
+}
+
+.theme4-btn-outline2:hover {
+	color: #fff!important;
+    border-color: #e2e8f0;
+    border: 1px solid #9da7b3;
+    background: #9da7b3;
+    font-weight: 300;
+    border-radius: .5rem;
+    transition-duration: .3s;
+}
+
+.theme4-btn-outline3 {
+	color: #f56565!important;
+    border-color: #f56565;
+    border: 2px solid #f56565;
+    background:transparent;
+    font-weight: 300;
+    border-radius: .5rem;
+	transition-duration: .3s;
+}
+
+.theme4-btn-outline3:hover {
+	color: #fd8181!important;
+    border-color: #e03636;
+    border: 2px solid #e03636;
+    background: #e03636;
+    font-weight: 300;
+    border-radius: .5rem;
+	transition-duration: .3s;
+}
+
+
+.theme-4-p-color, .theme4-tab-color p a {
+	color:#718096;
+}
+.theme4-heading-color {
+	color:#000;
+}
+.theme4-nav-tabs {border-bottom: 0px solid #dee2e6;}
+
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #70d8fd;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+	border-width:2px solid;
+}
+
+.shadow2 {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+}
+
+.theme4-bg-dark {
+background:	#ebf4ff;
+}
+
+.theme4-bg-dark a{
+color: #718096;
+font-size:14px;
+}
+
+.theme4-form-lg {
+    height: calc(2em + 1rem + 2px);
+    font-size: 1rem;
+}

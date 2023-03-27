@@ -1,0 +1,268 @@
+{HEADER_HTML}
+<script src="{INFO_TEXT_JSCRIPT_FILE}"></script>
+{HEADER_MIDDLE_HTML}
+<script language="javascript">
+function set_action(action1)
+{
+ document.education.action.value=action1;
+}
+function set_action1(action1)
+{
+ document.target.action.value=action1;
+}
+function set_action_ct(action1)
+{
+ document.certification.action.value=action1;
+}
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+function popUp(URL) {
+day = new Date();
+id = day.getTime();
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=270,left = 100,top = 100');");
+}
+</script>
+<!-- Below Script for auto close -->
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container">
+    <div class="row">
+		<div class="col-md-3">
+		{JOBSEEKER_RESUME_LEFT}
+		</div>
+
+        <div class="col-md-9">
+		<!-- Below Alert message File path is class/message_stack.php -->
+		{update_message}
+            <div class="card card-custom">
+                <div class="card-header card-header-custom">
+                    <h1 class="display-6 p-0 m-0 float-left">{HEADING_TITLE}</h1>
+					<h2 class="display-6 float-right">{INFO_TEXT_RESUME_NAME1}</h2>
+                </div>
+                <div class="card-body card-body-custom">
+
+{registration_form}
+
+{RESUME_NAVIGATION}
+<!--<div class="alert alert-warning alert-warning-custom" role="alert">
+{SECTION_ACCOUNT_RESUME_NAME} {REQUIRED_INFO}</div>
+<div>{INFO_TEXT_RESUME_NAME} {INFO_TEXT_RESUME_NAME1}</div>-->
+<div id="ff"> 
+<div class="font-weight-bold text-danger mb-2">{SECTION_EDUCATION_DETAILS}</div>
+<div class="table-responsive-sm">
+<table class="table table-hover table-bordered table-sm border-bottom mb-4">
+		<thead>
+		<tr class="dataTableHeadingRow ">
+			<th scope="col" class="dataTableHeadingContent" width="25%">{TABLE_HEADING_DEGREE}</th>
+			<th scope="col" class="dataTableHeadingContent" width="25%">{TABLE_HEADING_INSTITUTION_NAME}</th>
+			<th scope="col" class="dataTableHeadingContent" width="15%">{TABLE_HEADING_DEGREE_OBT_DATE}</th>
+			<th scope="col" class="dataTableHeadingContent" width="15%">{TABLE_HEADING_DEGREE_END_DATE}</th>
+			<th scope="col" class="dataTableHeadingContent" width="7%">{TABLE_HEADING_EDIT}</th>
+			<th scope="col" class="dataTableHeadingContent" width="8%">{TABLE_HEADING_DELETE}</th>
+		</tr>
+		</thead>
+		<!-- BEGIN education -->
+		<tr {education.row_selected}>
+			<td class="dataTableContent" >{education.degree}</td>
+			<td class="dataTableContent" >{education.institution_name}</td>
+			<td class="dataTableContent" >{education.start_date}</td>
+			<td class="dataTableContent" >{education.end_date}</td>{education.list_form}
+			<td class="dataTableContent" >{education.edit}</td>
+			<td class="dataTableContent" >{education.delete}</td></form>
+		</tr>
+		<!-- END education -->
+	</table>
+</div>
+{education_form}
+<!-- {COUNTRY_STATE_SCRIPT} -->
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_DEGREE}</label>
+    <div class="col-sm-9">
+     {INFO_TEXT_DEGREE1}
+     <!-- <span class="small_red">*</span> -->
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_SPECIALIZATION}</label>
+    <div class="col-sm-9">
+     {INFO_TEXT_SPECIALIZATION1}
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_INSTITUTION_NAME}</label>
+    <div class="col-sm-9">
+     {INFO_TEXT_INSTITUTION_NAME1}
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_CITY}</label>
+    <div class="col-sm-9">
+     {INFO_TEXT_CITY1}
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_COUNTRY}</label>
+    <div class="col-sm-9">
+     {INFO_TEXT_COUNTRY1}
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_START_DATE}</label>
+    <div class="col-sm-9">
+      <div class="row">
+        {INFO_TEXT_START_DATE1}
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_END_DATE}</label>
+    <div class="col-sm-9">
+      <div class="row">
+        {INFO_TEXT_END_DATE1}
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_RELATED_INFO}</label>
+    <div class="col-sm-9">
+	    {INFO_TEXT_RELATED_INFO1}
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom"></label>
+    <div class="col-sm-9">
+	{education_button} {add_next_button}
+    </div>
+  </div>
+</form>
+  <br>
+  {certification_form}
+
+</div>
+<div id="sf">
+  <div class="font-weight-bold text-danger mb-2">Certificaciones</div>
+  <div class="table-responsive-sm">
+    <table class="table table-hover table-bordered table-sm border-bottom mb-4">
+        <thead>
+        <tr class="dataTableHeadingRow ">
+          <th scope="col" class="dataTableHeadingContent" width="25%">Titulo</th>
+          <th scope="col" class="dataTableHeadingContent" width="20%">Fecha inicio	</th>
+          <th scope="col" class="dataTableHeadingContent" width="20%">Fecha finalización</th>
+          <th scope="col" class="dataTableHeadingContent" width="7%">{TABLE_HEADING_EDIT}</th>
+          <th scope="col" class="dataTableHeadingContent" width="8%">{TABLE_HEADING_DELETE}</th>
+        </tr>
+        </thead>
+        <tbody>
+          {TABLE_NEW}
+        </tbody>
+        <!-- BEGIN education -->
+        
+        <!-- END education -->
+      </table>
+    </div>
+    <div class="form-group row">
+      <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">Titulo obtenido :</label>
+      <div class="col-sm-9">
+        {INFO_TEXT_CERTIFICATION1}
+        <a href="#" id="add" onclick="add_skill()">Agregar certificado manualmente</a>
+     <a href="#" id="noadd" onclick="noadd_skill()">Ocultar</a>
+     <br>
+     <input id="skill_manual" class="form-control" type="text">
+       </div>
+    </div>
+    <div class="form-group row">
+      <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_RELATED_INFO}</label>
+      <div class="col-sm-9">
+        {INFO_TEXT_RELATED_INFO2}
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_START_DATE}</label>
+      <div class="col-sm-9">
+        <div class="row">
+          {INFO_TEXT_START_DATE2}
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_END_DATE}</label>
+      <div class="col-sm-9">
+        <div class="row">
+          {INFO_TEXT_END_DATE2}
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom"></label>
+      <div class="col-sm-9">
+    {education_button2} {add_next_button}
+      </div>
+    </div>
+
+
+
+<!-- <tr>
+		<td>&nbsp;</td>
+		<td><div align="right" class="style27">{INFO_TEXT_STATE}</div></td>
+		<td>&nbsp;</td>
+		<td>{INFO_TEXT_STATE1}</td>
+</tr> -->
+</form>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="select2/select2.min.js"></script>
+<script>
+$("#country").select2( {} );
+
+$("#skill_manual").hide();
+$("#noadd").hide();
+
+function add_skill(params) { 
+  event.preventDefault();
+  $("#skill_manual").show();
+  $("#noadd").show();
+  $("#add").hide();
+}
+
+function noadd_skill(params) { 
+  event.preventDefault();
+  $("#skill_manual").hide();
+  $("#noadd").hide();
+  $("#add").show();
+}
+
+$("#skill_manual").focusout( ()=>{
+  document.getElementById('skill_manual').setAttribute("name","certification");
+  document.getElementById('country').setAttribute("name","xxx");
+});
+
+$("#country").change( ()=>{
+   document.getElementById('skill_manual').setAttribute("name","xxx");
+   document.getElementById('country').setAttribute("name","certification");
+   $("#skill_manual").hide();
+   $("#noadd").hide();
+   $("#add").show();
+});
+</script>
+
+{FOOTER_HTML}

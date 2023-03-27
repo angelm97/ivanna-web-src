@@ -1,0 +1,85 @@
+{HEADER_HTML}
+
+{HEADER_MIDDLE_HTML}
+<script>
+function excelpage_submit(name)
+{
+ if(name=='excel')
+  document.page.excel.value=name;
+  document.page.submit();
+  document.page.excel.value='';
+}
+function show_result(val)
+{
+  document.page.show_result.value=val;
+  document.page.submit();
+}
+</script>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-custom">
+                 <div class="card-header card-header-custom">
+                    <h1 class="display-6 mt-2 float-left">{HEADING_TITLE}</h1>
+					<div class="btn-group float-right small"><span class="mr-3">{create_excel_button}</span> <span>{show_result}</span></div>
+                </div>
+  				<div class="card-header card-header-secondary bg-white">
+					  <!--<div class="col-md-12 font-weight-bold mb-2">
+					  <span class="badge badge-secondary">{HEADING_TITLE_SEARCH}</span>
+					  </div>-->
+					  
+					  {appl_form}<input type="hidden" name="excel" >
+						<div class="row">
+						<div class="col-md-8"><span class="text-muted mt-2 d-block"> <span class="text-danger font-weight-bold">{no_of_applicants}</span> aplicado talentos con tus criterios de búsqueda.</span></div>
+						<div class="col-md-2">
+						  {INFO_TEXT_TRACKING_ROUND1}
+						</div>
+						<div class="col-md-2">
+						   {INFO_TEXT_APPLICATION_STATUS1}
+						</div>
+					</div>
+					 
+				</div>		
+						
+				<div class="card-body p-0">
+                <div class="table-responsive-sm scrollmenu">
+				<table class="table table-hover">
+										<thead class="alert-primary">
+										<tr class="jobs-table-headbar">
+											<th width="100">{TABLE_HEADING_APPL_PHOTO}</th>
+											<th>{TABLE_HEADING_APPL_NAME}</th>
+											<th class="mobile-col">{TABLE_HEADING_APPL_EMAIL}</th>
+											<th>{TABLE_HEADING_APPL_JOB_TITLE}</th>
+											<th>{TABLE_HEADING_APPL_STATUS}</th>
+											<th>{TABLE_HEADING_DATE_OF_APPLICATION}</th>
+											<th>{TABLE_HEADING_APPL_ACTION}</th>
+										</tr>
+										</thead>
+									<!-- BEGIN applicant_track -->
+									 <tr{applicant_track.row_selected} >
+										 <td valign="top" class="dataTableContent ">{applicant_track.photo}</td>
+											<td width="12%" valign="top" class="dataTableContent font-weight-bold link-color">{applicant_track.name}</td>
+											<td class="mobile-col" valign="top" class="dataTableContent ">{applicant_track.email_address}</td>
+											<td valign="top" class="dataTableContent ">{applicant_track.job_title}</td>
+										 <td valign="top" class="dataTableContent ">{applicant_track.applicant_status}</td>
+										 <td valign="top" class="dataTableContent ">{applicant_track.inserted}</td>
+										 <td width="20%" valign="top" class="dataTableContent ">{applicant_track.action}</td>
+										</tr>
+									 <!-- END applicant_track -->
+				</table>
+                                       <table>  
+                                       <tr>
+                                       <td class="label">{check_link1}</td>
+                                       <td valign="top" align="right" class="label">{list_page}&nbsp;{page}&nbsp;</td>
+                                       </tr>
+                                       </table>{hidden_fields}</form>  
+				</div>
+				</div>
+					  </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="jscript/jquery-3.5.1.min.js"></script>
+{INFO_TEXT_JSCRIPT_FILE}
+{FOOTER_HTML}

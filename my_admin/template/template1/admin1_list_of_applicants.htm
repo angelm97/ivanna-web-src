@@ -1,0 +1,100 @@
+{ADMIN_HEADER_HTML}
+
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-users fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+	<!--   <tr>
+        <td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="top-select-bar">
+		  <tr><form name="disply" method="get">
+			<td align="left">{check_link}</td>
+			<td align="right">{INFO_TEXT_STATUS} {INFO_TEXT_STATUS1}</td>
+			<td align="right">{new_button}</td>
+		  </tr></form>
+		</table>		</td>
+       </tr>-->
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+     
+	{update_message}<br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table">          
+										<tr class="admin-table-head-bar">
+											<td class="dataTableHeadingContent" width="10%">{TABLE_HEADING_APPLICANT_PIC}</td>
+											<td class="dataTableHeadingContent" width="20%">{TABLE_HEADING_APPLICANT_NAME}</td>
+											<td class="dataTableHeadingContent" width="20%">{TABLE_HEADING_APPLICANT_EMAIL}</td>
+											<td class="dataTableHeadingContent" width="20%">{TABLE_HEADING_APPLICANT_COMP_APPLIED}</td>
+											<td class="dataTableHeadingContent" width="20%">{TABLE_HEADING_APPLICANT_JOB_APPLIED}</td>
+											<td class="dataTableHeadingContent" width="10%">{TABLE_HEADING_DATE_OF_APPLICATION}</td>
+<!--											<td class="dataTableHeadingContent" width="10%">{TABLE_HEADING_APPLICANT_ID}</td>-->
+											<td class="dataTableHeadingContent" width="10%">{TABLE_HEADING_APPLICANT_SELECT}</td>
+											<td class="action-text">{TABLE_HEADING_ACTION}</td>
+										</tr><form name="page" method="post" >{hidden_fields}
+											<!-- BEGIN applicant -->
+										<tr{applicant.row_selected}>
+											<td valign="top" class="dataTableContent">{applicant.app_pic}</td>
+											<td valign="top" class="dataTableContent">{applicant.app_name}</td>
+											<td valign="top" class="dataTableContent">{applicant.app_email}</td>
+											<td valign="top" class="dataTableContent">{applicant.comp_applied}</td>
+											<td valign="top" class="dataTableContent">{applicant.job_applied}</td>
+											<td valign="top" class="dataTableContent">{applicant.date_of_application}</td>
+<!--											<td valign="top" class="dataTableContent">{applicant.app_id}</td>-->
+											<td valign="top" class="dataTableContent">{applicant.applicant_select}</td>
+ 								            <td>{applicant.action}</td>
+										</tr>
+										<!-- END applicant -->
+         </table></form>
+		 
+		 <table border="0" width="100%" cellspacing="0" cellpadding="0" class="bottom-select-bar">
+            <tr>
+             <td align="left">{count_rows}</td>
+             <td align="right">{no_of_pages}</td>
+            </tr>
+           </table>
+	
+		
+         
+        </td>
+       </tr>
+      </table>
+     </td>
+<!-- Middle Ends	-->
+<!-- Right Starts -->
+     <td width="{RIGHT_BOX_WIDTH}" valign="top">
+      <table border="0" width="{RIGHT_BOX_WIDTH}" cellspacing="0" cellpadding="0" id="admin-right-table2">
+       <tr>
+        <td valign="top">{ADMIN_RIGHT_HTML}</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

@@ -1,0 +1,176 @@
+{ADMIN_HEADER_HTML}
+{update_message}
+<SCRIPT LANGUAGE="JavaScript">
+ <!--
+ function view_list(curr_dir)
+ {
+  document.thems.curr_dir.value=curr_dir;
+  document.thems.submit();
+ }
+
+ function show_content(content)
+ {
+  var obj=document.getElementById("upload_button");
+  var obj1=document.getElementById("add_folder");
+  var obj2=document.getElementById("upload_file");
+  if(content=='add_folder')
+  {
+   obj.style.display='none';
+   obj1.style.display='block';
+   obj2.style.display='none';
+  }
+  else if(content=='upload_file')
+  {
+   obj.style.display='none';
+   obj1.style.display='none';
+   obj2.style.display='block';
+  }
+  else
+  {
+   obj.style.display='block';
+   obj1.style.display='none';
+   obj2.style.display='none';
+  }
+ } 
+ function set_action(file,action)
+ {
+  if(action=='delete')
+  { 
+   var check= confirm("Are you sure you want to delete this file? :'"+escape(file)+"'.");
+   if(check==true)
+   {
+    document.thems.file.value=file;
+    document.thems.action.value=action;
+    document.thems.submit();
+   }
+  }
+  else
+  {
+   document.thems.file.value=file;
+   document.thems.action.value=action;
+   document.thems.submit();
+  }  
+ }
+//-->
+</SCRIPT>
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="2">
+    <tr>
+     <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-pencil-square fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top"><br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" >
+       <tr>
+        <td valign="top" align="center">
+         <table border="0" cellspacing="0" cellpadding="0" >
+          <tr>{theme_editor_form}
+           <td >Select theme to edit :</td>
+           <td >{INFO_TEXT_THEME_LIST}<input type="submit" value="Go"></td>
+           </tr></form>
+         </table>      
+        </td>
+       </tr>
+      </table>
+      <div >
+      <table border="0" width="100%" cellspacing="1" cellpadding="0" class="middle_table1">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="2" cellpadding="2" class="middle_table2">
+         <tr>{edit_form}
+           <td colspan="2" bgcolor="#efefef"><b>{INFO_TEXT_FILE_NAME}</b> {INFO_TEXT_FILE_NAME1}</td>
+          </tr>  
+          <tr >
+           <td valign="top"  align="center"  width="80%">{INFO_TEXT_FILE_CONTENT}</td></form>
+           <td  valign="top" style="border: solid 1px #dddddd" width="80%" >
+            <table border="0" width="100%" cellspacing="0" cellpadding="2" >
+             <tr>{theme_form}
+              <td colspan="2"><font color="#0000A0"><b><u>{INFO_TEXT_THEME_NAME}</u></b></font></td>
+             </tr>          
+             <tr>
+              <td width="27%"><b>{INFO_TEXT_THEME_DIRECTORY}</b> </td>
+              <td ><font color="#0000A0">{INFO_TEXT_THEME_DIRECTORY1}</font></td>
+             </tr>          
+             <tr>
+              <td colspan="2">{INFO_TEXT_THEME_SCREENSHOT}</td>
+             </tr>          
+             <tr>
+              <td colspan="2"><b>Files</b></td>
+             </tr>
+             <!-- BEGIN file_list -->
+             <tr>
+              <td colspan="2">{file_list.icon}</td>
+             </tr> 
+             <!-- END file_list -->
+             <tr>
+              <td colspan="2" >&nbsp;</td>
+             </tr></form>
+             <tr id="upload_button">
+              <td colspan="2" ><b>Upload </b><br><br>
+               <div >{INFO_TEXT_NEW_BUTTON}</div></td>
+             </tr>
+             <tr id="add_folder" style="display:none;">
+              <td colspan="2" >
+               <table border="0" width="100%" cellspacing="0" cellpadding="2" >
+                <tr>{folder_form}
+                 <td>{INFO_TEXT_FOLDER}</td>
+                <tr>              
+                <tr>
+                 <td>{INFO_TEXT_FOLDER1}</td>
+                <tr>              
+                <tr>
+                 <td>{FOLDER_SAVE_BUTTON}</td>
+                <tr></form>
+               </table>              
+              </td>
+             </tr>
+             <tr id="upload_file" style="display:none;">
+              <td colspan="2" >
+               <table border="0" width="100%" cellspacing="0" cellpadding="2" >
+                <tr>{upload_form}
+                 <td>{INFO_TEXT_UPLOAD_FILE_NAME}</td>
+                <tr>              
+                <tr>
+                 <td>{INFO_TEXT_UPLOAD_FILE_NAME1}</td>
+                <tr>              
+                <tr>
+                 <td>{UPLOAD_BUTTON}</td>
+                <tr></form>              
+               </table>              
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>          
+         </table>
+        </td>
+       </tr>
+      </table>
+      </div>      
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->     
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

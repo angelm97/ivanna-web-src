@@ -1,0 +1,146 @@
+{ADMIN_HEADER_HTML}
+{update_message}
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-pie-chart fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" class="top-select-bar2">
+      {form}
+       <tr>
+        <td>{TABLE_HEADING_REPORT}</td>
+        <td align="right">{TABLE_HEADING_STATISTICS}{TABLE_HEADING_STATISTICS_YEAR}&nbsp;{button}&nbsp;</td>
+       </tr>
+      </table>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="1" cellpadding="0">
+          <tr>
+           <td valign="top">
+            <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table">
+             <tr class="admin-table-head-bar">
+              <td>{TEXT_INFO_JOBSEEKERS}</td>
+              <td>{TEXT_INFO_JOBSEEKERS1}</td>
+             </tr>
+             <tr class="admin-table-head-bar">
+              <td>{TEXT_INFO_FEATURED_JOBSEEKERS}</td>
+              <td>{TEXT_INFO_FEATURED_JOBSEEKERS1}</td>
+             </tr>
+             <tr class="admin-table-head-bar">
+              <td>{TEXT_INFO_TOTAL_RECRUITERS}</td>
+              <td>{TEXT_INFO_TOTAL_RECRUITERS1}</td>
+             </tr>
+             <tr class="admin-table-head-bar">
+              <td>{TEXT_INFO_ACTIVE_RECRUITERS}</td>
+              <td>{TEXT_INFO_ACTIVE_RECRUITERS1}</td>
+             </tr>
+             <tr class="admin-table-head-bar">
+              <td>{TEXT_INFO_FEATURED_RECRUITERS}</td>
+              <td>{TEXT_INFO_FEATURED_RECRUITERS1}</td>
+             </tr>
+             <tr class="admin-table-head-bar">
+              <td>{TEXT_INFO_SALES}</td>
+              <td>{TEXT_INFO_SALES1}</td>
+             </tr>
+            </table>
+           </td>
+           <td valign="top">
+            <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table">
+             <tr class="admin-table-head-bar">
+              <td>{TEXT_INFO_TOTAL_JOBS}</td>
+              <td>{TEXT_INFO_TOTAL_JOBS1}</td>
+             </tr>
+             <tr class="admin-table-head-bar">
+              <td>{TEXT_INFO_ACTIVE_JOBS}</td>
+              <td>{TEXT_INFO_ACTIVE_JOBS1}</td>
+             </tr>
+             <tr class="admin-table-head-bar">
+              <td>{TEXT_INFO_EXPIRED_JOBS}</td>
+              <td>{TEXT_INFO_EXPIRED_JOBS1}</td>
+             </tr>
+             <tr class="admin-table-head-bar">
+              <td>{TEXT_INFO_DELETED_JOBS}</td>
+              <td>{TEXT_INFO_DELETED_JOBS1}</td>
+             </tr>
+             <tr class="admin-table-head-bar">
+              <td>{TEXT_INFO_FEATURED_JOBS}</td>
+              <td>{TEXT_INFO_FEATURED_JOBS1}</td>
+             </tr>
+             <tr class="admin-table-head-bar">
+              <td >{TEXT_INFO_OTHER_JOBS}</td>
+              <td>{TEXT_INFO_OTHER_JOBS1}</td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+       </form>
+      </table>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" class="top-select-bar2">
+       <tr>
+        <td class="label">{TABLE_HEADING_REPORT_YEAR1}</td>
+       </tr>
+      </table>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table">
+          <tr class="admin-table-head-bar">
+           <td>{TABLE_HEADING_MONTH}</td>
+           <td>{TABLE_HEADING_JOBSEEKER}</td>
+           <td>{TABLE_HEADING_FEATURED_JOBSEEKER}</td>
+           <td>{TABLE_HEADING_JOB}</td>
+           <td>{TABLE_HEADING_RECRUITER}</td>
+           <td>{TABLE_HEADING_FEATURED_RECRUITER}</td>
+           <td>{TABLE_HEADING_SALES}</td>
+          </tr>
+        <!-- BEGIN report -->
+          <tr {report.row_selected}>
+           <td><b>{report.TEXT_INFO_MONTH}</b></td>
+           <td>{report.TEXT_INFO_JOBSEEKERS2}</td>
+           <td>{report.TEXT_INFO_FEATURED_JOBSEEKERS2}</td>
+           <td>{report.TEXT_INFO_TOTAL_JOBS2}</td>
+           <td>{report.TEXT_INFO_TOTAL_RECRUITERS2}</td>
+           <td>{report.TEXT_INFO_FEATURED_RECRUITERS2}</td>
+           <td>{report.TEXT_INFO_SALES2}</td>
+          </tr>
+       <!-- END report -->
+         </table>
+        </td>
+       </tr>
+      </table>
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+    </tr>
+   </table>
+	 </td>
+	</tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

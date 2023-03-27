@@ -1,0 +1,36 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+
+<div class="container-lg">
+    <div class="row">
+
+
+        <div class="col-md-12 mb-3">
+            <div class="card">
+                <div class="card-header">
+                    <!--<h1 class="display-6 p-0 m-0">{INFO_TEXT_LATEST_ARTICLE}</h1>-->
+                    <h1 class="display-6 p-0 m-0">Publicaciones recientes</h1>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 mb-2 text-center">{tabletext}</div>
+
+                <!-- BEGIN article -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        {article.article_image}
+                        <div class="card-body pt-0">
+                            <h5 class="card-title fontt">{article.article_name}</h5>
+                            <p class="card-text mt-2">{article.more_article}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END article -->
+            
+
+    </div>
+</div>
+
+{FOOTER_HTML}

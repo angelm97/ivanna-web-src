@@ -1,0 +1,49 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<!-- Below Script for auto close -->
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+		      <!-- Below Alert message File path is class/message_stack.php -->
+			{update_message}
+			<div class="card card-custom">
+				<div class="card-header card-header-custom">
+					<h1 class="display-6 p-0 m-0 float-left">{HEADING_TITLE}</h1>
+				</div>
+				<div class="card-body card-body-custom">
+				<form name="page" method="post" >
+					{question_answer_string}
+					
+					<p class="text-muted">
+						{INFO_TEXT_SCREENER_QUESTION}
+					</p>
+					<p class="text-muted">
+						{INFO_TEXT_ADD_UPTO_FIVE}
+					</p>
+					<div class="text-center">
+						{button}
+					</div>
+					{hidden_fields}
+				</form>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+
+{FOOTER_HTML}

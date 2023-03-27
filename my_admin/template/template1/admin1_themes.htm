@@ -1,0 +1,196 @@
+{ADMIN_HEADER_HTML}
+
+ <style>.popup_content{border:black 1px solid;position:absolute;z-index: 1002;left: 5%;overflow: auto;top: 20;background-color: white;display:block;}
+  #popunder_content1
+ {
+  height:400;
+  overflow:scroll;
+ }
+
+ .popup_content2
+ {
+  display:none;
+ }
+  .black_overlay
+ {
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index:1001;
+  -moz-opacity: 0.8;
+  opacity:.80;
+  filter: alpha(opacity=80);
+ }		
+
+ </style>
+ <script >
+  function show_image(url)
+  {
+   var obj=document.getElementById('popunder_content1');
+   var obj1=document.getElementById('popunder_image');
+   obj1.src=url;
+   obj.className='popup_content';
+   document.getElementById('fade').className='black_overlay';
+  }
+  function  close_popup()
+  {
+   document.getElementById('popunder_content1').className='popup_content2'
+   document.getElementById('fade').className='popup_content2'
+   var obj1=document.getElementById('popunder_image');
+   obj1.src="../img/spinner.gif";
+  }
+  function show_screenshot(img)
+  {
+   var obj;
+   if(obj=document.getElementById('default_main_screenshot'))
+   {
+    obj.src=img;
+   }
+  }
+  var  screen_height=0;
+  var  screen_width=0;
+  function set_screen_size()
+  {
+   screen_height = document.body.offsetHeight;
+   screen_width  = document.body.offsetWidth;
+  }
+  function  set_screen_box()
+  {
+   var obj = document.getElementById ("popunder_content1");     
+   var obj1 = document.getElementById('fade');
+   var top_position=document.body.scrollTop; 
+   var left_position=document.body.scrollLeft; 
+   obj.style.top=parseInt(1)+top_position+"px";
+   obj1.style.height=screen_height+top_position+"px";   
+   obj1.style.width=screen_width+left_position+"px";   
+  } 
+  window.onload = set_screen_size;   
+  window.onscroll = set_screen_box; 
+ </script>
+
+ <div id="fade" class="popup_content2"></div>
+ <div id="popunder_ads" ><div class="popup_content2"  id="popunder_content1">
+ <div style="background-color: rgb(192, 192, 192);" align="left"><a onclick="close_popup();" style="color:#222;padding-left:2px;" href="javascript:void(0)">close</a>&nbsp;</div><img src="{INFO_TEXT_LOGO}" style="border: medium none ;" id="popunder_image"></div></div>
+ <!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>{update_message}
+      <table border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-th-large fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+      <div id='site_themes' {INFO_TEXT_THEMES_STYLE}><br>      
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+           <td><div class="active-theme-title">Active Theme</div></td>
+          </tr>          
+          <tr>
+           <td width="350"><div class="theme-screnshot2">{CURRENT_THEME_SCREENSHOT}</div></td>
+           <td valign="top">
+		   <br>
+            <table border="0"  cellspacing="0" cellpadding="0" >
+            <tr>
+             <td><div class="theme-name2">{CURRENT_THEME_NAME}</div></td>
+            </tr>
+            <tr >
+             <td><div class="current-theme-dir">{CURRENT_THEME_DIRECTORY}</div></td>
+            </tr>
+            <tr>
+             
+             <td><div class="current-theme-dir">Version: {CURRENT_THEME_VERSION}</div></td>
+            </tr>
+            <tr>
+             <td><div class="current-theme-dir2">{CURRENT_THEME_DESCRIPTION}</div><br>&nbsp;<div id="theme_screenshots">{CURRENT_THEME_SCREENSHOT1}</div></td>
+            </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+      <br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table2 rowclick" id="admin-second-data-table2">
+          <tr class="admin-table-head-bar">{theme_form}
+           <td>Available Themes</td>
+           <td>{TABLE_HEADING_THEME_NAME}</td>
+		   <!--<td>{themes.directory}</td>-->
+           <td>{TABLE_HEADING_THEME_VERSION}</td>
+           <td><nobr>{TABLE_HEADING_THEME_DEFAULT}</nobr></td>
+          </tr>
+          <!-- BEGIN themes -->
+          <tr {themes.row_selected}>
+           <td><div class="theme-screnshot">{themes.screenshot}</div></td>
+           <td valign="top"><div class="theme-name">{themes.name}</div><div class="theme-desc">{themes.description}</div></td>
+           <td><div class="theme-ver">{themes.version}</div></td>
+           <td><div class="radio-btn">{themes.radio_button}</div></td>
+          </tr>
+          <!-- END themes -->
+         </table>  
+		<table border="0" width="100%" cellspacing="0" cellpadding="0" class="bottom-select-bar">
+            <tr>
+             <td align="right">{button}</td>
+            </tr></form>
+           </table>	
+		   
+         
+        </td>
+       </tr>
+      </table>
+      </div> 
+      <br>
+      <div id='site_broken_themes' {INFO_TEXT_BROKEN_THEMES_STYLE}>
+        <table border="0" cellspacing="0" cellpadding="0">
+         <tr>
+          <td align="center" style="color:#ff0000"><u><b>{INFO_TEXT_BROKEN_THEMES}</b></u></td>
+         </tr>
+        </table><br>
+         <table border="0" width="100%" cellspacing="0" cellpadding="4" class="middle_table2">
+          <tr class="dataTableHeadingRow">
+           <td class="dataTableHeadingContent">{TABLE_HEADING_THEME_NAME}</td>
+           <td class="dataTableHeadingContent" >{TABLE_HEADING_THEME_ERROR}</td>
+          </tr>
+          <!-- BEGIN broken_themes -->
+          <tr{broken_themes.row_selected}>
+           <td valign="top" class="dataTableContent"><span style="font-size: 12px;font-weight: bold;font-family: Arial,Verdana, Helvetica, sans-serif;">{broken_themes.name}</span> <br>{broken_themes.directory}</td>
+           <td valign="top" class="dataTableContent" >{broken_themes.error}</td>
+          </tr>
+          <!-- END broken_themes -->
+         </table>         
+         </div>
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->     
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

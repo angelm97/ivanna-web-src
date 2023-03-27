@@ -1,0 +1,211 @@
+{HEADER_HTML}
+ <script language="JavaScript">
+<!--
+function search_company(company_name)
+{
+ document.company_search.company_name.value=company_name;
+ document.company_search.submit();
+}
+//-->
+</script>
+<style>
+body {
+background:#eef1f6;
+}
+.card {border:1px solid #fff;border-radius:0;}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: #fff #fff #fff;
+}
+.alert-info {
+    color: #0c5460;
+    background-color: #e9f7ff;
+    border: 2px solid #fff!important;
+}
+</style>
+
+        <div class="container">
+	
+		
+            <div class="row">
+                <div class="col-md-9 pr-0">
+					<div class="row for-mobile">
+					<div class="col-md-12">
+					<div class="card boxshadow">
+					  <div class="card-body pb-0 mobile-padding-bottom">
+						<img src="themes/theme3/images/banner.jpg" class="img-fluid float-left mr-4 home-profile for-mobile" height="205">
+						<h5 class="card-title-theme3">{INFO_TEXT_WELCOME_HEADING}</h5>
+						<p class="card-text text-muted text-gray">{INFO_TEXT_MESSAGE}</p>
+						{JOBSEEKER_LOGIN} {RECRUITER_LOGIN}
+					  </div>
+					</div>
+					</div>
+                    </div>
+					
+					<div class="row mt-3 mobile-margin-top-zero">
+						<div class="col-md-12">
+						<div class="card search-area">
+						<!--<h5 class="card-header">{INFO_TEXT_M_QUICK_SEARCH}</h5>-->
+						  <div class="card-body">
+						  {job_search_form}
+						  <div class="row">
+							<div class="col-md-4 mpr-0">{INFO_TEXT_KEYWORD}</div>
+							<div class="col-md-3 mpr-0">{location}</div>
+							<div class="col-md-3 mpr-0">{industry_sector}</div>
+							<div class="col-md-2">{SEARCH_BUTTON}</div>
+						  </div>
+
+						</div>
+						</div>
+						</div>
+                    </div>
+					<!-- End Sarch Block -->
+				
+				<div class="row mt-3">
+					<div class="col-md-12">
+						<div class="card">
+						<h5 class="card-header">{INFO_TEXT_EMPLOYER_SPOTLIGHT}</h5>
+						  <div class="card-body pb-0">
+							<!-- BEGIN banner -->
+							<div class="row">
+							<div class="col-md-2 mobile-featured-recruiter">
+								<center>{banner.emp1}</center>
+							</div>
+							<div class="col-md-2 mobile-featured-recruiter">
+								<center>{banner.emp2}</center>
+							</div>
+							<div class="col-md-2 mobile-featured-recruiter">
+								<center>{banner.emp3}</center>
+							</div>
+							<div class="col-md-2 mobile-featured-recruiter">
+								<center>{banner.emp4}</center>
+							</div>
+							<div class="col-md-2 mobile-featured-recruiter">
+								<center>{banner.emp5}</center>
+							</div>
+							<div class="col-md-2 mobile-featured-recruiter mb-3">
+								<center>{banner.emp6}</center>
+							</div>
+							</div>
+						<!-- END banner -->
+					</div>
+					</div>
+					</div>
+                </div>
+				
+			<div class="row mt-3">
+			<div class="col-md-12">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			  <li class="nav-item mr-2" role="presentation">
+				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{INFO_TEXT_JOBS_BY_CATEGORY}</a>
+			  </li>
+			  <li class="nav-item mr-2" role="presentation">
+				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">{INFO_TEXT_JOBS_BY_COMPANY}</a>
+			  </li>
+			  <li class="nav-item" role="presentation">
+				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">{INFO_TEXT_JOBS_BY_LOCATION}</a>
+			  </li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+			  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+			  <div class="card">
+			  <div class="card-body">
+			  {JOB_CATEGORY}
+			  </div>
+			  </div>
+			  </div>
+			  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+			  <div class="card">
+			  <div class="card-body">
+			  {JOB_COMPANY}
+			  </div>
+			  </div>
+			  </div>
+			  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+			  <div class="card">
+			  <div class="card-body">
+			  {JOB_LOCATION}
+			  </div>
+			  </div>
+			  </div>
+			</div>			
+        </div>
+		</div>
+		
+
+
+		<div class="row mt-3 for-mobile">
+		<div class="col-md-12">
+		<div class="card">
+		<div class="card-body">
+		<div class="row">
+			<div class="col-md-5">
+			<div class="card-text text-muted small mb-2">Get daily emails in your inbox with jobs 
+			that match your industry or sector.</div>
+			</div>
+			<div class="col-md-7">
+			{CREATE_ALERT}
+			</div>
+		</div>
+		
+		
+		
+		</div>
+        </div>
+		</div>
+		</div>
+		
+		
+		</div>
+		
+		<div class="col-md-3 mb-3">
+				
+				{CREATE_ACCOUNT_HOME}
+				<!-----------jobseeker recruiter login-------->
+                
+				<!-- end----------------------------------------- -->
+				
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+						<div class="card">
+						<h5 class="card-header">{INFO_TEXT_LATEST_JOBS}</h5>
+						<div class="card-body">
+						
+						<!-- BEGIN latest_jobs -->
+						<div class="media mb-4">
+						  <div class="job-img mr-2">{latest_jobs.clogo}</div>
+						  <div class="media-body">
+							<h6 class="m-0">{latest_jobs.title}</h6>
+							<p class="m-0 small">{latest_jobs.company}</p>
+							<p class="m-0 small">{latest_jobs.location}</p>
+						  </div>
+						 
+						</div>
+						 <!-- END latest_jobs -->	
+						
+						</div>
+						</div>
+						
+      
+                        </div>
+						
+						
+
+						
+						
+						
+						
+						
+                    </div>
+					
+					
+		
+		</div>
+				
+				
+        </div>
+		
+
+ </div>
+        <!-- Page Content -->
+        <!-- /.container -->
+  {FOOTER_HTML}

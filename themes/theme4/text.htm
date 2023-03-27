@@ -1,0 +1,150 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML} 
+<script language="JavaScript">
+<!--
+function search_company(company_name)
+{
+ document.company_search.company_name.value=company_name;
+ document.company_search.submit();
+}
+//-->
+</script>
+
+
+        </div>
+		
+        <div class="container for-mobile">
+            <div class="row pt-2">
+                <div class="col-sm-3 col-md-3 text-center pr-0">
+                    <div class="card mb-4 shadow2">
+					<img src="themes/theme4/images/jobs-by-category.jpg" alt="" class="img-fluid img-hover ">
+					<div class="card-body">
+                            <div class="theme-4-p-color">Browse Job openings by Functional Area/Industry and join the Team</div>
+                            {JOBS_BY_CATEGORY}
+                    </div>
+					</div>
+                </div>
+                <div class="col-sm-3 col-md-3 text-center pr-0">
+                    <div class="card shadow2">
+					<img src="themes/theme4/images/jobs-by-location.jpg" alt="" class="img-fluid img-hover ">
+					<div class="card-body">
+                            <div class="theme-4-p-color">We're building company across the world, View Job Openings by location</div>
+                            {JOBS_BY_LOCATION}
+					</div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 text-center pr-0">
+                    <div class="card shadow2">
+					<img src="themes/theme4/images/resume-alert.jpg" alt="" class="img-fluid img-hover ">
+					<div class="card-body">
+                            <div class="theme-4-p-color">Get latest Job Alerts on email about new jobs matching your skills</div>
+                            {RESUME_ALERT}
+                    </div>
+					</div>
+                </div>
+                <div class="col-sm-3 col-md-3 text-center pr-0">
+                    <div class="card shadow2">
+					<img src="themes/theme4/images/newsletter.jpg" alt="" class="img-fluid img-hover ">
+					<div class="card-body">
+                            <div class="theme-4-p-color">Sign up for company email newsletter covering variety of topics</div>
+                            {NEWSLETTER}
+                    </div>
+					</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-9 pt-0">
+				
+		
+                                <div class="row mb-4">
+								<div class="col-md-12 pt-0 pr-0">
+									<div class="card shadow2">
+									<h5 class="theme4-heading-color pl-4 pt-3">Featured Recruiter</h5>
+									<div class="card-body">
+									<div class="row">
+                                    <div class="col-md-2 mobile-featured-recruiter">{B1}</div>
+                                    <div class="col-md-2 mobile-featured-recruiter">{B2}</div>
+                                    <div class="col-md-2 mobile-featured-recruiter">{B3}</div>
+                                    <div class="col-md-2 mobile-featured-recruiter">{B4}</div>
+                                    <div class="col-md-2 mobile-featured-recruiter">{B5}</div>
+                                    <div class="col-md-2 mobile-featured-recruiter">{B6}</div>
+									</div>
+									</div>
+                                </div>
+        </div>
+		</div>
+				
+				
+				<div class="row">
+				<div class="col-md-12 pt-0 pr-0">
+				<ul class="nav nav-tabs theme4-nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item" role="presentation">
+					<a class="nav-link active theme-4-tab-border" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Industry</a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a class="nav-link theme-4-tab-border" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Location</a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a class="nav-link theme-4-tab-border" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Company</a>
+				  </li>
+				</ul>
+				<div class="tab-content mb-3 theme4-tab-color" id="myTabContent">
+				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+					<div class="card shadow2">
+					<div class="card-body">
+					{JOB_CATEGORY}
+					</div>
+					</div>
+				  </div>
+				  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="card shadow2">
+					<div class="card-body">
+					{JOB_LOCATION}
+				  </div>
+				  </div>
+				  </div>
+				  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+					<div class="card shadow2">
+					<div class="card-body">
+					{JOB_COMPANY}
+				  </div>
+				  </div>
+				  </div>
+				</div>
+</div>
+</div>
+                </div>
+                
+				
+				<div class="col-sm-3 col-md-3 for-mobile">
+				
+				<div class="card mb-3 theme4-color-box1 shadow2">
+				<div class="card-body">
+					<h5 class="mb-3 theme4-heading-color">Job Seeker</h5>
+					<p class="theme-4-p-color">Search job openings in jobboard and post your resume</p>
+					<div>{REGISTER_CV}</div>
+				</div>
+				</div>
+				
+				<div class="card mb-3 theme4-color-box2 shadow2">
+				<div class="card-body">
+					<h5 class="theme4-heading-color">Recruiting?</h5>
+                    <p class="theme-4-p-color">Search resumes in job board and post your jobs</p>
+                    {START_RECRUITING}
+				</div>
+				</div>
+				
+				<div class="card for-mobile theme4-color-box3 shadow2">
+				<div class="card-body">
+                    <p class="theme-4-p-color">Get daily emails in your inbox with jobs that match your industry or sector when an opportunity opens up.</p>
+                    {CREATE_ALERT} 
+				</div>
+				</div>				
+
+                </div>
+            </div>
+        </div>
+		
+{FOOTER_HTML}

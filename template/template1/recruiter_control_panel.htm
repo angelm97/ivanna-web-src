@@ -1,0 +1,220 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<script>
+  function classAdd() {
+    const btnClass = document.querySelector('div a.customClass');
+    btnClass.classList.add('btn', 'btn-sm', 'btn-primary');
+  }
+  window.addEventListener('load', classAdd);
+</script>
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container-lg">
+  <div class="row">
+    <div class="col-md-12">
+	{update_message}
+      <div class="card card-custom">
+        <div class="card-header card-header-custom">
+          <h1 class="display-6 p-0 m-0 float-left">{INFO_TEXT_EMPLOYER_CONTROL_PANEL}</h1>
+
+          <div class="float-right">{INFO_TEXT_POST_JOB}</div>
+        </div>
+        <div class="card-body card-body-custom">
+          
+          <div class="row">
+            <div class="col-md-8">
+              <div class="media float-left">
+                {INFO_TEXT_LOGO}
+                <div class="media-body">
+                  <h5 class="mt-0 pb-1">{INFO_TEXT_COMPANY_NAME}</h5>
+                  <div class="text-muted text-muted-custom"><i class="fa fa-at faicons" aria-hidden="true"></i> {INFO_TEXT_EMAIL_ADDRESS1}</div>
+                  <div class="text-muted text-muted-custom"><i class="fa fa-map-marker faicons" aria-hidden="true"></i> {INFO_TEXT_ADDRESS1}</div>
+                  <div class="text-muted text-muted-custom"><i class="fa fa-phone faicons" aria-hidden="true"></i> {INFO_TEXT_PHONE1}</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card float-right">
+                <div class="card-body">
+                  <small class="justify-content-sm-center d-block mb-2">
+                    Planes Wao. ¡Te ayudarán a encontrar el talento ideal para tu compañía!
+                  </small>
+
+                  {RATE_CARD}
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="display-6 mb-2">{INFO_TEXT_JOB_POSTING}
+                    <small class="">{INFO_TEXT_PLAN_TYPE}</small></h5>
+                  <h6 class="card-subtitle text-muted text-muted-custom">{INFO_TEXT_FROM_TO}</h6>
+                  <div class="text-muted text-muted-custom">{INFO_TEXT_NO_OF_JOBS} {INFO_TEXT_NO_OF_JOBS1}</div>
+                  <div class="text-muted text-muted-custom">{INFO_TEXT_NO_OF_JOBS_USED} {INFO_TEXT_NO_OF_JOBS_USED1}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="display-6 mb-2">{INFO_TEXT_RESUME} - <small
+                      class="">{INFO_TEXT_PLAN_TYPE1}</small></h5>
+                  <h6 class="card-subtitle text-muted text-muted-custom">{INFO_TEXT_FROM_TO1}</h6>
+                  <div class="text-muted text-muted-custom">{INFO_TEXT_NO_OF_CV} {INFO_TEXT_NO_OF_CV1}</div>
+                  <div class="text-muted text-muted-custom">{INFO_TEXT_NO_OF_CV_USED} {INFO_TEXT_NO_OF_CV_USED1}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body p-0">                    
+                    <div class="row">
+
+                      {INFO_TEXT_GRAPH}
+
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+		<div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <h5 class="card-header alert-info">{INFO_TEXT_JOB_POSTING}</h5>
+                <div class="card-body py-2">
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                    </i> {INFO_TEXT_POST_JOB}</div>
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                    </i> {INFO_TEXT_LIST_OF_JOBS}</div>
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                    </i> {INFO_TEXT_LIST_OF_JOBFAIRS}</div>
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                    </i> {INFO_TEXT_MY_ACTIVE_JOBS}</div>
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                    </i> {INFO_TEXT_MY_EXPIRED_JOBS}</div>
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                    </i> {INFO_TEXT_IMPORT_JOBS}</div>
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                    </i> {INFO_TEXT_ADMIN_RESPONSE}</div>
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                    </i> {INFO_TEXT_JOBSEEKER_RESPONSE}</div>
+                  <div class="pb-1">{INFO_TEXT_DIRECT_LOGIN}</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <h5 class="card-header alert-info">{INFO_TEXT_HEADER_SEARCH_RESUMES}</h5>
+                <div class="card-body py-2" style="height: 228px;">
+                  <div class="pb-1">
+                    <i class="fa fa-angle-right icon-page-title" aria-hidden="true"></i>
+                    {INFO_TEXT_SEARCH_RESUMES}
+                  </div>
+                  <div class="pb-1">
+                    <i class="fa fa-angle-right icon-page-title" aria-hidden="true"></i>
+                    {INFO_TEXT_SEARCH_APPLICANT}
+                  </div>
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true"></i>
+                    {INFO_TEXT_RESUME_SEARCH_AGENT}
+                  </div>
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true"></i>
+                    {INFO_TEXT_SAVE_RESUME}
+                  </div>
+                  <div class="pb-1">
+                    {INFO_TEXT_LIST_OF_APPLICATIONS}
+                  </div>
+                  <div class="pb-1">
+                    {INFO_TEXT_APPLICANT_TRACKING}
+                  </div>
+                  <div class="pb-1">
+                    {INFO_TEXT_LIST_OF_UNREGISTERED_RESUMES}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <h5 class="card-header alert-info">{INFO_TEXT_MY_ACCOUNT}</h5>
+                <div class="card-body py-2" style="height: 148px;">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                        </i> {INFO_TEXT_EDIT_PROFILE}</div>
+                      <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                        </i> {INFO_TEXT_CONTACT_LIST}</div>
+                      <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                        </i> {INFO_TEXT_COMPANY_DESCRIPTION}</div>
+                      <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                        </i> {INFO_TEXT_NEWSLETTER}</div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                        </i> {INFO_TEXT_ORDER_HISTORY}</div>
+                      <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                        </i> {INFO_TEXT_CHANGE_PASSWORD}</div>
+                      <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                        </i> {INFO_TEXT_MANAGED_USERS}</div>
+                      <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true">
+                        </i> {INFO_TEXT_JOIN_FORUM}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <h5 class="card-header alert-info">{INFO_TEXT_CURRENT_STATUS}</h5>
+                <div class="card-body py-2">
+                  <div class="pb-1">
+                    <i class="fa fa-angle-right icon-page-title" aria-hidden="true"></i>
+                    {INFO_TEXT_TOTAL_JOBS}
+                  </div>
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true"></i>
+                   {INFO_TEXT_TOTAL_APPLICANT}
+                  </div>
+<!-----seperated---->                 
+				  <div class="pb-1">{INFO_TEXT_TOTAL_DIRECT_APPLICANT}</div>
+<!--------------->
+                  <div class="pb-1"><i class="fa fa-angle-right icon-page-title" aria-hidden="true"></i>
+                    {INFO_TEXT_TOTAL_APPLICANT_SELETED}
+                  </div>
+                  <div class="pb-1">{INFO_TEXT_RATE_CHART1}</div>
+                </div>
+              </div>
+            </div>
+		</div>	
+		
+		
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{FOOTER_HTML}

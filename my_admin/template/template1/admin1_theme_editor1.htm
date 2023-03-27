@@ -1,0 +1,199 @@
+{ADMIN_HEADER_HTML}
+{update_message}
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+ function view_list(curr_dir)
+ {
+  document.thems.curr_dir.value=curr_dir;
+  document.thems.submit();
+ } 
+
+ function show_content(content)
+ {
+  var obj=document.getElementById("upload_button");
+  var obj1=document.getElementById("add_folder");
+  var obj2=document.getElementById("upload_file");
+  if(content=='add_folder')
+  {
+   obj.style.display='none';
+   obj1.style.display='block';
+   obj2.style.display='none';
+  }
+  else if(content=='upload_file')
+  {
+   obj.style.display='none';
+   obj1.style.display='none';
+   obj2.style.display='block';
+  }
+  else
+  {
+   obj.style.display='block';
+   obj1.style.display='none';
+   obj2.style.display='none';
+  }
+ }
+
+ function set_action(file,action)
+ {
+  if(action=='delete')
+  { 
+   var check= confirm("Are you sure you want to delete this file? :'"+escape(file)+"'.");
+   if(check==true)
+   {
+    document.thems.file.value=file;
+    document.thems.action.value=action;
+    document.thems.submit();
+   }
+  }
+  else
+  {
+   document.thems.file.value=file;
+   document.thems.action.value=action;
+   document.thems.submit();
+  }  
+ }
+//-->
+</SCRIPT>
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-pencil-square fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top"><br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" >
+       <tr>
+        <td valign="top" align="left">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="top-select-bar">
+		  <tr>{theme_editor_form}
+           <td align="left">Select theme to edit: {INFO_TEXT_THEME_LIST}<input type="submit" value="Go"></td>
+           </tr></form>
+		</table>
+		
+		
+         
+
+		 
+        </td>
+       </tr>
+      </table>
+      <div >
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="middle_table2">                  
+          <tr >{theme_form}
+           <td valign="top"  align="center"  width="80%">
+            <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table">
+             <tr class="admin-table-head-bar">
+             <td>{TABLE_HEADING_FILENAME}</td>
+             <td>{TABLE_HEADING_SIZE}</td>
+             <td>{TABLE_HEADING_PERMISSIONS}</td>
+             <td>{TABLE_HEADING_USER}</td>
+             <td>{TABLE_HEADING_GROUP}</td>
+             <td>{TABLE_HEADING_LAST_MODIFIED}</td>
+             <td>{TABLE_HEADING_DELETE_EDIT}</td>
+             </tr>
+             <!-- BEGIN file_manager -->
+             <tr{file_manager.row_selected}>
+              <td>{file_manager.name}</td>
+              <td>{file_manager.size}</td>
+              <td>{file_manager.permissions}</td>
+              <td>{file_manager.user}</td>
+              <td class="dataTableContent" >{file_manager.group}</td>
+              <td class="dataTableContent" >{file_manager.last_modified}</td>
+              <td class="dataTableContent" >{file_manager.delete} {file_manager.edit}</td>
+             </tr>
+             <!-- END file_manager -->
+            </table>
+            <table border="0" width="100%" cellspacing="0" cellpadding="2" class="show_page">
+             <tr>
+              <td colspan="15" align="right">{new_button}</td>
+             </tr>
+            </table>
+            
+            </td>
+           <td  valign="top" style="border: solid 1px #dddddd" >
+            <table border="0" align="right" width="90%" cellspacing="0" cellpadding="0">
+             <tr>
+              <td colspan="2"><font color="#0000A0"><b><u>{INFO_TEXT_THEME_NAME}</u></b></font></td>
+             </tr>          
+             <tr>
+              <td width="27%"><b>{INFO_TEXT_THEME_DIRECTORY}</b> </td>
+              <td ><font color="#0000A0">{INFO_TEXT_THEME_DIRECTORY1}</font></td>
+             </tr>          
+             <tr>
+              <td colspan="2">{INFO_TEXT_THEME_SCREENSHOT}</td>
+             </tr>                       
+             <tr>
+              <td colspan="2" >&nbsp;</td>
+             </tr></form>
+             <tr id="upload_button">
+              <td colspan="2" ><b>Upload </b><br><br>
+               <div >{INFO_TEXT_NEW_BUTTON}</div></td>
+             </tr>
+             <tr id="add_folder" style="display:none;">
+              <td colspan="2" >
+               <table border="0" width="100%" cellspacing="0" cellpadding="2" >
+                <tr>{folder_form}
+                 <td>{INFO_TEXT_FOLDER}</td>
+                <tr>              
+                <tr>
+                 <td>{INFO_TEXT_FOLDER1}</td>
+                <tr>              
+                <tr>
+                 <td>{FOLDER_SAVE_BUTTON}</td>
+                <tr></form>
+               </table>              
+              </td>
+             </tr>
+             <tr id="upload_file" style="display:none;">
+              <td colspan="2" >
+               <table border="0" width="100%" cellspacing="0" cellpadding="2" >
+                <tr>{upload_form}
+                 <td>{INFO_TEXT_UPLOAD_FILE_NAME}</td>
+                <tr>              
+                <tr>
+                 <td>{INFO_TEXT_UPLOAD_FILE_NAME1}</td>
+                <tr>              
+                <tr>
+                 <td>{UPLOAD_BUTTON}</td>
+                <tr></form>              
+               </table>              
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>          
+         </table>
+        </td>
+       </tr>
+      </table>
+      </div>      
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->     
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

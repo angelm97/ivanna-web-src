@@ -1,0 +1,118 @@
+{ADMIN_HEADER_HTML}
+<script language="javascript">
+<!--
+function DeleteSelected(action)
+{
+	var check;
+ check=false;
+	for (var i=0;i< document.page.elements.length;i++)
+ {
+ 	var e = page.elements[i];
+		if((e.checked) == true)
+		{
+  	check=true;
+   break;
+  }
+ }
+ if(check)
+ {
+  document.page.action1.value=action;
+  document.page.submit();
+ }
+ else
+ {
+ 	alert('Please check atleast one checkbox and then click on delete.');
+ }
+}
+//-->
+</script>
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+	 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-edit fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+	   <tr>
+        <td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="top-select-bar">
+		  <tr><form name="disply" method="get" onsubmit="return ValidateForm(this)">
+			<td align="right">{INFO_TEXT_SEARCH_POST} {INFO_TEXT_SEARCH_POST1} {INFO_TEXT_SEARCH_EMAIL} {INFO_TEXT_SEARCH_EMAIL1}{INFO_TEXT_SEARCH_GO}</td>
+		  </tr></form>
+		</table>
+		</td>
+       </tr>
+      </table>
+      
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">{update_message}<br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table">
+          <tr class="admin-table-head-bar">
+           <td class="dataTableHeadingContent" valign="top"></td>
+           <td class="dataTableHeadingContent" valign="top"><nobr>{TABLE_HEADING_TITLE}</nobr></td>
+           <td class="dataTableHeadingContent"><nobr>{TABLE_HEADING_FORUM}</nobr></td>
+           <td class="dataTableHeadingContent">{TABLE_HEADING_INSERTED}</td>
+           <td class="dataTableHeadingContent" align="right">{TABLE_HEADING_ACTION}</td>
+          </tr><form name="page" method="post" >{hidden_fields}
+          <!-- BEGIN search_tag -->
+          <tr{search_tag.row_selected}>
+           <td valign="top" class="dataTableContent">{search_tag.check_box}</td>
+           <td valign="top" class="dataTableContent">{search_tag.title}</td>
+           <td valign="top" class="dataTableContent">{search_tag.topic}</td>
+           <td valign="top" class="dataTableContent"><nobr>{search_tag.inserted}</nobr></td>
+           <td valign="top" class="dataTableContent" align="right">{search_tag.action}</td>
+          </tr>
+          <!-- END search_tag --></form>
+         </table>
+		 <table border="0" width="100%" cellspacing="0" cellpadding="0" class="bottom-select-bar">
+            <tr>
+             <td align="left">{check_link}</td>
+            </tr>
+			<tr>
+             <td align="left">{count_rows}</td>
+             <td align="right">{no_of_pages}</td>
+            </tr>
+        </table>
+		
+		
+         
+   					</td>
+       </tr>
+      </table>
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+     <td width="{RIGHT_BOX_WIDTH}" valign="top">
+      <table border="0" width="{RIGHT_BOX_WIDTH}" cellspacing="0" cellpadding="0" id="admin-right-table2">
+       <tr>
+        <td valign="top">{ADMIN_RIGHT_HTML}</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

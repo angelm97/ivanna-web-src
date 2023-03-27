@@ -1,0 +1,21 @@
+[10-Sep-2020 05:28:37 UTC] PHP Parse error:  syntax error, unexpected end of file in /home2/cricket8/public_html/jobboard7bs/recruiter_registration.php on line 430
+[11-Sep-2020 15:36:38 UTC] PHP Parse error:  syntax error, unexpected ''' (T_ENCAPSED_AND_WHITESPACE) in /home2/cricket8/public_html/jobboard7bs/job_details.php on line 235
+[25-Sep-2020 13:32:44 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home2/cricket8/public_html/jobboard7bs/list_of_applications.php on line 253
+[12-May-2021 09:29:10 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/jbbh41cpatco/public_html/login.php on line 207
+[12-May-2021 09:29:36 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/jbbh41cpatco/public_html/login.php on line 204
+[12-May-2021 09:29:38 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/jbbh41cpatco/public_html/login.php on line 204
+[12-May-2021 09:30:52 UTC] PHP Parse error:  syntax error, unexpected ''<div>'' (T_CONSTANT_ENCAPSED_STRING) in /home/jbbh41cpatco/public_html/login.php on line 205
+[12-May-2021 09:30:54 UTC] PHP Parse error:  syntax error, unexpected ''<div>'' (T_CONSTANT_ENCAPSED_STRING) in /home/jbbh41cpatco/public_html/login.php on line 205
+[12-May-2021 09:31:30 UTC] PHP Parse error:  syntax error, unexpected ''<div>.$social_login_button2.<' (T_CONSTANT_ENCAPSED_STRING) in /home/jbbh41cpatco/public_html/login.php on line 205
+[12-May-2021 09:31:31 UTC] PHP Parse error:  syntax error, unexpected ''<div>.$social_login_button2.<' (T_CONSTANT_ENCAPSED_STRING) in /home/jbbh41cpatco/public_html/login.php on line 205
+[12-May-2021 09:33:54 UTC] PHP Parse error:  syntax error, unexpected ''' (T_CONSTANT_ENCAPSED_STRING) in /home/jbbh41cpatco/public_html/login.php on line 210
+[25-Jun-2021 16:31:31 UTC] PHP Parse error:  syntax error, unexpected 'include_once' (T_INCLUDE_ONCE) in /home/jbbh41cpatco/public_html/home.php on line 1
+[02-Jul-2021 17:59:32 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/jbbh41cpatco/public_html/post_job.php on line 805
+[02-Jul-2021 17:59:40 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/jbbh41cpatco/public_html/post_job.php on line 805
+[02-Jul-2021 17:59:57 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/jbbh41cpatco/public_html/post_job.php on line 805
+[09-Jul-2021 16:10:51 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/jbbh41cpatco/public_html/application_report.php on line 185
+[16-Jul-2021 17:34:56 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/jbbh41cpatco/public_html/jobseeker_registration_step1.php on line 231
+[16-Jul-2021 17:34:59 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/jbbh41cpatco/public_html/jobseeker_registration_step1.php on line 231
+[16-Jul-2021 17:35:00 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/jbbh41cpatco/public_html/jobseeker_registration_step1.php on line 231
+[16-Jul-2021 17:35:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/jbbh41cpatco/public_html/jobseeker_registration_step1.php on line 231
+[16-Jul-2021 17:56:54 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/jbbh41cpatco/public_html/jobseeker_registration_step1.php on line 243

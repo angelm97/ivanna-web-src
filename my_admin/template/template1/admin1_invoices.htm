@@ -1,0 +1,104 @@
+{ADMIN_HEADER_HTML}
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+  {update_message}
+   <table border="0" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-cart-arrow-down fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+        
+       </tr>
+	   <tr>
+	   <td>
+	   <table width="100%" border="0" cellspacing="0" cellpadding="0" class="top-select-bar">
+		  <tr>{search_form}
+			<td align="left">{search_text}</td>
+			{invoice_form}
+			<td align="right">{invoice_text}</td>
+		  </tr>
+		</table>
+	   </td>
+	   </tr>
+	   </tr>	   
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+          <tr>
+           <td valign="top">
+            <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table">
+             <tr class="admin-table-head-bar">
+               <td>{TABLE_HEADING_INVOICE_NO}</td>
+               <td>{TABLE_HEADING_COMPANY_NAME}</td>
+               <td>{TABLE_HEADING_EMAIL_ADDRESS}</td>
+               <td>{TABLE_HEADING_DATE_PURCHASED}</td>
+               <td>{TABLE_HEADING_INVOICE_TOTAL}</td>
+               <td>{TABLE_HEADING_PAYMENT_METHOD}</td>
+               <td>{TABLE_HEADING_STATUS}</td>
+               <td>{TABLE_HEADING_VIEW}</td>
+               <td>{TABLE_HEADING_EMAIL}</td>
+             </tr>
+               <!-- BEGIN invoice -->
+               <tr{invoice.row_selected}>
+                <td>{invoice.invoice_no}</td>
+                <td>{invoice.company_name}</td>
+                <td>{invoice.email_address}</td>
+                <td>{invoice.date_purchased}</td>
+                <td>{invoice.invoice_total}</td>
+                <td>{invoice.payment_method}</td>
+                <td>{invoice.status}</td>
+                <td>{invoice.view}</td>
+                <td>{invoice.email}</td>
+               </tr>
+               <!-- END invoice -->
+              </table>
+              <table border="0" width="100%" cellspacing="0" cellpadding="0" class="bottom-select-bar">
+            <tr>
+             <td align="left">{count_rows}</td>
+             <td align="right">{no_of_pages}</td>
+            </tr>
+           </table>
+             </td>
+            </tr>
+           </table>
+          </td>
+         </tr>
+        </table>
+       </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+<!--     <td width="{RIGHT_BOX_WIDTH}" valign="top">
+      <table border="0" width="{RIGHT_BOX_WIDTH}" cellspacing="0" cellpadding="0" id="admin-right-table">
+       <tr>
+        <td valign="top">{ADMIN_RIGHT_HTML}</td>
+       </tr>
+      </table>
+     </td>
+	 -->
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

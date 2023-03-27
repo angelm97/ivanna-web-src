@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rss version="2.0" xmlns:job="http://www.ejobsitesoftware.com/jobsite_demo/rss" >
+<channel>
+<job:link href="http://www.ejobsitesoftware.com/jobsite_demo/rss/all_jobs.xml" rel="self" type="application/rss+xml"/>
+<title>Ejobsitesoftware.com JobSite Demo</title>
+<description> jobs </description>
+<link>http://www.ejobsitesoftware.com/jobsite_demo/</link>
+<copyright>Copyright 2012 www.ejobsitesoftware.com All Rights Reserved</copyright>
+<item>
+<title>Communications Specialist</title>
+<guid>http://www.ejobsitesoftware.com/jobsite_demo/13011/Communications-Specialist.html</guid>
+<description>Title Communications Specialist Job Function Advertising/Marketing/PR Requisition Number 040338 Metropolitan... develop and, present advertising materials. Major...</description>
+<job:country>United States</job:country>
+<job:state>Illinois</job:state>
+<job:location>Chicago</job:location>
+<link>http://www.ejobsitesoftware.com/jobsite_demo/13011/Communications-Specialist.html</link>
+</item>
+<item>
+<title>SECTION HEAD,ANALYTICAL DEVELOPMENT</title>
+<guid>http://www.ejobsitesoftware.com/jobsite_demo/13040/SECTION-HEAD-ANALYTICAL-DEVELOPMENT.html</guid>
+<description>to the discovery, development and delivery of our... investigations and drug screenings. Job - Science/Research&amp;amp; Development Primary Location - Americas...</description>
+<job:country>United States</job:country>
+<job:state>Ohio</job:state>
+<job:location>Columbus</job:location>
+<link>http://www.ejobsitesoftware.com/jobsite_demo/13040/SECTION-HEAD-ANALYTICAL-DEVELOPMENT.html</link>
+</item>
+</channel>
+</rss>

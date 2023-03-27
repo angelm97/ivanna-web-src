@@ -1,0 +1,49 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<script src="{INFO_TEXT_JSCRIPT_FILE}"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- Below Script for auto close -->
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 mx-auto">
+			<!-- Below Alert message File path is class/message_stack.php -->
+			{update_message} 
+            <div class="card card-custom">
+                <div class="card-header card-header-custom">
+                    <h1 class="display-6 p-0 m-0">{HEADING_TITLE}</h1>
+                </div>
+                <div class="card-body card-body-custom">
+				{form}
+											
+{FIRST_PARAGRAPH}
+<p class="card-text">{INFO_TEXT_FULL_NAME}</p>
+<p class="card-text">{INFO_TEXT_FULL_NAME1}</p>
+<p class="card-text">{INFO_TEXT_EMAIL_ADDRESS}</p>
+<p class="card-text">{INFO_TEXT_EMAIL_ADDRESS1}</p>
+<p class="card-text">{INFO_TEXT_SUBJECT}</p>
+<p class="card-text">{INFO_TEXT_SUBJECT1}</p>
+<p class="card-text">{INFO_TEXT_MESSAGE}</p>
+<p class="card-text">{INFO_TEXT_MESSAGE1}</p>
+<p class="card-text">{google_captcha}</p>
+<p class="card-text">{button}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{FOOTER_HTML}

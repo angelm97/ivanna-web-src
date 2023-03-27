@@ -1,0 +1,3 @@
+Theme Name: Wao Jobs 
+Description: Configure:</b><br>big middle picture theme<br>
+Version: 4.5

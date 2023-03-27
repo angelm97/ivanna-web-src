@@ -1,0 +1,205 @@
+{ADMIN_HEADER_HTML}
+ <style>
+ .popup_content
+ {
+  border:black 1px solid;
+  position:absolute;
+  z-index: 1002;
+  left: 25%;
+  overflow: auto;
+  top:20;
+  background-color: white;
+  display:block;
+ }
+ .popup_content2
+ {
+  display:none;
+ }
+ #popunder_content1
+ {
+  height:370;
+  overflow:scroll;
+ }
+ .black_overlay
+ {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index:1001;
+  -moz-opacity: 0.8;
+  opacity:.80;
+  filter: alpha(opacity=80);
+ }
+ .theme_view_section
+{
+ padding:4px;
+ color:#ff0000;
+ background-color:#FFFFE1;
+ font-family:Arial,Verdana, Helvetica, sans-serif;
+ font-size:12px;
+ line-height:normal;
+ font-weight:bold;
+ text-align:center;
+ border-top:3px double #ff0000;
+ border-bottom:3px double #ff0000;
+}
+.theme_view_section a,.theme_view_section a:hover
+{
+ color:#0000ff;
+}
+#theme_shot_desc
+{
+ color:#444444;
+ font-family:Arial,Verdana, Helvetica, sans-serif;
+ font-size:13px;
+ padding-top:15px;
+}
+ </style>
+ <script type="text/javascript">
+  function show_image(url)
+  {
+   var obj=document.getElementById('popunder_content1');
+   var obj1=document.getElementById('popunder_image');
+   obj1.src=url;
+   obj.className='popup_content';
+   document.getElementById('fade').className='black_overlay';
+  }
+  function show_screenshot(img)
+  {
+   var obj;
+   if(obj=document.getElementById('default_main_screenshot'))
+   {
+    obj.src=img;
+   }
+  }
+  function  close_popup()
+  {
+   document.getElementById('popunder_content1').className='popup_content2'
+   document.getElementById('fade').className='popup_content2'
+   var obj1=document.getElementById('popunder_image');
+   obj1.src="../img/spinner.gif";
+  }
+  var  screen_height=0;
+  var  screen_width=0;
+  function set_screen_size()
+  {
+   screen_height = document.body.offsetHeight;
+   screen_width  = document.body.offsetWidth;
+  }
+  function  set_screen_box()
+  {
+   var obj = document.getElementById ("popunder_content1");     
+   var obj1 = document.getElementById('fade');
+   var top_position=document.body.scrollTop; 
+   var left_position=document.body.scrollLeft; 
+   obj.style.top=parseInt(1)+top_position+"px";
+   obj1.style.height=screen_height+top_position+"px";   
+   obj1.style.width=screen_width+left_position+"px";   
+  }  
+  window.onscroll = set_screen_box;   
+  window.onload = set_screen_size;   
+ </script>
+ <div id="fade" class="popup_content2"></div>
+ <div id="popunder_ads" ><div class="popup_content2"  id="popunder_content1"><div style="background-color:rgb(192, 192, 192);" align="left">&nbsp;<a onclick="close_popup();" style="color:#000000;" href="javascript:void(0)">close</a>
+</div><img src="../img/spinner.gif" style="border:none;" id="popunder_image"></div></div>
+{update_message}
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+     <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-th-large fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+      <div id='site_themes' {INFO_TEXT_THEMES_STYLE}><br>      
+      <table border="0" width="100%" cellspacing="1" cellpadding="0" class="middle_table1">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="4" class="middle_table2">
+          <tr>
+           <td><div class="active-theme-title">Active Theme</div></td>
+          </tr>          
+          <tr>
+           <td valign="top"><div class="theme-screnshot4">{CURRENT_THEME_SCREENSHOT}</div></td>
+           <td valign="top">
+            <table border="0"  cellspacing="" cellpadding="" >
+            <tr>
+             <td><div class="theme-name2">{CURRENT_THEME_NAME}</div></td>
+            </tr>
+            <tr >
+             <td><div class="current-theme-dir">{CURRENT_THEME_DIRECTORY}</div></td>
+            </tr>
+            <tr>
+
+             <td><div class="current-theme-dir">{CURRENT_THEME_VERSION}</div></td>
+            </tr>
+            <tr >
+             <td><div class="current-theme-dir2">{CURRENT_THEME_DESCRIPTION}</div><br>&nbsp;<div id="theme_screenshots">{CURRENT_THEME_SCREENSHOT1}</div></td>
+            </tr>
+            <tr>
+             <td><div class="button">{INFO_TEXT_VIEW_MOBILE_SITE}</div></td>
+            </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+      <br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table2">
+          <tr class="admin-table-head-bar">{theme_form}
+           <td>Available Themes</td>			<td>{TABLE_HEADING_THEME_NAME}</td>		   <!--<td>{themes.directory}</td>           <td>{TABLE_HEADING_THEME_VERSION}</td>-->           <td><nobr>{TABLE_HEADING_THEME_DEFAULT}</nobr></td>
+          </tr> 
+          <!-- BEGIN themes -->
+          <tr{themes.row_selected}>
+           <td><div class="theme-screnshot3">{themes.screenshot}</div></td>			<td><div class="theme-name">{themes.name}</div><div class="theme-desc">{themes.description}</div>			<div class="theme-ver">Directry: {themes.directory}</div>			<div class="theme-ver">Version : {themes.version}</div></td>
+           <td><div class="radio-btn">{themes.radio_button}</div></td>
+          </tr>
+          <!-- END themes -->
+         </table>
+         <table border="0" width="100%" cellspacing="0" cellpadding="2" class="show_page">
+          <tr>
+           <td  align="right">{button}</td>
+          </tr></form>
+          <tr>
+           <td align="right">{INFO_TEXT_DISPLAY_THEMES_PAGE}</td>
+          </tr>          
+         </table>      
+        </td>
+       </tr>
+      </table>
+      </div>       
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->     
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

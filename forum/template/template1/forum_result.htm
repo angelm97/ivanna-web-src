@@ -1,0 +1,55 @@
+{page_title}{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">	{update_message}
+      <div class="card">
+        <div class="card-header">            <h1 class="display-6 p-0 m-0 float-left">{HEADING_TITLE}</h1>          {INFO_TEXT_HEADING_SEARCH}          <div class="float-right text-right">            {INFO_TEXT_FORUM_HEADER_LINK}          </div>        </div>        <div class="card-header">            			{hidden_fields} {total} {list_page}&nbsp;{page}        </div>
+        <div class="card-body">
+          
+          <table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#FFFFFF">
+                          <form name="page" method="post">
+            {INFO_TEXT_HIDE_START}		<thead>
+            <tr class="forum_header_bar">
+              <th colspan="2" class="forum_heading">{TABLE_HEADING_TOPICS}</th>
+              <th width="86" class="forum_heading">{TABLE_HEADING_REPLIES}</th>
+              <th width="86" class="forum_heading">{TABLE_HEADING_AUTHOR} </th>
+              <th width="80" class="forum_heading">{TABLE_HEADING_VIEW} </th>
+            </tr>		</thead>
+            <!-- BEGIN search_result -->
+            <tr {search_result.row_selected}>
+              <td width="35" class="forum_row_content">
+                <div align="right"><i class="fa fa-comments forum-icon-bg p-3 mr-2" aria-hidden="true"></i></div>
+              </td>
+              <td valign="top" class="forum_row_content">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="forum_title" valign="top">
+                      {search_result.title}</td>
+                  </tr>
+                  <tr>
+                    <td class="forum_content">{search_result.description}
+                      {search_result.more_link}</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="forum_row_content1" valign="top">{search_result.reply}
+              </td>
+              <td class="forum_row_content1" valign="top">
+                <nobr>{search_result.inserted}</nobr> <span class="forum_author">{search_result.posted_by}</span>
+              </td>
+              <td class="forum_row_content1" valign="top">{search_result.view}
+              </td>
+            </tr>
+            <!-- END forum_result -->
+            {INFO_TEXT_HIDE_END}
+          </table>
+          {INFO_TEXT_HIDE_START}</form>
+          {INFO_TEXT_HIDE_END}
+        </div>				<div class="card-footer">		{total} {list_page}&nbsp;{page}		</div>
+        <!--card body end-->
+      </div>
+    </div>
+  </div>
+</div>
+{FOOTER_HTML}

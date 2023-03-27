@@ -1,0 +1,3 @@
+Theme Name: THEME 6
+Description: Configure:</b><br>Header Middle Rotating Banner <br>
+Version: 4.6

@@ -1,0 +1,74 @@
+{ADMIN_HEADER_HTML}
+<script language="javascript" type="text/javascript" src="../TinyMCE/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+<script language="javascript" type="text/javascript">
+		tinyMCE.init({
+		mode : "exact",
+		elements : "description1",
+		theme : "simple2",
+		theme_simple2_toolbar_location : "top",
+
+	});
+</script>
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="2">
+    <tr>
+     <td>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+       <tr>
+        <td class="pageHeading">{HEADING_TITLE}</td>
+       </tr>
+      </table><br>{update_message}
+      <table border="0" align="center" cellspacing="3" cellpadding="2">
+       <tr>{feed_form}
+        <td class="label">{TEXT_INFO_POST_USER}</td>
+        <td >{TEXT_INFO_POST_USER1}</td>
+       </tr>
+       <tr>
+        <td class="label">{TEXT_INFO_POST_TITLE}</td>
+        <td >{TEXT_INFO_POST_TITLE1}</td>
+       </tr>       
+       <tr>
+        <td class="label">{TEXT_INFO_POST_FORUM}</td>
+        <td >{TEXT_INFO_POST_FORUM1}</td>
+       </tr>       
+       <tr>
+        <td class="label">{TEXT_INFO_POST_DESCRIPTION}</td>
+       </tr>       
+       <tr>
+        <td colspan="2" >{TEXT_INFO_POST_DESCRIPTION1}</td>
+       </tr>       
+                  
+      </table>
+       <tr>
+        <td class="label" align="center">{submit_button}</td>
+       </tr></form>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+     
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

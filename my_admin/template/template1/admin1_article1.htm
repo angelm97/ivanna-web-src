@@ -1,0 +1,110 @@
+{ADMIN_HEADER_HTML}
+{update_message}
+<script language="JavaScript">
+<!--
+function set_action(action)
+{
+ document.article.action1.value=action;
+ document.article.submit();
+}
+//-->
+</script>
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="2">
+    <tr>
+     <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td class="pageHeading">{HEADING_TITLE}</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+      <table border="0" width="70%" cellspacing="1" cellpadding="0" class="middle_table1"  id="admin-article-box">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="4" class="middle_table2">
+          <tr>
+           <td valign="top">
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr> 
+             <td width="80"></td>
+             <td><font color="#CC0000" size="2">*Required Field<br>&nbsp;</font></td>
+            </tr>
+            </table>
+            <table width="100%" border="0" align="center" cellpadding="4" cellspacing="0">
+            {form}
+             <tr> 
+              <td class="label" width="20%">{INFO_TEXT_TITLE}ddddd</td>
+              <td>{INFO_TEXT_TITLE1}</td>
+             </tr>
+													<tr> 
+              <td class="label" valign="top">{INFO_TEXT_SEO_NAME}</td>
+              <td>{INFO_TEXT_SEO_NAME1}</td>
+             </tr>
+             <tr> 
+              <td class="label">{INFO_TEXT_CATEGORY}</td>
+              <td>{INFO_TEXT_CATEGORY1}</td>
+             </tr>
+             <tr> 
+              <td class="label">{INFO_TEXT_AUTHOR}</td>
+              <td>{INFO_TEXT_AUTHOR1}</td>
+             </tr>
+             <tr> 
+              <td class="label">{INFO_TEXT_SHOW_DATE}</td>
+              <td>{INFO_TEXT_SHOW_DATE1}</td>
+             </tr>
+             <tr> 
+              <td class="label">{INFO_TEXT_SHOW}</td>
+              <td>{INFO_TEXT_SHOW1}</td>
+             </tr>{hidden_fields}
+             <tr>
+             <tr> 
+              <td class="label" valign="top">{INFO_TEXT_ARTICLE_PHOTO}</td>
+              <td>{INFO_TEXT_ARTICLE_PHOTO1}</td>
+             </tr>
+             <tr> 
+              <td class="label" colspan="2" style="padding-top:15px;">{INFO_TEXT_SHORT_DESCRIPTION}</td>
+             </tr>
+             <tr> 
+              <td colspan="2">{INFO_TEXT_SHORT_DESCRIPTION1}</td>
+             </tr>
+             <tr> 
+              <td class="label" style="padding-top:15px;">{INFO_TEXT_DESCRIPTION}</td>
+             </tr>
+             <tr> 
+              <td colspan="2">{INFO_TEXT_DESCRIPTION1}</td>
+             </tr>
+              <td align="middle" colspan="2">{button}</td>
+             </tr>
+            </form>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+{ADMIN_FOOTER_HTML}

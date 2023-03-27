@@ -1,0 +1,120 @@
+{ADMIN_HEADER_HTML}
+{update_message}
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->
+<script>
+function list_submit(id)
+{
+ document.page.jID.value=id;
+ document.page.submit();
+}
+</script>
+<script>
+function page_submit(name)
+{
+ if(name=='email')
+  document.page.email.value=name;
+ else if(name=='excel')
+  document.page.excel.value=name;
+ document.page.submit();
+}
+</script>
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+			   <table border="0" width="99%" cellspacing="1" cellpadding="0" class="infoBox" align="center">
+				   <tr class="background">
+					   <td valign="top">
+         <table border="0" width="100%" cellspacing="3" cellpadding="0">
+          <tr>
+           <td valign="top">
+           {update_message}
+           {save_search}
+            <table border="0" cellspacing="0" cellpadding="5">
+             <tr>
+              <td class="label">{INFO_TEXT_TITLE_NAME}ss</td>
+              <td>{INFO_TEXT_TITLE_NAME1}</td>
+              {hidden_fields}
+             </tr></form>
+            </table>
+            <form name="page" method="post">
+            <table border="0" width="100%" cellspacing="3" cellpadding="0">
+             <tr>
+              <td class="footer">{total}</td><td valign="top" align="right">{list_page}&nbsp;{page}&nbsp;</td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+         <table border="0" width="100%" cellspacing="3" cellpadding="0">
+          <tr>
+           <td valign="top">
+           {update_message}
+            <table border="0" width="100%" cellspacing="1" cellpadding="2">
+              <tr class="dataTableHeadingRow">
+                <td class="dataTableHeadingContent" width="20%">{INFO_TEXT_JOBSEEKER_NAME}</td>
+                <td class="dataTableHeadingContent" width="35%">{TABLE_HEADING_EMAIL_ADDRESS}</td>
+                <td class="dataTableHeadingContent" width="15%">{TABLE_HEADING_RESUME_TITLE}</td>
+                <td class="dataTableHeadingContent" align="middle" width="11%">{TABLE_HEADING_AVAILABILITY}</td>
+                <td class="dataTableHeadingContent" width="5%">{TABLE_HEADING_RATING}</td>
+                <td class="dataTableHeadingContent" width="14%">{TABLE_HEADING_INSERTED}</td>
+                <td class="dataTableHeadingContent" width="10%" align="middle">{TABLE_HEADING_RESUME}</td>
+              </tr>
+             <!-- BEGIN search_resume_result -->
+             <tr{search_resume_result.row_selected}>
+              <td valign="top" class="dataTableContent">{search_resume_result.name}</td>
+              <td valign="top" class="dataTableContent">{search_resume_result.email_address}</td>
+              <td valign="top" class="dataTableContent">{search_resume_result.resume_title}</td>
+              <td valign="top" align="middle" class="dataTableContent">{search_resume_result.available_status}</td>
+              <td valign="top" align="middle" class="dataTableContent">{search_resume_result.rating}</td>
+              <td valign="top" class="dataTableContent">{search_resume_result.inserted}</td>
+              <td valign="top" class="dataTableContent" align="middle">{search_resume_result.view}</td>
+             </tr>
+             <!-- END search_resume_result -->
+            </table>
+            <table border="0" width="100%" cellspacing="0" cellpadding="10" class="show_page">
+             <tr>
+              <td class="footer">{total}&nbsp;</td>
+             </tr>
+             {hidden_fields}
+             </form>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+     <td width="{RIGHT_BOX_WIDTH}" valign="top">
+      <table border="0" width="{RIGHT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+       <tr>
+        <td valign="top">{ADMIN_RIGHT_HTML}</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

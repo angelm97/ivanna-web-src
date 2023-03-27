@@ -1,0 +1,64 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<!-- Below Script for auto close -->
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+		<!-- Below Alert message File path is class/message_stack.php -->
+		{update_message}
+            <div class="card card-custom">
+                <div class="card-header card-header-custom">
+                    <h1 class="display-6 p-0 m-0 float-left">{HEADING_TITLE}</h1>
+                </div>
+				
+				<div class="card-header">Tu hoja de vida será destacada frente a las empresas ideales .</div>
+				
+                <div class="card-body card-body-custom p-0">
+            <div class="table-responsive-sm scrollmenu">
+			
+			<table class="table table-hover">
+              <thead>
+			  <tr class="dataTableHeadingRow">
+                <th class="dataTableHeadingContent1">{TABLE_HEADING_PLAN_TYPE_NAME}</th>
+                <th class="dataTableHeadingContent1">{TABLE_HEADING_PLAN_TYPE_TIME_PERIOD}</th>
+                <th class="dataTableHeadingContent1">{TABLE_HEADING_PLAN_TYPE_FEE}</th>
+                <th class="dataTableHeadingContent1">{TABLE_HEADING_PLAN_TYPE_BUY}</th>
+              </tr>
+			  </thead>
+             <!-- BEGIN rates -->
+             <tr{rates.row_selected}>
+              <td valign="top">{rates.name}</td>
+              <td valign="top">{rates.time}</td>
+              <td valign="top">{rates.fee}</td>
+              <td valign="top">{rates.buy}</td>
+             </tr>
+             <!-- END rates -->
+            </table>
+			</div>
+           </div>
+		   
+		   <div class="card-footer">
+		   <span class="text-danger">*</span> Para más información sobre estos planes, por favor <a href="contact_us.php" class="blue">contáctanos.</a>
+		   </div>
+		   
+		   
+            </div>
+        </div>
+    </div>
+</div>
+
+{FOOTER_HTML}

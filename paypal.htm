@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+ <head>
+   <title>Paypal Test</title>
+ </head>
+ <body>
+  <form method="post" action="https://www.sandbox.paypal.com/nvp">
+
+<table>
+<tr>
+	<td> USER : </td>
+	<td><input type="text"  name=USER value="sb-ebsfz3706697_api1.business.example.com" size="80"></td>
+</tr>
+<tr>
+	<td>Password</td>
+	<td><input type="text" name=PWD value="QJWEA4MKSMGLS9ZU" size="80" ></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>Signature</td>
+	<td><input type="text" name=SIGNATURE value="AGRlivd-w1.x76rooYVtlFKN43YvAUFrTOsPitfc.see1n2ri7ZgUXrP" size="80"></td>
+</tr>
+<tr>
+	<td>Card Type:</td>
+	<td><select name="CREDITCARDTYPE"><option value="VISA">Visa</option><option value="VISA_DEBIT">Visa Debit</option><option value="VISA_ELECTRON">Visa Electron</option><option value="MASTERCARD">MasterCard</option><option value="DISCOVER">Discover Card</option><option value="AMEX">American Express</option><option value="SWITCH">Maestro</option><option value="SOLO">Solo</option></select></td>
+</tr>
+<tr>
+	<td>Card Number</td>
+	<td><input type="text" name="ACCT" value="4111111111111111" size="50"></td>
+</tr>
+<tr>
+	<td>Card Valid From Date</td>
+    <td><input type="text" name="STARTDATE" value="112000" size="50"></td>
+
+</tr>
+<tr>
+	<td>Card Expiry Date:</td>
+    <td><input type="text" name="EXPDATE" value="112020" size="50"></td>
+</tr>
+<tr>
+	<td>Card Security Code (CVV2):</td>
+	<td><input type="text" name="CVV2" value="123" size="5" maxlength="4"></td>
+</tr>
+<tr>
+	<td>Card Issue </td>
+	<td><input type="text" name="ISSUENUMBER" size="3" maxlength="2"> (for Maestro and Solo cards only)</td>
+</tr>
+<tr>
+	<td>PAYMENTACTION </td>
+	<td><select name="PAYMENTACTION">
+		<option value="Authorization" selected>Authorization</option>
+		<option value="Sale">Sale</option>
+	</select></td>
+</tr>
+<tr>
+	<td>AMOUNT</td>
+	<td><input type="text" name="AMT" value="0.00"> </td>
+</tr>
+<tr>
+	<td>COUNTRYCODE</td>
+	<td><input type="text" name="COUNTRYCODE" value="USD"></td>
+</tr>
+<tr>
+	<td>Email</td>
+	<td><input type="text" name="EMAIL" value="info@aynsoft.com"></td>
+</tr>
+
+</table>
+ <br>
+   <input type=hidden name=VERSION value= 58.0>
+  
+   <input type=hidden name=FIRSTNAME value="James Smith">
+  <input type=hidden name=LASTNAME value=...>
+  <input type=hidden name=STREET value=...>
+  <input type=hidden name=STREET2  value=>
+  <input type=hidden name=CITY value="San Francisco">
+  <input type=hidden name=STATE value=CA>
+  <input type=hidden name=Zip value=94121>
+    <input type=submit name=METHOD value=DoDirectPayment>
+</form>
+
+
+ </body>
+</html>

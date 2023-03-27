@@ -1,0 +1,114 @@
+  {HEADER_HTML}
+  {HEADER_MIDDLE_HTML}
+
+<div class="container">
+		    <div class="row">
+            <div class="col-lg-3 mt-4">
+			
+			<div class="row mb-3">
+                <div class="col-lg-12 mb-2">
+				
+				<div class="card">
+				<div class="card-header bg-white">
+				<h5 class="theme2-title">Job categories</h5>
+				</div>
+				
+				  <div class="card-body p-0">
+					  <div class="list-group">
+					  {CATEGORY1}
+					   {CATEGORY2}
+					   {CATEGORY3}
+					   {CATEGORY4}
+					  {CATEGORY5}
+					   {CATEGORY6}
+					   {CATEGORY7}
+					   {CATEGORY8}
+					</div>
+					</div>
+					<div class="card-footer bg-white mobile-center-align bg-white2">{ALL_CATEGORIES}</div>
+					</div>
+                </div>
+            </div>
+			
+		<div class="card for-mobile">
+			<div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted small">Get daily emails in your inbox with jobs that match your industry or sector when an opportunity opens up.</p>
+					{CREATE_ALERT} 
+                </div>
+            </div>
+		</div>
+        </div>
+
+			</div>
+				
+				<div class="col-lg-7 mt-4">
+				<div class="card">
+				<div class="card-header bg-white">
+				 <h5 class="float-left theme2-title">Recent Jobs</h5>
+					 <div class="float-right small">{ALL_JOBS}</div>
+				</div>
+				  <div class="card-body p-0">
+					<div class="table-responsive">
+					<table class="table table-hover">
+                        <tbody>
+						    <tr class="text-muted small font-weight-bold  for-mobile">
+                                <td width="1%"><div class="job-img for-mobile">#</div></td>
+                                <td class="mobile-font-weight-bold for-mobile">Job title</td>
+                                <td class="for-mobile">Company</td>
+                                <td class="for-mobile">Location</td>
+                            </tr>
+						<!-- BEGIN latest_jobs -->
+                            <tr>
+                                <td width="1%"><div class="job-img">{latest_jobs.clogo}</div></td>
+                                <td class="text-capitalize mobile-padding-right">{latest_jobs.title}</td>
+                                <td class="for-mobile">{latest_jobs.company}</td>
+                                <td class="for-mobile">{latest_jobs.location}</td>
+                            </tr>
+                           <!-- END latest_jobs -->
+                        </tbody>
+                    </table>
+					</div>
+				  </div>
+				</div>
+
+                 
+
+
+                
+            
+			<div class="card mt-4">
+			<div class="card-header bg-white"><h5 class="theme2-title">Recent Articles</h5></div>
+			<div class="card-body pt-2">
+            {ARTICLE_HOME}
+			</div>
+			</div>
+
+
+
+				 
+                </div>
+				
+                <div class="col-md-2 mt-4">
+				
+				<div class="card">
+				<div class="card-header bg-white"><h5 class="theme2-title">Featured Recruiter</h5></div>
+				  <div class="card-body">
+					<!-- BEGIN banner -->
+                        {banner.banner}
+					<!-- END banner -->
+				  </div>
+				  <div class="card-footer bg-white mobile-center-align bg-white2">
+				  {ALL_RECRUITERS}
+				  </div>
+				</div>
+                </div>
+				
+				
+</div>
+</div>		
+		
+
+
+{FOOTER_HTML}

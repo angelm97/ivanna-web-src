@@ -1,0 +1,122 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}  
+
+
+<div class="container">
+<div class="row">
+		<div class="col-md-9">
+		    
+			<div class="row">
+			<!-- BEGIN featured_jobs -->
+			<div class="col-md-3 text-center mb-3">
+			<div class="card theme7-card" style="height: 8rem;">
+			  <div class="card-body pt-2 pb-3">
+				<div class="card-text mb-2 font-weight-bold featured-title">{featured_jobs.title}</div>
+				{featured_jobs.logo}
+			  </div>
+			</div>
+             </div>
+				<!-- END featured_jobs -->
+            </div>
+			
+			
+
+
+
+		<div class="row">
+			<div class="col-md-3 mb-3 for-mobile">
+				<div class="card theme7-card">
+				  <h5 class="card-header bg-white color-dark">Top Employer</h5>
+				  <div class="card-body">
+					<!-- BEGIN employer -->
+					<div class="col mobile-featured-recruiter">{employer.emp}</div>
+					<!-- END employer -->
+				  </div>
+				</div>
+			</div>
+			
+			
+			<div class="col-md-9">
+			
+			<div class="card theme7-card mb-3">
+			  <h5 class="card-header bg-white color-dark">Top 10 Hot Jobs</h5>
+			  <div class="card-body p-0">
+							<div class="table-responsive theme7-jobs">
+							<table class="table table-hover">
+
+                                <tbody>
+					<!-- BEGIN latest_jobs -->
+                                    <tr>
+                                        <td class="px-4"><div class="font-weight-bold">{latest_jobs.title}</div>
+										<div class="text-muted text-capitalize">{latest_jobs.company}</div>
+										<div class="text-muted text-capitalize">{latest_jobs.location}</div>
+										<td width="55"><div class="theme7-logo pr-2">{latest_jobs.clogo}</div></td>
+										</td>
+                                    </tr>
+					<!-- END latest_jobs -->
+                                </tbody>
+                            </table>
+							</div>
+			  </div>
+			</div>
+			
+			
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			  <li class="nav-item mt-2 mr-3 for-mobile" role="presentation">
+				Jobs By:
+			  </li>
+			  
+			  <li class="nav-item" role="presentation">
+				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Category</a>
+			  </li>
+			  <li class="nav-item" role="presentation">
+				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Company</a>
+			  </li>
+			  <li class="nav-item" role="presentation">
+				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Location</a>
+			  </li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+			  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+			  <div class="card theme7-card border-top-0"><div class="card-body">{JOB_CATEGORY1}</div></div>
+			  </div>
+			  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+			  <div class="card theme7-card border-top-0"><div class="card-body">{JOB_COMPANY}</div></div>
+			  </div>
+			  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+			  <div class="card theme7-card border-top-0"><div class="card-body">{JOB_LOCATION}</div></div>
+			  </div>
+			</div>
+		
+			
+			</div>
+		</div>
+
+
+
+		</div>
+		<!-- End Col 9 -->
+		
+		<div class="col-md-3 for-mobile">
+		
+			<div class="card theme7-card mb-3" style="background: #f0f4fa;">
+			  <div class="card-body">
+				<p class="card-text mb-2">Get daily emails with jobs that match your sector</p>
+				{JOB_ALERT}
+			  </div>
+			</div>		
+		
+			<div class="card theme7-card">
+			  <h5 class="card-header bg-white">Jobs by Categories</h5>
+			  <div class="card-body">
+				{JOB_CATEGORY}
+				
+			  </div>
+			</div>
+		</div>
+		<!-- End Col 3 -->		
+		<!--{RT_BANNER}-->
+</div>
+</div>
+		
+</div>{FOOTER_HTML}

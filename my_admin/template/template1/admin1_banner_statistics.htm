@@ -1,0 +1,86 @@
+{ADMIN_HEADER_HTML}
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+	 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-list fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+	   <tr>
+        <td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="top-select-bar">
+		  <tr>
+			<td align="right">{different_banners}</td>
+		  </tr>
+		</table>
+		</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">{update_message}<br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table">
+                    <tr class="admin-table-head-bar"> 
+                      <td>{TABLE_HEADING_BANNER_NAME}</td>
+                      <td>{TABLE_HEADING_ADVIEWS}</td>
+                      <td>{TABLE_HEADING_ADCLICKS}</td>
+                      <td>{TABLE_HEADING_CTR}</td>
+                    </tr>
+                    <!-- BEGIN banner -->
+					{banner.location}
+                    <tr{banner.row_selected}>
+                       <td>{banner.title}</td>
+                      <td>{banner.adviews}</td>
+                      <td>{banner.adclicks}</td>
+                      <td>{banner.ctr}</td>
+                    </tr>
+                    <!-- END banner -->
+                  </table>
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="bottom-select-bar">
+            <tr>
+             <td align="left">{count_rows}</td>
+             <td align="right">{no_of_pages}</td>
+            </tr>
+			<tr>
+           <td align="right">*CTR=(AdClicks/AdViews)*100</td>
+         </tr>
+        </table>
+        </td>
+       </tr>
+      </table>
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+     <td width="{RIGHT_BOX_WIDTH}" valign="top">
+      <table border="0" width="{RIGHT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+       <tr>
+        <td valign="top">{ADMIN_RIGHT_HTML}</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

@@ -1,0 +1,56 @@
+{page_title}{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<tr>
+	<td valign="top">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+      <td class="heading_bar_internal">
+       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         <td width="15" valign="middle"><img src="../img/red_bullet_internal.gif" width="9" height="8" alt="red_bullet"></td>
+          <td valign="middle" class="heading_bar_internal_content">{HEADING_TITLE}</td>
+          <td valign="middle"width="10%" align="right" class="heading_bar_internal_content1">{INFO_TEXT_HEADING_SEARCH}</td>
+         </tr>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td class="block_with_heading_bar">
+       <!---->
+       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         <td>
+          <table width="100%"  border="0" cellpadding="0" cellspacing="1" >
+           <tr>
+            <td >
+              {INFO_TEXT_FORUM_HEADER_LINK}
+              <!-- BEGIN forum_result -->
+             <table width="100%" border="0" cellpadding="4" cellspacing="1" class="forum_box" >
+              <tr class="forum_header_bar">
+               <td colspan="2"  class="forum_heading">{forum_result.forum_category}</td>
+               <td width="86"  class="forum_heading">{TEXT_INFO_THREADS} </td>
+               <td width="80" class="forum_heading">{TEXT_INFO_POSTS}</span></td>
+              </tr>
+              {forum_result.forum}
+             </table>
+													&nbsp;
+               <!-- END forum_result -->
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+        <tr>
+          <td></td>
+          </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+       </table>
+       <!---->
+      </td>
+     </tr>
+  </table>
+ </td>
+</tr>
+{FOOTER_HTML}

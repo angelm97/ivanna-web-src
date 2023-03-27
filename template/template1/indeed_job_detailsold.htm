@@ -1,0 +1,243 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+ </td>
+</tr>
+<SCRIPT LANGUAGE="JavaScript">
+function popUp(URL) 
+{
+ day = new Date();
+ id = day.getTime();
+ eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=600,height=400,left = 0,top = 0');");
+}
+</script>
+<style>
+#outteriframe {
+width:650px;
+height:650px;
+overflow:hidden;
+position:relative;
+margin-left: auto;
+margin-right: auto;
+}
+#inneriframe {
+position:absolute;
+top:-145px;
+ 
+left:-25px;
+width:1280px;
+height:1200px;
+}
+</style>
+<tr>
+	<td valign="top">
+		<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+			<tr valign="top">
+				<td width="86%"><div align="center">
+					<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>
+								<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td width="0%" background="{HOST_NAME}img/main_bar_bg.gif"><div align="left"><img src="{HOST_NAME}img/main_bar_left.gif" width="2" height="30"></div></td>
+										<td width="100%" background="{HOST_NAME}img/main_bar_bg.gif">
+											<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td width="74%">
+														<table  border="0" align="left" cellpadding="0" cellspacing="0">
+															<tr>
+																<td><img src="{HOST_NAME}img/spacer.gif" width="12" height="5"></td>
+																<td><img src="{HOST_NAME}img/dotted_bullet.gif" width="10" height="10"></td>
+																<td><img src="{HOST_NAME}img/spacer.gif" width="6" height="5"></td>
+																<td ><h1 class="pageMainHeading">{INFO_TEXT_JOB_TITLE1}</h1></td>
+															</tr>
+														</table>
+													</td>
+													<td width="26%">
+														<table  border="0" align="right" cellpadding="0" cellspacing="0">
+															<tr>
+																<td class="style27">{button}</td>
+																<td class="style17"><img src="{HOST_NAME}img/spacer.gif" width="7" height="5"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td width="0%" background="{HOST_NAME}img/main_bar_bg.gif"><div align="right"><img src="{HOST_NAME}img/main_bar_right.gif" width="2" height="30"></div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>{update_message}
+							 <table width="100%" height="550"  border="0" cellpadding="15" cellspacing="1" bgcolor="#E2E2E2">
+									<tr>
+										<td valign="top" bgcolor="#FFFFFF">
+										 <table width="97%"  border="0" align="center" cellpadding="0" cellspacing="0">
+												<tr>
+													<td>
+													 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td>
+																 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+																		<tr>
+																			<td>
+                   <table width="100%">
+                    <tr>
+                     <td>
+                      <table border="0" align="right" cellpadding="0" cellspacing="0">
+                       <tr>
+                        <td><span class="style33">{INFO_TEXT_APPLY_NOW}</span></td>
+                        <td>&nbsp;</td>
+                        <td><img src="{HOST_NAME}img/arrow_apply.gif" width="12" height="8"></td>
+                        <td>&nbsp;</td>
+                        {button_apply}
+                       </tr>
+                      </table>
+                     </td>
+                    </tr>
+																			</table>
+																			 <table width="100%"  border="0" cellspacing="0" cellpadding="2">
+																					<tr class="style27">
+																						<td width="25%" class="style28">{INFO_TEXT_JOB_TITLE}</td>
+																						<td width="3%">:</td>
+																						<td width="72%">{INFO_TEXT_JOB_TITLE1} </td>
+																					</tr>
+																					<tr class="style27">
+																						<td class="style28">{INFO_TEXT_JOB_LOCATION}</td>
+																						<td>:</td>
+																						<td>{INFO_TEXT_JOB_LOCATION1}</td>
+																					</tr>
+																					<tr class="style27">
+																						<td class="style28">{INFO_TEXT_JOB_POSTED} </td>
+																						<td>:</td>
+																						<td>{INFO_TEXT_JOB_POSTED1}</td>
+																					</tr>
+																					<tr class="style27">
+																						<td class="style28">{INFO_TEXT_JOB_APPLY_BEFORE}</td>
+																						<td>:</td>
+																						<td>{INFO_TEXT_JOB_APPLY_BEFORE1}</td>
+																			 	</tr>
+	 																			<tr class="style27">
+																						<td class="style28">{INFO_TEXT_EXPERIENCE}</td>
+																						<td>:</td>
+																						<td>{INFO_TEXT_EXPERIENCE1}</td>
+		 																		</tr>
+			 																	<tr class="style27">
+																						<td valign="top" class="style28">{INFO_JOB_CATEGORY}</td>
+																						<td valign="top">:</td>
+																						<td>{INFO_JOB_CATEGORY1}</td>
+				 																</tr>
+																				</table>
+																			</td>
+																			<td>&nbsp;</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td><img src="{HOST_NAME}img/spacer.gif" width="5" height="12"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+													 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td background="{HOST_NAME}img/bgr_8.gif"><img src="{HOST_NAME}img/trans_002.gif" width="1" height="1"></td>
+															</tr>
+															<tr>
+																<td></td>
+															</tr>
+															<tr>
+																<td height="21" bgcolor="#F8F8F8"><span class="style24">&nbsp;{INFO_TEXT_JOB_DETAILS}</span></td>
+															</tr>
+															<tr>
+																<td><img src="{HOST_NAME}img/spacer.gif" width="5" height="10"></td>
+															</tr>
+															<tr>
+																<td >{INFO_TEXT_JOB_DETAILS1}</td>
+															</tr>
+															<tr>
+																<td height="19" class="style27"><span class="style28">{INFO_TEXT_JOB_APPLY_BEFORE} </span> {INFO_TEXT_JOB_APPLY_BEFORE1}</td>
+															</tr>
+															<tr>
+																<td background="{HOST_NAME}img/dot_line_bg.gif">&nbsp;</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+													 <table width="100%"  border="0" align="left" valign="bottom" cellpadding="0" cellspacing="0">
+													 	<tr>
+														 	<td>
+																	<div id="at-button">
+																	<script type="text/javascript">addthis_pub = 'AddThis';</script>
+																	<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/lg-share-en.gif" width="125" height="16" border="0" alt="Share" /></a>
+																	<script type="text/javascript" src="http://s7.addthis.com/js/200/addthis_widget.js"></script>
+																	</div>
+																</td>
+																<td>
+																 <table border="0" valign="bottom" cellspacing="0" cellpadding="0">
+																	 {view_company_jobs}
+																	</table>
+																</td>
+																<td>
+																 <table  border="0" cellspacing="0" cellpadding="0">
+																	 <tr>
+																			{INFO_TEXT_SIMILAR_JOBS}
+																		</tr>
+																	</table>
+																</td>
+																<td>
+																 <table  border="0" cellspacing="0" cellpadding="0">
+																	 <tr>
+																			<td class="style7"><span class="style17">{view_company_profile}</span></td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+ 										</table>
+										</td>
+ 								</tr>
+	    			</table>
+							</td>
+						</tr>
+					</table>
+					</div>
+				</td>
+				<!-- Middle Ends -->
+    <!-- Right Starts -->
+				{RIGHT_HTML}
+    <!-- Right ends -->
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<script language="javascript">
+<!--
+var max_history =1;
+if (navigator.appName == 'Microsoft Internet Explorer')
+max_history =0;
+var h_obj= document.getElementById("job_detail_back");
+if(h_obj)
+{
+ if(window.history.length > max_history)
+  h_obj.style.display="visible";
+ 	else
+  h_obj.style.display="none";
+}
+//-->
+</script>
+
+{FOOTER_HTML}

@@ -1,0 +1,188 @@
+{ADMIN_HEADER_HTML}
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function test_authentication()
+{
+ if(document.facebook_form.facebook_app_key.value=='')
+ {
+ 	alert("Please enter Facebook API Key .");
+		document.facebook_form.facebook_app_key.focus();
+  return false
+ }
+ if(document.facebook_form.facebook_app_secret.value=='')
+ {
+ 	alert("Please enter Facebook APP Secret.");
+		document.facebook_form.facebook_app_secret.focus();
+  return false
+ }
+ document.facebook_form.action.value='test_authentication';
+ document.facebook_form.submit();
+}
+function page_authentication()
+{
+ if(document.facebook_form.facebook_app_key.value=='')
+ {
+ 	alert("Please enter Facebook API Key .");
+		document.facebook_form.facebook_app_key.focus();
+  return false
+ }
+ if(document.facebook_form.facebook_app_secret.value=='')
+ {
+ 	alert("Please enter Facebook APP Secret.");
+		document.facebook_form.facebook_app_secret.focus();
+  return false
+ }
+ if(document.facebook_form.facebook_page.value=='')
+ {
+ 	alert("Please enter Facebook page URL.");
+		document.facebook_form.facebook_page.focus();
+  return false
+		}
+ document.facebook_form.action.value='page_authentication';
+ document.facebook_form.submit(); 
+	}
+
+    var oldLinkvalue ='{linkvalue}'
+	function checkPageLink()
+	{
+	 var linkvalue = document.facebook_form.facebook_page.value;
+     if(linkvalue!='' && linkvalue != oldLinkvalue)
+	 {
+	  document.getElementById("auth_button").innerHTML='<a  href="#" onclick="page_authentication();" class="link_blink">Authentication This Page</a>'; 
+	 }
+	 else
+	  document.getElementById("auth_button").innerHTML=''; 
+
+	}
+//-->
+</SCRIPT>
+<style>
+a.link_blink:active,a.link_blink:visited,a.link_blink:link,a.link_blink:hover
+{
+ text-decoration: blink;
+	color:red;
+ font-family: Arial,Verdana, Helvetica, sans-serif;
+ background-color:#ffff00;
+ padding-top:8px;
+ padding-bottom:8px;
+ padding-left:25px;
+ padding-right:25px;
+ border-right:1px solid #E4F89A;
+ border-bottom:1px solid #97C36B;
+ font-weight:normal;
+ font-size:12px;
+ border-radius:1em;
+}
+a.link_blink:hover
+{
+ background-color:#E1F0FF;
+}
+</style>
+
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+      <table border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-facebook-square fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">{update_message}<br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+       <tr>
+        <td valign="top">
+        <table border="0" width="100%" align="center" cellspacing="0" cellpadding="1" class="middle_table1">
+          <tr>
+           <td valign="top">
+            <table border="0" width="100%" cellspacing="0" cellpadding="10" class="middle_table2">
+             <tr class="dataTableRowSelected">
+              <td >Facebook  Plugin is currently <b>{FACEBOOK_PLUGIN_STATUS}</b>.
+               <br>
+                <ul>
+                <li><b>App Domain :</b> <u>{INFO_TEXT_FACEBOOK_APP_DOMAIN}</u></li>
+                <li>Website  <b>Site URL :</b> <u>{INFO_TEXT_FACEBOOK_WEBSITE_URL}</u></li>
+                <li>APP on Facebook  <b>Canvas  URI :</b> <u>{INFO_TEXT_FACEBOOK_CANVAS_URL}</u></li>
+                </ul>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" >
+          <tr>
+           <td valign="top">
+            <table border="0" width="100%" cellspacing="0" cellpadding="4" >
+             <tr >
+              <td >{facebook_form}
+               <table border="0" width="100%" cellspacing="10" cellpadding="4" >
+                <tr >
+                 <td class="label" width="20%"><nobr>{INFO_TEXT_FACEBOOK_PLUGIN}</nobr></td>
+                 <td class="dataTableContent">{INFO_TEXT_FACEBOOK_PLUGIN1}</td>
+                </tr>
+                <tr>
+                 <td class="label" valign="top"><nobr>{INFO_TEXT_FACEBOOK_PLUGIN_KEY}</nobr></td>
+                 <td class="label">{INFO_TEXT_FACEBOOK_PLUGIN_KEY1}<div>Enter your Facebook  Api KEY.<br>Don't you have such a key? <a href="https://developers.facebook.com/apps" target="_blank" class="blue">Request one here!</a>.</div> </td>
+                </tr>                
+                <tr>
+                 <td class="label" valign="top"><nobr>{INFO_TEXT_FACEBOOK_PLUGIN_SECRET}</nobr></td>
+                 <td class="label">{INFO_TEXT_FACEBOOK_PLUGIN_SECRET1} {authentication_link} </td>
+                </tr>
+                <tr>
+                 <td class="label" width="20%"><nobr>{TEXT_INFO_J_MODULE_STATUS}</nobr></td>
+                 <td class="dataTableContent">{TEXT_INFO_J_MODULE_STATUS1}</td>
+                </tr>
+                <tr>
+                 <td class="label" width="20%"><nobr>{TEXT_INFO_R_MODULE_STATUS}</nobr></td>
+                 <td class="dataTableContent">{TEXT_INFO_R_MODULE_STATUS1}</td>
+                </tr>
+                <tr>
+                 <td class="label" width="20%"><nobr>{TEXT_INFO_JOB_MODULE_STATUS}</nobr></td>
+                 <td class="dataTableContent">{TEXT_INFO_JOB_MODULE_STATUS1}</td>
+                </tr>
+                <tr>
+                 <td class="label" ><nobr>{INFO_TEXT_FACEBOOK_PAGE}</nobr></td>
+                 <td class="dataTableContent">{INFO_TEXT_FACEBOOK_PAGE1} <span id="auth_button">{authentication_page}</span><br>{INFO_TEXT_FACEBOOK_PAGE_DESC}</td>
+                </tr>
+                <tr>
+                 <td></td>
+                 <td class="label" valign="top" >{button}</td>
+                </tr></form>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

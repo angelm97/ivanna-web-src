@@ -1,0 +1,565 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<script src="{INFO_TEXT_JSCRIPT_FILE}"></script>
+<script language="JavaScript">
+  // <!--
+  function show_hide() {
+    if (document["defineForm"]["post_url"].checked) {
+      document.getElementById("myrow").style.visibility = "visible"
+      document.getElementById("myrow1").style.display = "none"
+      document.getElementById("myrow2").style.display = "none"
+    }
+    else {
+      document.getElementById("myrow").style.visibility = "hidden"
+      document.getElementById("myrow1").style.display = "block"
+      document.getElementById("myrow2").style.display = "block"
+    }
+  }
+  function check_url() {
+    if (document.defineForm.post_url.checked)
+      if (document.defineForm.url.value == '') {
+        alert("please Enter the Apply URL.");
+        document.defineForm.url.focus();
+      }
+  }
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="tinymce2/tinymce.js"></script>
+<script type="text/javascript">
+  tinyMCE.init({
+    theme: "modern",
+    plugins: [
+      'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+      'searchreplace wordcount visualblocks visualchars code fullscreen',
+      'insertdatetime media nonbreaking save table contextmenu directionality',
+      'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc help'
+    ],
+    toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+    toolbar2: 'print preview media | forecolor backcolor emoticons | codesample help',
+    menubar: false,
+    image_advtab: true,
+
+    relative_urls: false,
+    remove_script_host: false,
+    mode: "exact",
+    elements: "description",
+    theme_advanced_toolbar_location: "top",
+    theme_advanced_toolbar_align: "center",
+    force_br_newlines: true,
+    force_p_newlines: false,
+    forced_root_block: ''
+
+  });
+</script>
+<style>
+  .displayNone {
+    display: none;
+  }
+</style>
+<script>
+  window.setTimeout(function () {
+    $(".alert").fadeTo(500, 0).slideUp(500, function () {
+      $(this).remove();
+      $(".messageStackSuccess").addClass("displayNone"
+
+      );
+      // $messageStackSuccess
+    });
+  }, 50000););
+</script>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 mx-auto xxx">
+      {update_message}
+      <div class="card card-custom">
+        <div class="card-header card-header-custom">
+          <h1 class="display-6 p-0 m-0">{HEADING_TITLE}</h1>
+        </div>
+        <div class="card-body card-body-custom">
+
+
+          {post_job_form}{SCRIPT}
+
+          <form>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_JOB_TITLE}</label>
+              <div class="col-sm-9">
+                {INFO_TEXT_JOB_TITLE1}
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_JOB_REF}</label>
+              <div class="col-sm-9">
+                {INFO_TEXT_JOB_REF1}
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_COUNTRY}</label>
+              <div class="col-sm-9">
+                {INFO_TEXT_COUNTRY1}
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_STATE}</label>
+              <div class="col-sm-9">
+                <select name="state" class="form-control">
+                  <option value="">Ciudad</option>
+                  <option value="200">Altamira</option>
+                  <option value="361">Arenoso</option>
+                  <option value="201">Azua</option>
+                  <option value="202">Baitoa</option>
+                  <option value="203">Baní</option>
+                  <option value="204">Bánica</option>
+                  <option value="205">Barahona</option>
+                  <option value="206">Bávaro</option>
+                  <option value="207">Bayaguana</option>
+                  <option value="208">Bisonó</option>
+                  <option value="209">Boca Chica</option>
+                  <option value="210">Bohechío</option>
+                  <option value="211">Bonao</option>
+                  <option value="212">Cabral</option>
+                  <option value="213">Cabrera</option>
+                  <option value="214">Cambita Garabitos</option>
+                  <option value="215">Castañuelas</option>
+                  <option value="216">Castillo</option>
+                  <option value="217">Cayetano Germosén</option>
+                  <option value="218">Cevicos</option>
+                  <option value="219">Comendador</option>
+                  <option value="220">Constanza</option>
+                  <option value="221">Consuelo</option>
+                  <option value="222">Cotuí</option>
+                  <option value="223">Cristóbal</option>
+                  <option value="224">Dajabón</option>
+                  <option value="390">Distrito Nacional</option>
+                  <option value="225">Duvergé</option>
+                  <option value="226">El Cercado</option>
+                  <option value="227">El Factor</option>
+                  <option value="228">El Llano</option>
+                  <option value="229">El Peñón</option>
+                  <option value="230">El Pino</option>
+                  <option value="231">El Seibo</option>
+                  <option value="232">El Valle</option>
+                  <option value="233">Enriquillo</option>
+                  <option value="234">Esperanza</option>
+                  <option value="235">Estebanía</option>
+                  <option value="236">Eugenio María de Hostos</option>
+                  <option value="237">Fantino</option>
+                  <option value="238">Fundación</option>
+                  <option value="239">Galván</option>
+                  <option value="240">Gaspar Hernández</option>
+                  <option value="241">Guananico</option>
+                  <option value="242">Guayabal</option>
+                  <option value="243">Guayacanes</option>
+                  <option value="244">Guaymate</option>
+                  <option value="245">Guayubín</option>
+                  <option value="246">Guerra</option>
+                  <option value="247">Haina</option>
+                  <option value="248">Hato Mayor</option>
+                  <option value="249">Higüey</option>
+                  <option value="250">Hondo Valle</option>
+                  <option value="251">Imbert</option>
+                  <option value="252">Jamao al Norte</option>
+                  <option value="253">Jánico</option>
+                  <option value="254">Jaquimeyes</option>
+                  <option value="255">Jarabacoa</option>
+                  <option value="256">Jima Abajo</option>
+                  <option value="257">Jimaní</option>
+                  <option value="258">Juan de Herrera</option>
+                  <option value="259">Juan Santiago</option>
+                  <option value="260">La Ciénaga</option>
+                  <option value="261">La Descubierta</option>
+                  <option value="262">La Mata</option>
+                  <option value="263">La Romana</option>
+                  <option value="264">La Vega</option>
+                  <option value="265">Laguna Salada</option>
+                  <option value="266">Las Charcas</option>
+                  <option value="267">Las Guáranas</option>
+                  <option value="268">Las Matas de Farfán</option>
+                  <option value="269">Las Matas de Santa Cruz</option>
+                  <option value="270">Las Salinas</option>
+                  <option value="271">Las Terrenas</option>
+                  <option value="272">Las Yayas de Viajama</option>
+                  <option value="273">Licey al Medio</option>
+                  <option value="274">Loma de Cabrera</option>
+                  <option value="275">Los Alcarrizos</option>
+                  <option value="276">Los Cacaos</option>
+                  <option value="277">Los Hidalgos</option>
+                  <option value="278">Los Llanos</option>
+                  <option value="279">Los Ríos</option>
+                  <option value="280">Luperón</option>
+                  <option value="281">Maimón</option>
+                  <option value="282">Mao</option>
+                  <option value="283">Matanzas</option>
+                  <option value="284">Mella</option>
+                  <option value="285">Miches</option>
+                  <option value="286">Moca</option>
+                  <option value="287">Monción</option>
+                  <option value="288">Monte Cristi</option>
+                  <option value="289">Monte Plata</option>
+                  <option value="290">Nagua</option>
+                  <option value="291">Navarrete</option>
+                  <option value="292">Neiba</option>
+                  <option value="293">Nigua</option>
+                  <option value="294">Nizao</option>
+                  <option value="360">Otra ciudad</option>
+                  <option value="295">Oviedo</option>
+                  <option value="296">Padre Las Casas</option>
+                  <option value="297">Palenque</option>
+                  <option value="298">Paraiso</option>
+                  <option value="299">Partido</option>
+                  <option value="300">Pedernales</option>
+                  <option value="301">Pedro Brand</option>
+                  <option value="302">Pedro Santana</option>
+                  <option value="303">Pepillo Salcedo</option>
+                  <option value="304">Peralta</option>
+                  <option value="305">Peralvillo</option>
+                  <option value="306">Piedra Blanca</option>
+                  <option value="307">Pimentel</option>
+                  <option value="308">Polo</option>
+                  <option value="309">Postrer Río</option>
+                  <option value="310">Pueblo Viejo</option>
+                  <option value="311">Puerto Plata</option>
+                  <option value="312">Puñal</option>
+                  <option value="313">Punta Cana</option>
+                  <option value="314">Quisqueya</option>
+                  <option value="315">Ramón Santana</option>
+                  <option value="316">Rancho Arriba</option>
+                  <option value="317">Restauración</option>
+                  <option value="318">Río San Juan</option>
+                  <option value="319">Sabana de la Mar</option>
+                  <option value="320">Sabana Grande de Boyá</option>
+                  <option value="321">Sabana Iglesia</option>
+                  <option value="322">Sabana Larga</option>
+                  <option value="323">Sabana Yegua</option>
+                  <option value="324">Sabaneta</option>
+                  <option value="325">Salcedo</option>
+                  <option value="326">Samaná</option>
+                  <option value="327">San Cristóbal</option>
+                  <option value="328">San Francisco de Macorís</option>
+                  <option value="329">San José de las Matas</option>
+                  <option value="330">San José de Ocoa</option>
+                  <option value="331">San Juan de la Maguana</option>
+                  <option value="332">San Pedro de Macorís</option>
+                  <option value="333">San Rafael del Yuma</option>
+                  <option value="334">San Víctor</option>
+                  <option value="335">Sánchez</option>
+                  <option value="336">Santiago</option>
+                  <option value="337">Santo Domingo</option>
+                  <option value="338">Santo Domingo Este</option>
+                  <option value="339">Santo Domingo Norte</option>
+                  <option value="340">Santo Domingo Oeste</option>
+                  <option value="341">Sosúa</option>
+                  <option value="342">Tábara Arriba</option>
+                  <option value="343">Tamayo</option>
+                  <option value="344">Tamboril</option>
+                  <option value="345">Tenares</option>
+                  <option value="346">Vallejuelo</option>
+                  <option value="347">Vicente Noble</option>
+                  <option value="348">Villa Altagracia</option>
+                  <option value="349">Villa González</option>
+                  <option value="350">Villa Hermosa</option>
+                  <option value="351">Villa Isabela</option>
+                  <option value="352">Villa Jaragua</option>
+                  <option value="353">Villa Los Almácigos</option>
+                  <option value="354">Villa Montellano</option>
+                  <option value="355">Villa Riva</option>
+                  <option value="356">Villa Tapia</option>
+                  <option value="357">Villa Vásquez</option>
+                  <option value="358">Yaguate</option>
+                  <option value="359">Yamasá</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_LOCATION}</label>
+              <div class="col-sm-9">
+                {INFO_TEXT_LOCATION1}
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_SALARY}</label>
+              <div class="col-sm-9">
+                <div class="input-group mb-2 mr-sm-2">
+                  {INFO_TEXT_SALARY1}
+                </div>
+              </div>
+            </div>
+
+            <input type="hidden" id="JOB_DEGREE" name="JOB_DEGREE" value="{JOB_DEGREE}">
+
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">Nivel de educación :</label>
+              <div class="col-sm-9">
+                <select name="TR_degree" id="TR_degree" class="form-control required">
+                  <option value="" selected="">Seleccione...</option>
+                  <option value="1">Ninguna</option>
+                  <option value="2">Educación Básica</option>
+                  <option value="3">Bachiller</option>
+                  <option value="4">Diplomados / Certificaciones</option>
+                  <option value="5">Educación Técnica</option>
+                  <option value="6">Estudiante Universitario</option>
+                  <option value="7">Técnico Medio</option>
+                  <option value="8">Licenciatura / Ingeniería</option>
+                  <option value="9">Maestria</option>
+                  <option value="10">Doctorado</option>
+                  <option value="11">Técnico Profesional</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_SKILLS}</label>
+              <div class="col-sm-9">
+                {SELECT_EE}
+            
+              </div>
+            </div>
+            <div class="clear:both"></div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_INDUSTRY_SECTOR}</label>
+              <div class="col-sm-9">
+                {INFO_TEXT_INDUSTRY_SECTOR1}
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_VACANCY_SUMMARY}</label>
+              <div class="col-sm-9">
+                {INFO_TEXT_VACANCY_SUMMARY1}
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_DESCRIPTION}</label>
+              <div class="col-sm-9">
+                {INFO_TEXT_DESCRIPTION1}
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_POST_URL}</label>
+              <div class="col-sm-9">
+                <div class="row">
+                  <div class="col-sm-3">
+                    {INFO_TEXT_POST_URL1}
+                  </div>
+                  <div class="col-sm-6" id="myrow" style="visibility:hidden">
+                    <label>Ingresa URL (enlace):</label>
+                    {SHOW_TEXT_BOX}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="form-group row" id="myrow" style="visibility:hidden">
+    <label for="inputPassword" class="col-sm-3 col-form-label text-right">Enter URL:</label>
+    <div class="col-sm-9">
+      {SHOW_TEXT_BOX}
+    </div>
+  </div> -->
+
+            <div class="form-group row">
+              <label for="resume_will_go" id="myrow2"
+                class="col-sm-3 col-form-label text-right">{INFO_TEXT_APPLICATION_GOTO}</label>
+              <div class="col-sm-9" id="myrow1">
+                {INFO_TEXT_APPLICATION_GOTO1}
+                <small>{INFO_TEXT_APPLICATION_GOTO2}</small>
+              </div>
+            </div>
+
+
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_JOB_TYPE}</label>
+              <div class="col-sm-9">
+                {INFO_TEXT_JOB_TYPE1}
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_EXPERIENCE}</label>
+              <div class="col-sm-9">
+                {INFO_TEXT_EXPERIENCE1}
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_ADVERTISE_DATE}</label>
+              <div class="col-sm-9">
+                <div class="row">
+                  {INFO_TEXT_ADVERTISE_DATE1}
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_ADVERTISE_WEEKS}</label>
+              <div class="col-sm-9">
+                <div class="row">
+                  {INFO_TEXT_ADVERTISE_WEEKS1}
+                </div>
+                <!--row end-->
+              </div>
+              <!--col-sm-9 end-->
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">{INFO_TEXT_JOB_AUTO_RENEW}</label>
+              <div class="col-sm-9">
+                {INFO_TEXT_JOB_AUTO_RENEW1}
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right"></label>
+              <input type="hidden" name="allskill" id="allskill">
+              <input type="hidden" name="allindustry" id="allindustry">
+              <div class="col-sm-9">
+                <p style="text-align: center; font-weight: bold;">Puntajes WaoMatch <button type="button" style="float: right; border: none;">
+                  <svg type="button"  data-toggle="tooltip" data-placement="bottom" title="Aqui tendras la oportunidad de asignar puntajes para esta vacante, basados en tu criterio de importancia. Estos seran utilzados para coincidir y filtrar perfiles adecuados a tu oportunidad." xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                </button></p> 
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">Localización :</label>
+              <div class="col-sm-9">
+                <input type="number" name="puntaje_localizacion" id="puntaje_localizacion" class='form-control' value="{weigth_location}">
+              </div>
+            </div>
+            <input type="hidden" name="job_skills" id="job_skills" value="{JOB_SKILLS}">
+            <input type="hidden" name="job_category22" id="job_category22" value="{JOB_CATEGORY22}">
+            <input type="hidden" name="job_category_array" id="job_category_array" value="{JOB_CATEGORY_ARRAY}">
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">Industria :</label>
+              <div class="col-sm-9">
+                <input type="number" name="puntaje_industria" id="puntaje_industria" class='form-control suma' value="{weigth_industry}">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">Experiencia :</label>
+              <div class="col-sm-9">
+                <input type="number" name="puntaje_experiencia" id="puntaje_experiencia" class='form-control suma' value="{weigth_experience}">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">Habilidades :</label>
+              <div class="col-sm-9">
+                <input type="number" name="puntaje_skill" id="puntaje_skill" class='form-control suma' value="{weigth_skill}">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">Educación :</label>
+              <div class="col-sm-9">
+                <input type="number" name="puntaje_education" id="puntaje_education" class='form-control suma' value="{weigth_job_type}">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">Total :</label>
+              <div class="col-sm-9">
+                <input type="number" name="" id="total_puntaje" class='form-control suma' disabled>
+              </div>
+            </div>
+
+            {JOBFAIR_TEXT}
+
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-right">&nbsp;</label>
+              <div class="col-sm-9">
+                {buttons}
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+{FOOTER_HTML}
+
+<script>
+
+  document.getElementById("TR_degree").value = document.getElementById("JOB_DEGREE").value; 
+  console.log(document.getElementById("job_category22").value); 
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+
+    var edit_skill2 = [];
+    var edit_industry_array2 = [];
+    var skills_string = document.getElementById("job_skills").value;
+    var edit_skill = skills_string.split(',');
+    edit_skill.pop();
+
+    var industry_string = document.getElementById("job_category_array").value;
+    var edit_industry_array = industry_string.split(',');
+    edit_industry_array.pop();
+
+    var industry_id = document.getElementById("job_category22").value;
+    var edit_industry_array_id = industry_id.split(',');
+    //edit_industry_array_id.pop();
+
+    console.log( "===>" , edit_industry_array_id);
+
+    edit_skill.forEach(function callback(value, index){
+      edit_skill2.push([value]);
+    })
+
+    edit_industry_array.forEach(function callback(value, index){
+      edit_industry_array2.push(value);
+    })
+
+
+    $('#skills').val(['Adobe Illustrator','Capacidad de adaptación']);
+  
+    var category_string = document.getElementById("job_category22").value;
+    var edit_skills = skills_string.split(',');
+    edit_skills.pop();
+    $('#skills').val(edit_skills);
+
+    var puntaje_localizacion = $("#puntaje_localizacion").val();
+    var puntaje_industria = $("#puntaje_industria").val();
+    var puntaje_experiencia = $("#puntaje_experiencia").val();
+    var puntaje_education = $("#puntaje_education").val();
+    var puntaje_skill = $("#puntaje_skill").val();
+
+    $("#puntaje_localizacion").change(res => {
+      puntaje_localizacion = $("#puntaje_localizacion").val();
+    });
+    $("#puntaje_industria").change( res => {
+      puntaje_industria = $("#puntaje_industria").val();
+    });
+    $("#puntaje_experiencia").change( res => {
+      puntaje_experiencia = $("#puntaje_experiencia").val();
+    });
+    $("#puntaje_skill").change( res => {
+      puntaje_skill = $("#puntaje_skill").val();
+    });
+    $("#puntaje_education").change( res => {
+      puntaje_education = $("#puntajepuntaje_education_skill").val();
+    });
+    $("#puntaje_education").change( res => {
+      puntaje_education = $("#puntaje_education").val();
+      var total_puntaje = parseInt(puntaje_localizacion) + parseInt(puntaje_industria) + parseInt(puntaje_experiencia) + parseInt(puntaje_education) + parseInt(puntaje_skill); 
+      if (total_puntaje != 100) {
+        alert('El puntaje Wao tiene que tener 100 puntos');
+      }
+      $("#total_puntaje").val(total_puntaje); 
+    });
+
+    $(".suma").change( res => {
+      puntaje_education = $("#puntaje_education").val();
+      var total_puntaje = parseInt(puntaje_localizacion) + parseInt(puntaje_industria) + parseInt(puntaje_experiencia) + parseInt(puntaje_education) + parseInt(puntaje_skill); 
+    
+      $("#total_puntaje").val(total_puntaje); 
+    });
+
+    
+
+});
+
+
+		
+	
+
+</script>

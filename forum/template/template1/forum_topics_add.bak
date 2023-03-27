@@ -1,0 +1,77 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}{INFO_TEXT_JSCRIPT_FILE}
+<tr>
+	<td valign="top">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+      <td class="heading_bar_internal">
+       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         <td width="15" valign="middle"><img src="../img/red_bullet_internal.gif" width="9" height="8" alt="red_bullet"></td>
+          <td valign="middle" class="heading_bar_internal_content">{HEADING_TITLE}</td>
+          <td valign="middle"width="10%" align="right" class="heading_bar_internal_content">{INFO_TEXT_HEADING_SEARCH}</td>
+         </tr>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td class="block_with_heading_bar">
+       <!---->
+       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         <td>
+          <table width="100%"  border="0" cellpadding="0" cellspacing="1" >
+           <tr>
+            <td > 
+             <table width="100%"  border="0" cellpadding="0" cellspacing="10" style="border:1px solid #d7d7d7;" >
+             <tr>
+              <td class="forum_sub_heading">{forum_title}</td>
+             </tr>
+             <tr>
+              <td class="forum_sub_heading">{INFO_TEXT_FORUM_HEADER_LINK}</td>
+             </tr>
+             </table> 
+														
+             <br>{update_message}
+             <table width="100%"  border="0" cellpadding="4" cellspacing="1" >
+              <tr valign="top" >
+               <td colspan="3" style="border:1px solid #d7d7d7" class="">
+               <table width="100%" border="0" align="center" cellpadding="4" cellspacing="0">
+               {form}
+                <tr> 
+                 <td class="label" align="right">{INFO_TEXT_TITLE}</td>
+                 <td>{INFO_TEXT_TITLE1}</td>
+                </tr>
+                <tr> 
+                 <td class="label" align="right">{INFO_TEXT_DESCRIPTION}</td>
+                 <td>{INFO_TEXT_DESCRIPTION1}</td>
+                </tr>
+                <tr>
+                 <td>&nbsp;</td>
+                 <td align="left">{button}</td>
+                </tr> </form>              
+                </td>
+               </tr>
+               </table>
+               </td>
+              </tr>
+             </table>
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+        <tr>
+          <td></td>
+          </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+       </table>
+       <!---->
+      </td>
+     </tr>
+  </table>
+ </td>
+</tr>
+{FOOTER_HTML}

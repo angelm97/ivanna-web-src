@@ -1,0 +1,129 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML} 
+
+<div class="container theme9-bg-white">
+<div class="row px-3 pt-1 pb-5">
+<div class="col-md-3 for-mobile pr-0">
+
+{INFO_JOBSEEKER_LOGIN_BOX}
+
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item nav-item2" role="presentation">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">category</a>
+  </li>
+  <li class="nav-item nav-item2" role="presentation">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">company</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" style="opacity:1;" id="home" role="tabpanel" aria-labelledby="home-tab">
+	<div class="card theme9-card">
+		<div class="card-body" style="font-size: 14px;">
+	{JOB_CATEGORY}
+		</div>
+	</div>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+	<div class="card theme9-card">
+		<div class="card-body" style="font-size: 14px;">
+	{JOB_COMPANY}
+		</div>
+	</div>	
+  </div>
+</div>
+
+<div class="card mt-3 theme9-card">
+  <h5 class="card-header theme9-card-header pt-4">Career articles</h5>
+  <div class="card-body pt-0 pb-0">
+    {ARTICLE}
+  </div>
+</div>
+
+
+<div class="card mt-3 for-mobile theme9-card">
+  <h5 class="card-header theme9-card-header pt-4">Create job alert</h5>
+  <div class="card-body pt-0">
+    <p class="card-text">Get daily emails with jobs that match your sector</p>
+    {JOB_ALERT}
+  </div>
+</div>
+
+</div>
+
+
+<div class="col-md-9">
+<div class="card mt-3 theme9-card">
+	<div class="card-header theme9-card-header">
+		<h5 class="float-left mt-1" style="font-size:1.2rem;">Recent Jobs</h5>
+		<div class="float-right text-right mobile-float-left theme9-sub-header">
+		<span class="badge badge-secondary py-2 px-3 mobile-margin-bottom">Search by</span><i class="fa fa-caret-right mr-2" aria-hidden="true" style="margin: 0 0 0 -1px;color: #6c757d;"></i>
+		{JOB_SEARCH} <span class="float-right">{searchform}</span>
+		</div>
+	</div> 
+
+  <div class="card-body">
+  <!-- BEGIN latest_jobs -->
+    <div class="media mb-4">
+	  {latest_jobs.logo}
+	  <div class="media-body">
+		<h6 class="mt-0">{latest_jobs.title}</h6>
+		<div class="">{latest_jobs.company}</div>
+		<div class="">{latest_jobs.location}</div>
+		<div class="for-mobile">{latest_jobs.summary}</div>
+	  </div>
+	</div>
+	<!-- END latest_jobs -->
+  </div>
+  <div class="card-footer bg-white text-center">{ALL_JOBS}</div>
+</div>
+
+<div class="card mt-3 theme9-card">
+  <h5 class="card-header theme9-card-header pt-4">Featured employer</h5>
+  <div class="card-body pt-0">
+	<!-- BEGIN featured -->
+    {featured.emp1} {featured.emp2} {featured.emp3} {featured.emp4} {featured.emp5} {featured.emp6} {featured.emp7} {featured.emp9} {featured.emp10}
+	<!-- END featured -->
+  </div>
+</div>
+
+<div class="row mt-3 for-mobile">
+<div class="col-md-4 pr-0">
+<div class="card theme9-card">
+  {jobseeker_pic}
+  <div class="card-body pt-0">
+    <h5 class="card-title theme9-card-title mt-4">Job Seeker</h5>
+    <p class="card-text">You are never too late to set another goal or to dream a new dream.</p>
+    {JOBSEEKER_REGISTER}
+  </div>
+</div>
+</div>
+
+<div class="col-md-4 pr-0">
+<div class="card theme9-card">
+  {employer_pic}
+  <div class="card-body pt-0">
+    <h5 class="card-title theme9-card-title mt-4">Employer</h5>
+    <p class="card-text">Best companies win with the best talent and great people are hard to find.</p>
+    {EMPLOYER_REGISTER}
+  </div>
+</div>
+</div>
+
+<div class="col-md-4 pr-0">
+<div class="card theme9-card">
+  {advertiser_pic}
+  <div class="card-body pt-0">
+    <h5 class="card-title theme9-card-title mt-4">Advertise</h5>
+    <p class="card-text">Do not be satisfied with current level, take your product to the next level.</p>
+    {CONTACT_US}
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+{FOOTER_HTML}

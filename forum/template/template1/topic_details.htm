@@ -1,0 +1,93 @@
+<title>{page_title}</title>
+<META NAME="Keywords" CONTENT=" {meta_title}">
+<meta NAME="Description" CONTENT=" {meta_description} ">
+
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<!--below script for auto disclose message -->
+<script>
+	window.setTimeout(function() {
+	   $(".alert").fadeTo(500, 0).slideUp(500, function(){
+		   $(this).remove(); 
+	   });
+   }, 4000);
+</script>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+		{update_message}
+			<div class="card">
+				<div class="card-header">
+					<span class="heading_bar_internal_content">
+						<h1 class="display-6 p-0 m-0 float-left">{HEADING_TITLE}</h1>
+					</span>
+					
+					<div class="float-right">
+						{INFO_TEXT_HEADING_SEARCH}
+					</div>
+				</div>
+				
+				<div class="card-header">
+					<span class="heading_bar_internal_content">
+						<div class="float-left">{INFO_TEXT_FORUM_HEADER_LINK}</div>
+					</span>
+					
+					<div class="float-right">
+						{new_button}
+					</div>
+				</div>				
+
+				<div class="card-header">
+					<span class="heading_bar_internal_content">
+					<h1 class="display-6 p-0 m-0 float-left">{form} {topic_title}</h1>
+					</span>
+					
+					<div class="float-right text-right">
+						{total} {list_page} {page}
+					</div>
+				</div>	
+
+				
+				<div class="card-body">
+				
+				<div class="card mb-3 bg-info-light">
+					<div class="card-header bg-info-light">
+					<div class="float-left font-weight-bold text-default"><i class="fa fa-user user-icon-rounded mr-2" aria-hidden="true"></i> {topic_author} <i class="fa fa-calendar ml-3" aria-hidden="true"></i> {topic_posted}</div>
+					</div>
+					<div class="card-body">
+					<h6 class="forum_sub_heading2">{topic_title}</h6>
+					<p>{topic_description}</p>
+					</div>
+				</div>
+				
+				<!-- BEGIN topic -->
+				<div class="card mb-3 bg-warning-light">
+					<div class="card-header bg-warning-light">
+					<div class="float-left font-weight-bold"><i class="fa fa-user user-icon-rounded-reply mr-2" aria-hidden="true"></i> {topic.author} <i class="fa fa-calendar ml-3" aria-hidden="true"></i> {topic.last_post}</div>
+					<div class="float-right text-right font-weight-bold">{topic.reply_no}</div>
+					</div>
+					<div class="card-body">
+					<p>{topic.desc}</p>
+					</div>
+				</div>				
+				<!-- END topic -->
+				
+				
+
+					
+					
+
+					
+				</div>
+				
+				<div class="card-footer">{total} {list_page} {page}</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{FOOTER_HTML}

@@ -1,0 +1,56 @@
+CREATE TABLE `search_resume_result` (
+  `id` int(11) NOT NULL,
+  `recruiter_id` int(11) NOT NULL DEFAULT 0,
+  `title_name` varchar(64) NOT NULL DEFAULT '',
+  `program` varchar(5) NOT NULL DEFAULT '',
+  `institution` varchar(5) NOT NULL DEFAULT 'Yes',
+  `course` varchar(5) NOT NULL DEFAULT '',
+  `specialization` varchar(5) DEFAULT NULL,
+  `percentage_10` int(11) NOT NULL,
+  `percentage_12` int(11) NOT NULL,
+  `percentage_degree` int(11) NOT NULL,
+  `percentage_masters` int(11) NOT NULL,
+  `job_type` varchar(5) NOT NULL DEFAULT '',
+  `year_passing` varchar(64) NOT NULL DEFAULT '',
+  `city` varchar(32) NOT NULL DEFAULT '',
+  `date_joining` date NOT NULL,
+  `industry_sector` varchar(255) NOT NULL DEFAULT '',
+  `language` varchar(64) NOT NULL DEFAULT '',
+  `experience` varchar(20) NOT NULL DEFAULT '',
+  `inserted` datetime NOT NULL,
+  `updated` datetime DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 PACK_KEYS=0;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `search_resume_result`
+--
+ALTER TABLE `search_resume_result`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `search_resume_result`
+--
+ALTER TABLE `search_resume_result`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+
+Remove 2 fields year_passing and date_joining
+
+ALTER TABLE `search_resume_result` ADD `join_month` SMALLINT(2) NOT NULL AFTER `experience`, ADD `join_year` SMALLINT(4) NOT NULL AFTER `join_month`, ADD `pass_month` SMALLINT(2) NOT NULL AFTER `join_year`, ADD `pass_year` SMALLINT(4) NOT NULL AFTER `pass_month`;
+ALTER TABLE `search_resume_result` ADD `immediately` ENUM('Yes','No') NOT NULL DEFAULT 'No' AFTER `pass_year`;
+
+
+
+
+ALTER TABLE `jobs` ADD `join_month` SMALLINT(2) NOT NULL AFTER `imp_note`, ADD `join_year` SMALLINT(4) NOT NULL AFTER `join_month`;
+
+ALTER TABLE `jobs` ADD `immediately` ENUM('Yes','No') NOT NULL DEFAULT 'No' AFTER `join_year`;

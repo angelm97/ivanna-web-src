@@ -1,0 +1,39 @@
+.toggleButton input[type=checkbox] {
+	display: none;
+}
+
+.toggleButton label {
+	background-color: #777;
+	border: 2px solid #555;
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: all ease-in-out 0.3s;
+	width: 77px;
+	height: 25px;
+}
+
+.toggleButton label::after {
+	background-color: #555;
+	border-radius: 50%;
+	content: ' ';
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	transition: all ease-in-out 0.3s;
+	width: 17px;
+	height: 17px;
+}
+
+.toggleButton input[type=checkbox]:checked ~ label {
+	background-color: #ecf2f5;
+	border-color: #006dc9;
+}
+
+.toggleButton input[type=checkbox]:checked ~ label::after {
+	background-color: #0054B0;
+	transform: translateX(50px);
+}

@@ -1,0 +1,25 @@
+[27-Nov-2020 03:42:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function tep_draw_hidden_fields() in E:\xampp\htdocs\jobboard7bs\jobseeker_control_panel.php:143
+Stack trace:
+#0 {main}
+  thrown in E:\xampp\htdocs\jobboard7bs\jobseeker_control_panel.php on line 143
+[08-Jan-2021 04:37:54 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in E:\xampp\htdocs\jobboard7bs\themes\theme1\header_middle.php on line 29
+[23-Mar-2021 03:11:42 Europe/Berlin] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\xampp\htdocs\jobboard7bs\class\order.php on line 167
+[23-Mar-2021 03:14:19 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$tax' (T_VARIABLE) in E:\xampp\htdocs\jobboard7bs\class\order.php on line 167
+[23-Mar-2021 05:25:36 Europe/Berlin] PHP Parse error:  syntax error, unexpected '.' in E:\xampp\htdocs\jobboard7bs\class\order.php on line 186
+[23-Mar-2021 05:29:03 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')' in E:\xampp\htdocs\jobboard7bs\class\order.php on line 253
+[23-Mar-2021 05:29:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function format() in E:\xampp\htdocs\jobboard7bs\class\order.php:253
+Stack trace:
+#0 E:\xampp\htdocs\jobboard7bs\class\order.php(26): order->cart()
+#1 E:\xampp\htdocs\jobboard7bs\checkout_payment.php(107): order->__construct()
+#2 {main}
+  thrown in E:\xampp\htdocs\jobboard7bs\class\order.php on line 253
+[23-Mar-2021 05:30:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function format() in E:\xampp\htdocs\jobboard7bs\class\order.php:253
+Stack trace:
+#0 E:\xampp\htdocs\jobboard7bs\class\order.php(26): order->cart()
+#1 E:\xampp\htdocs\jobboard7bs\checkout_payment.php(107): order->__construct()
+#2 {main}
+  thrown in E:\xampp\htdocs\jobboard7bs\class\order.php on line 253
+[28-Apr-2021 14:25:49 UTC] PHP Parse error:  syntax error, unexpected '--' (T_DEC) in /home/jbbh41cpatco/public_html/language/spanish.php on line 109
+[28-Apr-2021 14:49:30 UTC] PHP Parse error:  syntax error, unexpected '--' (T_DEC) in /home/jbbh41cpatco/public_html/language/spanish.php on line 109
+[28-Apr-2021 14:49:37 UTC] PHP Parse error:  syntax error, unexpected '--' (T_DEC) in /home/jbbh41cpatco/public_html/language/spanish.php on line 109
+[28-Apr-2021 14:49:40 UTC] PHP Parse error:  syntax error, unexpected '--' (T_DEC) in /home/jbbh41cpatco/public_html/language/spanish.php on line 109

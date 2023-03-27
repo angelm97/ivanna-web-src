@@ -1,0 +1,179 @@
+{ADMIN_HEADER_HTML}
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function CheckForm()
+{
+	var check;
+ check=false;
+	for (var i=0;i< document.site_map_ping.elements.length;i++)
+ {
+ 	var e = site_map_ping.elements[i];
+		if((e.checked) == true)
+		{
+  	check=true;
+    if(e.value=='yahoo'&& site_map_ping.elements[i+1].value=='')
+   {
+    alert("Please enter Yahoo Application ID.");
+    return false;
+   }
+  }
+ }
+ if(check)
+ {
+  return true;
+ }
+ else
+ {
+ 	alert('Please check atleast one checkbox.');
+  return false;
+ }
+}
+//-->
+</SCRIPT>
+<!-- Left Starts -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="{LEFT_BOX_WIDTH}" valign="top">
+   <table border="0" width="{LEFT_BOX_WIDTH}" cellspacing="0" cellpadding="0">
+    <tr>
+     <td valign="top">
+      <div class="admin-left-nav">{LEFT_HTML}</div>
+     </td>
+    </tr>
+   </table>
+  </td>
+<!-- Left Ends -->        
+<!-- Middle Starts -->
+  <td width="100%" valign="top">
+   <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-outer-table">
+    <tr>
+     <td>
+	 
+	 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td><div class="admin-page-heading"><i class="fa fa-sitemap fa-admin-icons" aria-hidden="true"></i> {HEADING_TITLE}</div></td>
+       </tr>
+	   <tr>
+        <td>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="top-select-bar">
+		  <tr>
+		  <td align="left">{UPDATE_SITEMAP_BUTTON}</td>
+			<td align="right">{new_button}</td>
+			
+		  </tr>
+		</table>
+		</td>
+       </tr>
+      </table>
+	  
+	  
+      
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">{update_message}<br>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="admin-main-data-table">
+       <tr>
+        <td valign="top">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="admin-second-data-table">
+          <tr class="admin-table-head-bar">
+           <td>{TABLE_HEADING_SITE_MAP_TITLE}</td>
+           <td>{TABLE_HEADING_PRIORITY}</td>
+           <td>{TABLE_HEADING_SITE_MAP_STATUS}</td>
+           <td>{TABLE_HEADING_ACTION}&nbsp;</td>
+          </tr>
+          <!-- BEGIN site_map -->
+          <tr{site_map.row_selected}>
+           <td>{site_map.name}</td>
+           <td>{site_map.priority}</td>
+           <td>{site_map.status}</td>
+           <td>{site_map.action}</td>
+          </tr>
+          <!-- END site_map -->
+         </table>
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" class="bottom-select-bar">
+            <tr>
+             <td align="left">{count_rows}</td>
+             <td align="right">{no_of_pages}</td>
+            </tr>
+        </table>
+		
+         <table border="0" width="100%" cellspacing="0" cellpadding="2" class="show_page">
+          <tr>
+           <td class="small"><br>
+            <table border="0" width="100%" cellspacing="0" cellpadding="2" class="show_page">
+             <tr>{generate_form}
+               <td bgcolor="#fcf8e3" colspan="2"><b>Generate Site Map :</b> <span >(for submission)</span></td>
+             </tr>
+             <tr class="dataTableRow2">
+              <td valign="top" class="dataTableContent">Your sitemap file name </td>
+              <td valign="top" class="dataTableContent">{INFO_TEXT_FILE_NAME}{INFO_TEXT_FILE_TYPE}<br><input type="submit" value="submit"><br></td>
+             </tr></form>
+             <tr class="dataTableRow2">
+              <td class="small" colspan="2" align="right"><font color="#ff0000">file name accept only the characters   "a-z" , "0-9" , "_" and "-"</font></td>
+             </tr>
+             </table><br>
+            <table border="0" width="100%" cellspacing="0" cellpadding="2" class="show_page">
+             <tr>
+               <td bgcolor="#fcf8e3"><b>Status :</b></td>
+             </tr>
+             <!-- BEGIN site_map_status -->
+             <tr {site_map_status.row_selected}>
+              <td valign="top" class="dataTableContent"><li>{site_map_status.file_status}</li></td>
+             </tr>
+             <!-- END site_map_status -->
+             <tr class="dataTableRow2">
+              <td class="small" colspan="2" align="right">&nbsp;</td>
+             </tr>
+             </table><br>
+             <table border="0" width="100%" cellspacing="2" cellpadding="2" class="show_page">
+             <tr>{site_map_ping_form}
+               <td bgcolor="#fcf8e3" colspan="2"><b>Sitemap submission</b></td>
+             </tr>
+             <tr class="dataTableRow2">
+              <td valign="top" class="dataTableContent" valign="top" width="65px"><nobr>{INFO_CHECKBOX_PING_GOOGLE} <label for='ping_google'>Google</label></nobr></td>
+              <td valign="top" class="dataTableContent">Notify Google about updates of your site map.<br> No registration required, but you can join the <a href="http://www.google.com/webmasters/tools/" target="_blank" style="color:blue">Google Webmaster Tools</a> to check crawling statistics</td>
+             </tr>
+             <tr class="dataTableRow1">
+              <td valign="top" class="dataTableContent" valign="top">{INFO_CHECKBOX_PING_MSN} <label for='ping_msn'>MSN</label></td>
+              <td valign="top" class="dataTableContent">Notify MSN Live Search about updates of your site map.<br> No registration required, but you can join the <a href="http://webmaster.live.com/" target="_blank" style="color:blue">MSN Live Webmaster Tools</a> to check </td>
+             </tr>
+             <tr class="dataTableRow2">
+              <td valign="top" class="dataTableContent">{INFO_CHECKBOX_PING_ASK} <label for='ping_ask'>Ask.com</label></td>
+              <td valign="top" class="dataTableContent">Notify Ask.com about updates of your site map.<br> No registration required. </td>
+             </tr>
+             <tr class="dataTableRow1">
+              <td valign="top" class="dataTableContent">{INFO_CHECKBOX_PING_YAHOO} <label for='ping_yahoo'>Yahoo!</label></td>
+              <td valign="top" class="dataTableContent">Notify YAHOO about updates of your site map.<br>Your Application ID: {INFO_TEXT_YAHOO_APPID}<br><br> Don't you have such a key? <a href="https://developer.yahoo.com/wsregapp/?wsydn_authtype=gen&wsydn_product_name=Sitemaps Ping&wsydn_application_description=Used to send ping requests for the XML sitemaps program" target="_blank" style="color:blue">Request one here!</a> (<a href="http://developer.yahoo.net/about/" target="_blank">Web Services by Yahoo!</a>) </td>
+             </tr>
+             <tr class="dataTableRow2">
+              <td valign="top" class="dataTableContent">{INFO_CHECKBOX_PING_BING} <label for='ping_bing'>Bing</label></td>
+              <td valign="top" class="dataTableContent">Notify Bing.com about updates of your site map.<br> No registration required. </td>
+             </tr>
+             <tr>
+              <td class="small" colspan="2"><input type="submit" value="resubmit the sitemap"></td>
+            </tr></form>
+            </table>
+           </td>
+          </tr>
+         </table>
+   					</td>
+       </tr>
+      </table>
+     </td>
+<!-- Middle Ends -->
+<!-- Right Starts -->
+     <td width="{RIGHT_BOX_WIDTH}" valign="top">
+      <table border="0" width="{RIGHT_BOX_WIDTH}" cellspacing="0" cellpadding="0" id="admin-right-table2">
+       <tr>
+        <td valign="top">{ADMIN_RIGHT_HTML}</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- Right Ends -->
+{ADMIN_FOOTER_HTML}

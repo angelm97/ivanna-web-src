@@ -1,0 +1,248 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<SCRIPT LANGUAGE="JavaScript">
+function popUp(URL) 
+{
+ day = new Date();
+ id = day.getTime();
+ eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=700,height=400,left = 0,top = 0');");
+}
+function set_action(application)
+{
+ document.page.application_id.value=application;
+ {lower_value}
+ {higher_value}
+ document.page.submit();
+}
+function set_action1(application,action)
+{
+ if(application!='' && action!='') 
+ {
+   if(action=='applicant_confirm_delete')
+   {
+    var check= confirm("Warning: All the data of this applicant will also be deleted.");
+    if(check==true)
+    {
+     document.page.application_id.value=application;
+     document.page.action1.value=action;
+     {lower_value}
+     {higher_value}
+     document.page.submit();
+    }
+   }
+   else
+   {
+    document.page.application_id.value=application;
+    document.page.action1.value=action;
+    {lower_value}
+    {higher_value}
+    document.page.submit();
+   }
+  }
+}
+function view_status(round1)
+{
+ document.page.process_round.options[document.page.process_round.selectedIndex].value=round1;
+ document.page.submit();
+}
+
+function select_action1()
+{
+ if(document.page.quick_action.options[document.page.quick_action.selectedIndex].value=="send_bulk_mail") 
+ {
+  document.page.action1.value='send_bulk_mail';
+  document.page.submit();
+ }
+ else
+ return false;
+}
+function select_action2()
+{
+	var check;
+	var j=0;
+ check=false;
+	for (var i=0;i < document.page.elements.length;i++)
+	{
+		var e = document.page.elements[i];
+		if(e.type == "checkbox")
+		{
+			if((e.checked) == true)
+			{
+   	check=true;
+    if(document.page.select_action.options[document.page.select_action.selectedIndex].value=="compair_profile") 
+    {
+     j=j+1;
+     if(j==3)
+				  break;
+    }
+    else
+				break;
+			}
+		}
+	}
+ if(document.page.select_action.options[document.page.select_action.selectedIndex].value=="compair_profile") 
+ {
+  if(j<2)
+   alert('Please check two checkbox.');
+  else if(j>2)
+   alert('Please check two checkbox.');
+   if(j==2)
+   {
+    document.page.action1.value='compair_profile';
+    document.page.submit();
+   }
+	 document.page.select_action.value='';
+  
+ }
+	else if(check)
+	{
+  if(document.page.select_action.options[document.page.select_action.selectedIndex].value=="send_mail") 
+  {
+   document.page.action1.value='send_mail';
+   document.page.submit();
+  }
+  else
+  {
+   return false;
+  }
+ }
+ else
+	{
+	 document.page.select_action.value='';
+  alert('Please check atleast one checkbox.');
+	}
+}
+</script>
+<style>
+input[type="checkbox"]{
+    background: transparent;
+    border-radius: 1px;
+    box-sizing: border-box;
+    position: relative;
+    box-sizing: content-box;
+    width: 16px;
+    height: 16px;
+    border-width: 0;
+    margin:  0;
+    transition: all .3s linear;
+    border: 1px solid #a8a8a8;
+    display: -webkit-inline-box;
+}
+</style>
+<!-- Below Script for auto close -->
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container-fluid">
+    <div class="row">
+	
+		<div class="col-md-2 small-font">
+		<div class="list-group mb-4">
+		  <button type="button" class="list-group-item list-group-item-action info-bg font-weight-bold">
+			<!--{INFO_TEXT_JOB_TITLE}-->{INFO_TEXT_JOB_TITLE1}
+		  </button>
+		  <div>{INFO_TEXT_ALL_APPLICANT}</div>
+		  <div>{INFO_TEXT_SELECTED_APPLICANT}</div>
+		  <div>{INFO_TEXT_SEARCH_APPLICANT}</div>
+		  <div>{INFO_TEXT_JOB_DETAIL}</div>
+		  <div>{INFO_TEXT_ADD_APPLICANT}</div>
+		</div>
+		
+		<div class="list-group mb-4">
+		  <button type="button" class="list-group-item list-group-item-action info-bg font-weight-bold">
+			{INFO_TEXT_REPORTS}
+		  </button>
+			<div>{INFO_TEXT_REPORT_PIPELINE}</div>
+			<div>{INFO_TEXT_REPORT_ROUNDWISE}</div>
+			<div>{INFO_TEXT_REPORT_ROUNDWISE_SUMMARY}</div>
+			<div>{INFO_TEXT_VIEW_DATE_REPORT}</div>
+		</div>
+		</div>
+		
+		
+		
+        <div class="col-md-8">
+		<!-- Below Alert message File path is class/message_stack.php -->
+		{update_message}
+            <div class="card card-custom">
+                <div class="card-header card-header-custom">
+                    <h1 class="display-6 p-0 m-0">{HEADING_TITLE}</h1>
+                </div>
+                <div class="card-body card-body-custom">
+				
+					<form name="page" method="post" >
+					<div class="card">
+					  
+					  <div class="card-body pt-2 pb-3">
+					  <div class="form-row">
+					  <div class="col-md-12 font-weight-bold mb-2"><span class="badge badge-secondary">{HEADING_TITLE_SEARCH}</span></div>
+						<div class="col-md-6">
+						  <label for="validationCustom01">{INFO_TEXT_TRACKING_ROUND}</label>
+						  {INFO_TEXT_TRACKING_ROUND1}
+						</div>
+						<div class="col-md-6">
+						  <label for="validationCustom02">{INFO_TEXT_APPLICATION_STATUS}</label>
+						   {INFO_TEXT_APPLICATION_STATUS1}
+						</div>
+						</div>
+						</div>
+					  </div>
+					
+					<div>{check_link1}</div>
+				<div style="font-size:12px;margin:12px 0 7px 0;">{display_search_key} {check_link}</div>
+					<!-- BEGIN jobs -->	 
+				<div class="" {jobs.row_selected}>	
+				<div class="card card-hover mb-3">
+				  <div class="card-header" {jobs.row_color}>
+					<span>{jobs.check_box}</span>
+					<span class="ml-2">{jobs.applicant_selected}</span>
+					<span class="font-weight-bold mr-3">{jobs.name}</span>
+					<span class="mr-3 small">[{jobs.application_id}]</span>
+					<span class="float-right">{jobs.action}</span>
+					<span class="float-right mr-5 small">{INFO_TEXT_RESUME_MATCH} : {jobs.match} </span>
+				  </div>
+				  <div class="card-body">
+					<div class="media">
+					{jobs.photo}
+					  <div class="media-body" {jobs.row_selected1}>
+						<div>{jobs.company_name}</div>
+						<div>{jobs.job_title}</div>
+						<div>{jobs.location}</div>
+						<div>{jobs.education}</div>
+						<div class="mb-2">{jobs.experience}</div>
+						<span class="badge badge-outline mr-2">{INFO_TEXT_SOURCE}: {jobs.source}</span>
+						<span class="badge badge-outline mr-2">{INFO_TEXT_APPLIED_ON} {jobs.inserted}</span>
+						<div class="small text-success font-weight-bold my-1">{INFO_TEXT_TRACKING_ROUND}</div>
+						<span class="badge badge-outline">{jobs.round}</span>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				</div>		   
+				<!-- END jobs -->
+				<div class="small text-muted">{total}</div>
+				{list_page}&nbsp;{page}
+				{hidden_fields}
+				</form>									   
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-2 small-font">
+			{RIGHT_HTML}
+		</div>
+	</div>
+</div>
+
+{FOOTER_HTML}

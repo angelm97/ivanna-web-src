@@ -1,0 +1,113 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<!-- Below Script for auto close -->
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 mx-auto">
+		<!-- Below Alert message File path is class/message_stack.php -->
+		{update_message}
+            <div class="card card-custom">
+                <div class="card-header card-header-custom">
+                    <h1 class="display-6 p-0 m-0 float-left">{HEADING_TITLE}</h1>
+					<div class="btn-group float-right">{different_jobs}<a class="btn btn-secondary" href="javascript:history.back();"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></div>
+				</div>
+                <div class="card-body card-body-custom p-0">
+				
+         <table class="table table-hover">
+          <tr>
+           <td valign="top">
+           {preview_job_form}
+           <table border="0" width="100%" align="center" cellspacing="0" cellpadding="5">
+             <tr>
+              <td width="30%" class="label" align="left">{INFO_TEXT_JOB_TITLE}</td>
+              <td width="70%">{INFO_TEXT_JOB_TITLE1}</td>
+             </tr>          
+             <tr>
+              <td class="label" align="left">{INFO_TEXT_JOB_REF}</td>
+              <td>{INFO_TEXT_JOB_REF1}</td>
+             </tr>
+             <tr>
+              <td class="label" align="left">{INFO_TEXT_COUNTRY}</td>
+              <td>{INFO_TEXT_COUNTRY1}</td>
+             </tr>
+             <!-- <tr>
+              <td class="label" align="right">{INFO_TEXT_STATE}</td>
+              <td>{INFO_TEXT_STATE1}</td>
+             </tr> -->
+             <tr>
+              <td class="label" align="left">{INFO_TEXT_LOCATION}</td>
+              <td>{INFO_TEXT_LOCATION1}</td>
+             </tr>
+             <tr>
+              <td class="label" align="left">{INFO_TEXT_SALARY}</td>
+              <td>{INFO_TEXT_SALARY1}</td>
+             </tr>
+             <tr>
+              <td class="label" align="left">{INFO_TEXT_INDUSTRY_SECTOR}</td>
+              <td>{INFO_TEXT_INDUSTRY_SECTOR1}</td>                
+             </tr>
+             </tr>
+			 <tr>
+              <td  class="label"  align="left" valign="top">{INFO_TEXT_JOB_SKILLS}</td>
+              <td>{INFO_TEXT_JOB_SKILLS1}</td>
+             </tr>
+             <tr>
+              <td  class="label"  align="left" valign="top">{INFO_TEXT_VACANCY_SUMMARY}</td>
+              <td>{INFO_TEXT_VACANCY_SUMMARY1}</td>
+             </tr>
+             <tr>
+              <td class="label" align="left" valign="top">{INFO_TEXT_DESCRIPTION}</td>
+              <td>{INFO_TEXT_DESCRIPTION1}</div></td>
+             </tr>
+             <tr>
+              <td width="28%" class="label" align="left">{INFO_TEXT_APPLICATION_GOTO}</td>
+              <td>{INFO_TEXT_APPLICATION_GOTO1}</td>
+             </tr>
+             <tr>
+              <td class="label" align="left">{INFO_TEXT_JOB_TYPE}</td>
+              <td>{INFO_TEXT_JOB_TYPE1}</td>
+             </tr>
+             <tr>
+              <td class="label" align="left">{INFO_TEXT_EXPERIENCE}</td>
+              <td>{INFO_TEXT_EXPERIENCE1}</td>
+             </tr>
+             <tr>
+              <td class="label" align="left">{INFO_TEXT_VACANCY_ADDED_ON}</td>
+              <td>{INFO_TEXT_VACANCY_ADDED_ON1}</td>
+             </tr>
+              <tr>
+              <td class="label" align="left">{INFO_TEXT_VACANCY_EXPIRED}</td>
+              <td>{INFO_TEXT_VACANCY_EXPIRED1}</td>
+             </tr>
+			 {INFO_TEXT_JOB_AUTO_RENEW1}
+              <tr>
+              <td class="label" align="left">{INFO_TEXT_POSTED_JOBFAIR}</td>
+              <td>{INFO_TEXT_POSTED_JOBFAIR1}</td>
+             </tr>
+             </table>
+            </form>
+           </td>
+          </tr>
+         </table>
+        
+<!-- Middle Ends -->
+   </div>
+            </div>
+        </div>
+    </div>
+</div>
+{FOOTER_HTML}

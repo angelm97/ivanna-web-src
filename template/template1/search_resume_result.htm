@@ -1,0 +1,203 @@
+{HEADER_HTML}
+{HEADER_MIDDLE_HTML}
+<SCRIPT LANGUAGE="JavaScript">
+function popUp(URL) 
+{
+ day = new Date();
+ id = day.getTime();
+ eval("page" + id + " = window.open(URL, '" + id + "','toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=300,height=300,left = 0,top = 0');");
+}
+ var ajaxurl='{HOST_NAME}ajax/search_resume.php'
+</script>
+
+<script src="{HOST_NAME}jscript/resume_pagination.js"></script>
+{MAP_JAVA_SCRIPT_LINK}
+<script src="{HOST_NAME}jscript/map.js"></script>
+<style>
+#map-canvas
+{
+ height:500px;
+</style>
+
+<script language="JavaScript">
+function collapse(id)
+{
+ //alert(id);
+ ID = window.document.getElementById(id); 
+		//alert(ID);
+		//alert(id);
+ if(ID.style.display == "") 
+ {
+	 ID.style.display = "none";
+	}
+ else 
+ {
+	 ID.style.display = "";
+	}
+}
+</script>
+<script src="{INFO_TEXT_JSCRIPT_FILE}"></script>
+<!-- Below Script for auto close -->
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">
+          Búsqueda de Talentos
+        </div>
+        <div class="card-body">
+          {search_resume_form}
+          <div class="form-group">
+            {search_resume_form_keyword}
+          </div>
+          <div class="form-group">
+            {search_resume_form_location}
+          </div>
+          <div class="form-group">
+            {search_resume_form_cat}
+          </div>
+          <div class="form-group">
+            {search_resume_form_exp}
+          </div>
+          {search_resume_form_button}
+		  
+          <div class="text-center mt-3">{advance_search}</div>
+          </form>
+        </div>
+      </div>
+    </div>
+	
+	<div class="col-md-9">
+		<!-- Below Alert message File path is class/message_stack.php -->
+	{update_message}
+      <div class="card">
+	  <div class="card-header">
+	  <h1 class="display-6 p-0 m-0 float-left text-left">Todas las hojas de vida</h1>
+			
+			<div class="float-right text-right">
+			{save_search}{hidden_fields}
+			<div class="input-group">
+			  {INFO_TEXT_TITLE_NAME1}
+			  <div class="input-group-append">
+				{save_button}
+			  </div>
+			  </form>
+			</div>
+			</div>
+	  </div>
+	
+	<div class="card-body">
+					
+					<!--start  featured search  -->
+						
+						<div class="">{total_1}</div>
+						  <div align="left">{check_link1}</div>					
+						  <div align="left">{list_page_1}</div>								
+						  <div align="right">{page_1}</div>							  
+					<!-- n----------------------------------- -->
+					
+					<form name="page1" method="post">
+					<!-- BEGIN search_resume_result1 -->
+					
+			<div class="border-topp">
+			<div class="media py-3 px-4">
+			<div class="col text-right checkbox" style="width:20px;">{search_resume_result1.check_box}</div>
+			  {search_resume_result1.photo}
+			<div class="media-body">
+			<div class="row">
+			
+			  <div class="col-md-11">
+				<h5 class="mt-0">{search_resume_result1.name} <span class="ml-3 small">{search_resume_result1.totalexp} Yrs. Exp.</span></h5>
+					<div class="small text-muted">{search_resume_result1.title}</div>
+					<div class="small text-muted">{search_resume_result1.working}</div>
+					<div class="small text-muted">{search_resume_result1.city}</div>
+					<div class="small text-muted mb-3">{search_resume_result1.objective}</div>
+					<span class="mr-1">{search_resume_result1.connect}</span>
+					<span class="mr-1">{search_resume_result1.view}</span>
+					<span class="mr-1">{search_resume_result1.contact}</span>
+					<span class="mr-1">{search_resume_result1.download}</span>
+					<span class="mr-1">{search_resume_result1.rate_resume}</span>
+					<span class="mr-1">{search_resume_result1.private_notes}</span>
+					<span class="mr-1">{search_resume_result1.rating}</span>
+				</div>
+				</div>
+			</div>
+			</div>
+			</div>					
+					
+		
+			<!-- END search_resume_result1 --> 			
+						  
+			{hidden_fields}
+			{hidden_fields1}
+			</form>
+			<!-- --------------------------------------- -->
+		<!-- close  featured search  -->
+			
+		<!-- start normal search-->													 
+		
+		<div class="">{total}</div>
+		<div class="my-1">{check_link}</div>
+		
+		<div>{page} {list_page}</div>
+		
+			<!-- ---------------------------------- - -->
+			<form name="page" method="post">
+			<!-- BEGIN search_resume_result -->
+			<div class="border-topp">
+			<div class="media py-3 px-4">
+			<div class="colw checkbox" style="width:20px;">{search_resume_result.check_box}</div>
+			  {search_resume_result.photo}
+			<div class="media-body">
+			<div class="row">
+			
+			  <div class="col-md-11">
+				<h5 class="mt-0">{search_resume_result.name} <span class="ml-3 small">{search_resume_result.totalexp} Yrs. Exp.</span></h5>
+					<div class="text-muted">{search_resume_result.title}</div>
+					<div class="text-muted">{search_resume_result.working}</div>
+					<div class="text-muted">{search_resume_result.city}</div>
+					<div class="text-muted mb-3">{search_resume_result.objective}</div>
+					<span class="mr-1">{search_resume_result.connect}</span>
+					<span class="mr-1">{search_resume_result.view}</span>
+					<span class="mr-1">{search_resume_result.contact}</span>
+					<span class="mr-1">{search_resume_result.download}</span>
+					<span class="mr-1">{search_resume_result.rate_resume_main}</span>
+				</div>
+				</div>
+			</div>
+			</div>
+			</div>
+			<!-- END search_resume_result --> 			
+
+			
+			{hidden_fields}
+			{hidden_fields1}
+			</form>
+			<!-- --------------------------------------- -->
+			<!-- close normal  search  -->
+			<div>{rate_mark_1}</div>
+
+		<!--- td end of right part-->
+
+</div> 
+   </div>      
+      </div>
+    </div>
+  </div>
+</div>
+
+{FOOTER_HTML}

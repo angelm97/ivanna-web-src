@@ -1,0 +1,203 @@
+{HEADER_HTML}
+<script src="{INFO_TEXT_JSCRIPT_FILE}"></script>
+{HEADER_MIDDLE_HTML}
+<script language="Javascript1.2">
+function set_action(action1)
+{
+ document.skills.action.value=action1;
+}
+function set_action1(action1)
+{
+ document.languages.action.value=action1;
+}
+</script>
+<!-- Below Script for auto close -->
+<style>
+    .displayNone {
+        display: none;
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+       $(".alert").fadeTo(500, 0).slideUp(500, function(){
+           $(this).remove();
+        $( ".messageStackSuccess" ).addClass( "displayNone" );
+        // $messageStackSuccess
+       });
+   }, 50000););
+</script>
+<div class="container">
+    <div class="row">
+		<div class="col-md-3">
+		{JOBSEEKER_RESUME_LEFT}
+		</div>			
+					
+        <div class="col-md-9">
+		<!-- Below Alert message File path is class/message_stack.php -->
+		{update_message} 
+            <div class="card card-custom">
+                <div class="card-header card-header-custom">
+                    <h1 class="display-6 p-0 m-0 float-left">{HEADING_TITLE}</h1>
+					<h2 class="display-6 float-right">{INFO_TEXT_RESUME_NAME1}</h2>
+                </div>
+                <div class="card-body card-body-custom">
+
+{registration_form}
+{RESUME_NAVIGATION}
+
+<!--<div class="alert alert-warning alert-warning-custom" role="alert">{SECTION_ACCOUNT_RESUME_NAME} {REQUIRED_INFO}</div>
+{INFO_TEXT_RESUME_NAME}
+{INFO_TEXT_RESUME_NAME1}-->
+
+<div class="font-weight-bold text-danger mb-2">{SECTION_SKILLS}</div>
+<div class="table-responsive-sm">
+<table class="table table-hover table-bordered table-sm border-bottom mb-4">
+																							<thead>
+																								<tr class="dataTableHeadingRow ">
+																									<th scope="col" class="dataTableHeadingContent" width="20%">{TABLE_HEADING_SKILL}</th>
+																									<th scope="col" class="dataTableHeadingContent" width="20%">{TABLE_HEADING_SKILL_LEVEL}</th>
+																									<th scope="col" class="dataTableHeadingContent" width="20%">{TABLE_HEADING_LAST_USED}</th>
+																									<th scope="col" class="dataTableHeadingContent" width="20%">{TABLE_HEADING_YEARS_OF_EXP}</th>
+																									<th scope="col" class="dataTableHeadingContent" width="10%">{TABLE_HEADING_EDIT}</th>
+																									<th scope="col" class="dataTableHeadingContent" width="10%">{TABLE_HEADING_DELETE}</th>
+																								</tr>
+																								</thead>	
+																								<!-- BEGIN skills -->
+																								<tr {skills.row_selected}>
+																									<td class="dataTableContent" >{skills.skill}</td>
+																									<td class="dataTableContent" >{skills.skill_level}</td>
+																									<td class="dataTableContent" >{skills.last_used}</td>
+																									<td class="dataTableContent" >{skills.years_of_exp}</td>{skills.list_form}
+																									<td class="dataTableContent" >{skills.edit_skills}</td>
+																									<td class="dataTableContent" >{skills.delete} </td></form>
+																								</tr>
+																								<!-- END skills -->
+																							</table>
+</div>
+																					{skills_form}
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_SKILL}</label>
+    
+    <div class="col-sm-9">
+     {INFO_TEXT_SKILL1}
+     <a href="#" id="add" onclick="add_skill()">Agregar habilidad manualmente</a>
+     <a href="#" id="noadd" onclick="noadd_skill()">Ocultar</a>
+     <br>
+     <input id="skill_manual" class="form-control" type="text">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_SKILL_LEVEL}</label>
+    <div class="col-sm-9">
+     {INFO_TEXT_SKILL_LEVEL1}
+    </div>
+  </div> 
+  
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_LAST_USED}</label>
+    <div class="col-sm-9">
+     {INFO_TEXT_LAST_USED1}
+    </div>
+  </div> 
+  
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_YEARS_OF_EXP}</label>
+    <div class="col-sm-9">
+     {INFO_TEXT_YEARS_OF_EXP1}
+    </div>
+  </div> 
+
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom"></label>
+    <div class="col-sm-9">
+     {skills_button}
+    </div>
+  </div>
+</form>
+
+<div class="font-weight-bold text-danger mb-2">{SECTION_LANGUAGES}</div>
+
+<div class="table-responsive-sm">
+<table class="table table-hover table-bordered table-sm border-bottom mb-4">
+																								<thead>
+																								<tr class="dataTableHeadingRow">
+																									<th class="dataTableHeadingContent" width="40%">{TABLE_HEADING_LANGUAGE}</th>
+																									<th class="dataTableHeadingContent" width="40%">{TABLE_HEADING_PROFICIENCY}</th>
+																									<th class="dataTableHeadingContent" width="10%">{TABLE_HEADING_EDIT}</th>
+																									<th class="dataTableHeadingContent" width="10%">{TABLE_HEADING_DELETE}</th>
+																								</tr>
+																								</thead>
+																								<!-- BEGIN languages -->
+																								<tr {languages.row_selected}>
+																									<td class="dataTableContent" >{languages.languages}</td>
+																									<td class="dataTableContent" >{languages.proficiency}</td>{languages.list_form}
+																									<td class="dataTableContent" >{languages.edit_languages}</td></form>
+																									<td class="dataTableContent" >{languages.delete}</td>
+																								</tr>
+																								<!-- END languages -->
+																							</table>
+</div>
+{languages_form}
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_LANGUAGE}</label>
+    <div class="col-sm-9">
+     {INFO_TEXT_LANGUAGE1}
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom">{INFO_TEXT_PROFICIENCY}</label>
+    <div class="col-sm-9">
+     {INFO_TEXT_PROFICIENCY1}
+    </div>
+  </div>  
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-custom"></label>
+    <div class="col-sm-9">
+     {languages_button} {add_next_button1} {add_next_button}
+    </div>
+  </div> 
+</form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="select2/select2.min.js"></script>
+<script>
+$("#country").select2( {} );
+$("#skill_manual").hide();
+$("#noadd").hide();
+
+function add_skill(params) { 
+  event.preventDefault();
+  $("#skill_manual").show();
+  $("#noadd").show();
+  $("#add").hide();
+}
+
+function noadd_skill(params) { 
+  event.preventDefault();
+  $("#skill_manual").hide();
+  $("#noadd").hide();
+  $("#add").show();
+}
+
+$("#skill_manual").focusout( ()=>{
+  document.getElementById('skill_manual').setAttribute("name","TR_skill");
+  document.getElementById('country').setAttribute("name","xxx");
+});
+
+$("#country").change( ()=>{
+   document.getElementById('skill_manual').setAttribute("name","xxx");
+   document.getElementById('country').setAttribute("name","TR_skill");
+});
+
+
+</script>
+
+
+{FOOTER_HTML}
