@@ -260,7 +260,7 @@ define('HEADER_HTML','<!DOCTYPE html>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>'.$meta_title.'</title>
+<title>'.$meta_title. 22 .'</title>
 <meta http-equiv="Content-Type" >
 '.$meta_description.'
 <link rel="icon" href="'.HOST_NAME.'img/'.DEFAULT_SITE_FAVICON.'" type="ico" sizes="16x16">

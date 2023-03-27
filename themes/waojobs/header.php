@@ -271,7 +271,7 @@ define('HEADER_HTML','
             <meta http-equiv="Content-Type" >
             <meta charset="UTF-8">
         '.$meta_description.'
-        <link rel="icon" href="'.HOST_NAME.'img/'.DEFAULT_SITE_FAVICON.'" type="ico" sizes="16x16">
+        <link rel="icon" href="'.HOST_NAME.'img/favicon.png" type="png" sizes="16x16">
 
         <link rel="stylesheet" type="text/css" href="'.tep_href_link("css/animate.css").'">
         <link rel="stylesheet" type="text/css" href="'.tep_href_link("css/animate.min.css").'"> 
