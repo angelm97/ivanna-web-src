@@ -181,6 +181,9 @@ function getMacth($resume_id_m, $job_id_m){
         $resume_location_weight= 100 ."%"; 
     }
 
+    // comentar la linea de abajo para que funcione el waomatch al 100%
+    $resume_location_weight= 100 ."%"; 
+
     // Industry  Listo
 
     $job_industries = explode(",", $jobs_info['job_industry_sector']);

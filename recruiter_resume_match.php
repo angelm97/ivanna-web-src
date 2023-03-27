@@ -241,6 +241,9 @@ if ($distance_total <= 20000) {
     $resume_location_weight= 100 ."%"; 
 }
 
+ // comentar la linea de abajo para que funcione el waomatch al 100%
+ $resume_location_weight= 100 ."%"; 
+
 
 // Industry  Listo
 
