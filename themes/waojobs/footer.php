@@ -53,9 +53,9 @@ define('FOOTER_HTML','
             <a class="navbar-brand" href="'.tep_href_link("").'">
             <img src="'.tep_href_link('img/'.DEFAULT_SITE_LOGO).'" alt="Jobboard Logo" class="internal-logo">
             </a>
-            <div class="mb-2 font-weight-bold">Síguenos</div>
+            <div class="mb-2 font-weight-bold" style="margin-left: 29px">Síguenos</div>
            
-            <p class="copyright PY-3">&copy; <a href="'.tep_href_link('').'"> Cuchumil </a></p>
+            <p class="copyright PY-3"  style="margin-left: 29px">&copy; <a href="'.tep_href_link('').'"> Cuchumil </a></p>
         
         </div>
         </div>
