@@ -22,9 +22,9 @@ define('ENTRY_STATE_ERROR_SELECT', 'Seleccione una Ciudad.');
 define('ENTRY_STATE_ERROR', 'Se requiere tu estado.');
 define('INFO_TEXT_PERMISSION_ERROR','¡Oops! No tienes permiso.');
 
-define('ENTRY_VACANCY_SUMMARY_ERROR', 'Ingresa el resumen de oportunidades. ');
-define('ENTRY_DESCRIPTION_ERROR', ' Ingresa la descripción de la oportunidad laboral. ');
-define('ENTRY_JOB_CATEGORY_ERROR', ' Selecciona al menos la categoría laboral. ');
+define('ENTRY_VACANCY_SUMMARY_ERROR', 'Ingresa el Objetivo del puesto. ');
+define('ENTRY_DESCRIPTION_ERROR', ' Ingresa las Funciones y Responsabilidades del Puesto. ');
+define('ENTRY_JOB_CATEGORY_ERROR', ' Selecciona al menos una categoría laboral. ');
 
 define('INFO_TEXT_LOCATION','Dirección:');
 
@@ -69,6 +69,6 @@ define('INFO_TEXT_NOT_MENTIONED','No mencionado');
 define('INFO_TEXT_POST_URL','Aplica en la Página Web de la Empresa:');
 define('ENTRY_ENTER_URL_ERROR','Ingresa una URL');
 define('INFO_TEXT_APPLICATION_GOTO_URL','El candidato será redirigido a:');
-define('ENTRY_SALARY_ERROR','Ingresa el salario solo en dígitos');
+define('ENTRY_SALARY_ERROR','Ingresa el salario');
 define('INFO_TEXT_JOBFAIR','Feria de trabajo :');
 ?>

@@ -9,6 +9,15 @@ if (isset($_POST['skills']) && gettype($_POST['skills']) == 'array') {
   $_POST['skills'] = $skillarr;
 }
 
+if(isset($_POST['salary']))
+	{	
+
+    $input_for_salary = '<option value="'. $_POST['salary'] .'" selected="">RD$ ' . $_POST['salary'] . '</option>';
+	}else{
+ 
+    $input_for_salary = '<option value="" selected="">Seleccione...</option>';
+  }
+
 
 /*
 ***********************************************************
@@ -270,9 +279,11 @@ if(tep_not_null($action))
 		$messageStack->add(ENTRY_SALARY_ERROR,'add_job');
 	}
 
+  
+
   if(isset($TR_degree) && (!is_numeric($TR_degree)))
 	{	$error = true;
-		$messageStack->add(ENTRY_SALARY_ERROR,'add_education');
+		$messageStack->add('Ingresa el nivel de educación','add_education');
 	}
 
    if(isset($vacancy_period) && $vacancy_period<1)
@@ -663,11 +674,11 @@ if($action=='preview' && !$error)
             </a>';
  if($edit)
  {
-  $preview_job_form=tep_draw_form('preview_job', FILENAME_RECRUITER_POST_JOB, 'jobID='.$_GET['jobID'], 'post', 'onsubmit="return ValidateForm(this)"');
+  $preview_job_form=tep_draw_form('preview_job', FILENAME_RECRUITER_POST_JOB, 'jobID='.$_GET['jobID'], 'post', 'onsubmit="return ValidateForm()"');
  }
  else
  {
-  $preview_job_form=tep_draw_form('preview_job', FILENAME_RECRUITER_POST_JOB, '', 'post', 'onsubmit="return ValidateForm(this)"');
+  $preview_job_form=tep_draw_form('preview_job', FILENAME_RECRUITER_POST_JOB, '', 'post', 'onsubmit="return ValidateForm()"');
  }
  $hidden_fields.=tep_draw_input_field('action', '','',false,'hidden',false);
  $hidden_fields.=tep_draw_input_field('TR_job_title', $TR_job_title,'',false,'hidden');
@@ -755,15 +766,15 @@ else
   //$buttons=tep_image_submit(PATH_TO_BUTTON.'button_preview.gif', IMAGE_PREVIEW, 'name="Preview"').'&nbsp;&nbsp;<a href="'.tep_href_link(FILENAME_RECRUITER_CONTROL_PANEL).'">'.tep_image_button(PATH_TO_BUTTON.'button_cancel.gif', IMAGE_CANCEL).'</a>';
   $buttons=tep_draw_submit_button_field('Preview','Vista previa','id="vp" class="btn btn-primary"').'&nbsp;&nbsp;<a href="'.tep_href_link(FILENAME_RECRUITER_CONTROL_PANEL).'"><button class="btn btn-secondary">Cancelar</button></a>';
   if(check_login('admin'))
-   $post_job_form=tep_draw_form('defineForm', FILENAME_RECRUITER_POST_JOB, 'rID='.$_SESSION['sess_recruiterid'].'&jobID='.$_GET['jobID'], 'post', 'enctype="multipart/form-data" onsubmit="return ValidateForm(this)"').tep_draw_hidden_field('action','edit');
+   $post_job_form=tep_draw_form('defineForm', FILENAME_RECRUITER_POST_JOB, 'rID='.$_SESSION['sess_recruiterid'].'&jobID='.$_GET['jobID'], 'post', 'enctype="multipart/form-data" onsubmit="return ValidateForm()"').tep_draw_hidden_field('action','edit');
   else
-   $post_job_form=tep_draw_form('defineForm', FILENAME_RECRUITER_POST_JOB, 'jobID='.$_GET['jobID'], 'post', 'enctype="multipart/form-data" onsubmit="return ValidateForm(this)"').tep_draw_hidden_field('action','edit');
+   $post_job_form=tep_draw_form('defineForm', FILENAME_RECRUITER_POST_JOB, 'jobID='.$_GET['jobID'], 'post', 'enctype="multipart/form-data" onsubmit="return ValidateForm()"').tep_draw_hidden_field('action','edit');
  }
  else
  {
   //$buttons=tep_image_submit(PATH_TO_BUTTON.'button_preview.gif', IMAGE_PREVIEW, 'name="Preview"').'&nbsp;&nbsp;<a href="'.tep_href_link(FILENAME_RECRUITER_CONTROL_PANEL).'">'.tep_image_button(PATH_TO_BUTTON.'button_cancel.gif', IMAGE_CANCEL).'</a>';
    $buttons=tep_draw_submit_button_field('Preview','Vista previa','id="vp" class="btn btn-primary"');//tep_image_submit(PATH_TO_BUTTON.'button_preview.gif', IMAGE_PREVIEW, 'name="Preview"');
- $post_job_form=tep_draw_form('defineForm', FILENAME_RECRUITER_POST_JOB, '', 'post', 'enctype="multipart/form-data" onsubmit="return ValidateForm(this)"').tep_draw_hidden_field('action','new');
+ $post_job_form=tep_draw_form('defineForm', FILENAME_RECRUITER_POST_JOB, '', 'post', 'enctype="multipart/form-data" onsubmit="return ValidateForm()"').tep_draw_hidden_field('action','new');
  }
  if($state_error)
  {
@@ -906,6 +917,7 @@ if($action=="preview" && !$error)
   'INFO_TEXT_LOCATION'=>INFO_TEXT_LOCATION,
   'INFO_TEXT_LOCATION1'=>(tep_not_null($location)?tep_db_output($location):INFO_TEXT_NOT_MENTIONED),
   'INFO_TEXT_SALARY'=>INFO_TEXT_SALARY,
+  'INPUT_SALARY'=> $input_for_salary,
   'INFO_TEXT_SALARY1'=>(tep_not_null($salary)?$sym_left.tep_db_output($salary).$sym_rt:INFO_TEXT_NOT_MENTIONED),
   'INFO_TEXT_SKILLS'=>INFO_TEXT_SKILLS,
   'INFO_TEXT_SKILLS1'=>(tep_not_null($skills)?tep_db_output($skills):INFO_TEXT_NOT_MENTIONED),
@@ -983,7 +995,7 @@ else
   'INFO_TEXT_VACANCY_SUMMARY1'=>tep_draw_textarea_field('TR_job_summary', 'soft', '68', '4', $TR_job_summary, 'class="form-control required"', true),
   'INFO_TEXT_DESCRIPTION'=>INFO_TEXT_DESCRIPTION,
   'INFO_TEXT_DESCRIPTION1'=>tep_draw_textarea_field('description', 'soft', '190', '10', $description, 'id="description" class="form-control7"', '', true),
-
+  'INPUT_SALARY'=> $input_for_salary,
   'INFO_TEXT_JOBFAIR'=>INFO_TEXT_JOBFAIR,
   'INFO_TEXT_JOBFAIR1'=>LIST_SET_DATA(RECRUITER_JOBFAIR_TABLE." as rjf left join ".JOBFAIR_TABLE." as jf on rjf.jobfair_id=jf.id"," where recruiter_id='".$_SESSION['sess_recruiterid']."' and approved='Yes'",'jobfair_title','jobfair_id',"jobfair_title",'name="post_jobfair[]" class="form-control"',"Select Jobfair",'',$post_jobfair),
 'JOBFAIR_TEXT'=>$jobfair_text,
