@@ -1,6 +1,6 @@
 <?
 define('HEADING_TITLE','Detalles de la empresa');
-define('ERROR_COMPANY_DETAILS_NOT_EXIST','¡Oops! Los detalles de la empresa no existen. El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
+define('ERROR_COMPANY_DETAILS_NOT_EXIST','¡Oops! Los detalles de la empresa no existen. Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
 define('IMAGE_BACK','Atrás');
 define('INFO_TEXT_LATEST_POSITIONS','Oportunidades laborales más recientes');
 define('INFO_TEXT_JOBS','Lista de oportunidades laborales');

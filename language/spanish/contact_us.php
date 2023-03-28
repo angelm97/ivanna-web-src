@@ -6,7 +6,7 @@ define('INFO_TEXT_SUBJECT','Asunto : ');
 define('INFO_TEXT_MESSAGE','Mensaje : ');
 define('SUCCESS_EMAIL_SENT','¡Listo! Tu mensaje ha sido enviado.');
 define('IMAGE_SEND','Enviar');
-define('FIRST_PARAGRAPH','<p>El Equipo WaoJobs está para apoyarte.</p>');
+define('FIRST_PARAGRAPH','<p>Nuestro Equipo está para apoyarte.</p>');
 define('YOUR_NAME_ERROR','Por favor, escribe tu nombre.');
 define('YOUR_EMAIL_ADDRESS_ERROR','Por favor, introduce tu dirección de correo electrónico.');
 define('EMAIL_SUBJECT_ERROR','Ingresa el asunto del correo electrónico.');

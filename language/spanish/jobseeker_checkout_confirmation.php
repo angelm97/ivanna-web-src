@@ -13,14 +13,14 @@ define('HEADING_PAYMENT_METHOD', 'Método de pago');
 define('HEADING_PAYMENT_INFORMATION', 'Información del pago');
 define('HEADING_ORDER_COMMENTS', 'Comentarios sobre tu orden');
 define('ERROR_PAYMENT_METHOD', 'Elige un método de pago.');
-define('DEMO_USED_MESSAGE', '¡Oops! Ya utilizaste el servicio gratuito. El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
+define('DEMO_USED_MESSAGE', '¡Oops! Ya utilizaste el servicio gratuito. Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
 define('TABLE_HEADING_COMMENTS','Comenta sobre tu pedido');
 
 define('TEXT_EDIT', 'Editar');
 define('IMAGE_BUTTON_CONFIRM_ORDER', 'Confirmar pedido');
 define('IMAGE_BUTTON_BACK', 'Atrás');
 define('IMAGE_BUTTON_PRINT', 'Imprimir');
-define('INFO_TEXT_SORRY_PROMOTION','¡Oops! El código de promoción que ingresaste no es válido. El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
-define('INFO_TEXT_ALREADY_USED_CODE','¡Oops! Ya has utilizado este código. El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
+define('INFO_TEXT_SORRY_PROMOTION','¡Oops! El código de promoción que ingresaste no es válido. Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
+define('INFO_TEXT_ALREADY_USED_CODE','¡Oops! Ya has utilizado este código. Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
 define('INFO_TEXT_ACCEPT','Aceptar');
 ?>

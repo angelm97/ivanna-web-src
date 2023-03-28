@@ -75,7 +75,7 @@ define('MESSAGE_JOB_UNSUCCESS_READVERTISED','¡Oops¡No pudimos publicar nuevame
 define('MESSAGE_JOB_UNSUCCESS_READVERTISED1','¡Oops! Te quedan % s puntos de trabajo, reduce las semanas de la oportunidad laboral');
 define('MESSAGE_JOB_UNSUCCESS_READVERTISED2','¡Oops! Te quedan % s punto de trabajo, comunícate con nosotros AQUÍ, estamos para ayudarte.');
 
-define('MESSAGE_JOB_ERROR','¡Oops¡No pudimos publicar nuevamente la oportunidad laboral. El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
+define('MESSAGE_JOB_ERROR','¡Oops¡No pudimos publicar nuevamente la oportunidad laboral. Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
 
 define('MESSAGE_SUCCESS_STATUS_UPDATED','¡Lsito! Oportunidad laboral actualizada.');
 

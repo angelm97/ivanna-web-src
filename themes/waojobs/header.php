@@ -259,19 +259,19 @@ define('HEADER_HTML','
     <html lang="en">
         <head>
 
-        <meta property="og:title" content="Waojobs">
+        <meta property="og:title" content="Cuchumil">
         <meta property="og:description" content=" ">
-        <meta property="og:image" content="https://waojobs.com/img/logo.png">
-        <meta property="og:url" content="https://waojobs.com/">
+        <meta property="og:image" content="/img/logo.png">
+        <meta property="og:url" content="https://Cuchumil.com/">
 
             <meta>
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>'.$meta_title.'</title>
+            <title>Cuchumil</title>
             <meta http-equiv="Content-Type" >
             <meta charset="UTF-8">
         '.$meta_description.'
-        <link rel="icon" href="'.HOST_NAME.'img/favicon.png" type="png" sizes="16x16">
+        <link rel="icon" href="'.HOST_NAME.'img/logo.png" type="png" sizes="16x16">
 
         <link rel="stylesheet" type="text/css" href="'.tep_href_link("css/animate.css").'">
         <link rel="stylesheet" type="text/css" href="'.tep_href_link("css/animate.min.css").'"> 
@@ -351,7 +351,7 @@ define('HEADER_HTML','
                     <a class="nav-link font30" href="'.tep_href_link(FILENAME_ABOUT_US).'"  >Quiénes somos</a>
                 </li>
 
-                <li style="margin: 16px 0 0 0;">
+                <li style="margin: 4px 0 0 0;">
                 <a class="navbar-brand font30" href="'.tep_href_link("").'" style="padding:0;">
                 <img src="'.tep_href_link('img/'.DEFAULT_SITE_LOGO).'" alt="Jobboard Logo" class="internal-logo">
             </a>

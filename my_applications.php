@@ -119,7 +119,7 @@ if($x > 0 && $x1 > 0)
 else
 {
  $hidden_fields.=tep_draw_hidden_field('lower');
- $template->assign_vars(array('total'=>tep_db_output(SITE_TITLE)."  ".INFO_TEXT_HAS_NOT_FOUND));
+ $template->assign_vars(array('total'=> "  ".INFO_TEXT_HAS_NOT_FOUND));
 }
 tep_db_free_result($result);
 tep_db_free_result($result1);

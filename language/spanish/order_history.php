@@ -20,7 +20,7 @@ define('TABLE_HEADING_INSERTED', 'Insertado');
 define('TABLE_HEADING_LAST_UPDATED', 'Última actualización');
 
 define('MESSAGE_SUCCESS_DELETED','¡Listo! Pedido eliminado.');
-define('MESSAGE_ORDER_ERROR','¡Oops! Este pedido no existe. Si no lo puedes encontrar, el Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
+define('MESSAGE_ORDER_ERROR','¡Oops! Este pedido no existe. Si no lo puedes encontrar, Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
 
 define('HEADING_TITLE_SEARCH', 'Solicitar ID:');
 define('HEADING_TITLE_STATUS', 'Estado:');

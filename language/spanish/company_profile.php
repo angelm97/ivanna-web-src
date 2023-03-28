@@ -15,8 +15,8 @@ define('TABLE_HEADING_ADVERTISED', 'Anunciado en');
 define('TABLE_HEADING_EXPIRED', 'Expirado el');
 define('TABLE_HEADING_APPLY', 'Aplica');
 
-define('MESSAGE_JOB_ERROR','¡Oops! Esta oportunidad laboral ya no se encuentra. El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
-define('ERROR_NO_COMPANIES_EXISTS','¡Oops! No hay empresas. El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
+define('MESSAGE_JOB_ERROR','¡Oops! Esta oportunidad laboral ya no se encuentra. Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
+define('ERROR_NO_COMPANIES_EXISTS','¡Oops! No hay empresas. Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
 
 define('IMAGE_BACK','Atrás');
 define('INFO_TEXT_APPLY_NOW','¡Quiero aplicar!');

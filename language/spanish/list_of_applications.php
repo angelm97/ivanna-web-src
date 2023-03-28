@@ -92,7 +92,7 @@ define('MESSAGE_SUCCESS_RATING_UPDATED','¡Listo! La calificación del candidato
 define('MESSAGE_SUCCESS_RATING_INSERTED','¡Listo! Candidato calificado ');
 define('MESSAGE_SUCCESS_SENT_APPLICANT', '¡Listo! Mensaje %s enviado.');
 
-define('ERROR_APPLICATION_NOT_EXIST','¡Oops! Esta aplicación no existe. Si no puedes continuar, el Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
+define('ERROR_APPLICATION_NOT_EXIST','¡Oops! Esta aplicación no existe. Si no puedes continuar, Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
 define('ERROR_STATUS_ALREADY_SET','¡Oops! El estado de la solicitud ya existe');
 define('ERROR_ATLEAST_ONE_CHECKED', 'Marca al menos una casilla de verificación.');
 define('ERROR_ATLEAST_ONE_SELECT', 'Selecciona una identificación de correo.');

@@ -15,7 +15,7 @@ define('INFO_TEXT_TO_EMAIL_ADDRESS','La dirección de correo electrónico de tu 
 define('INFO_TEXT_SUBJECT','Sujeto: ');
 define('INFO_TEXT_MESSAGE','Mensaje:');
 define('IMAGE_SEND','Enviar');
-define('ERROR_JOB_NOT_EXIST','¡Oops! Esta oportunidad laboral no se encuentra. Si el problema persiste,  comunícate con El Equipo WaoJobs AQUÍ.');
+define('ERROR_JOB_NOT_EXIST','¡Oops! Esta oportunidad laboral no se encuentra. Si el problema persiste,  comunícate con Nuestro Equipo.');
 define('INFO_TEXT_HI','¡Hola!');
 define('INFO_TEXT_YOUR_FRIEND','tu amigo/a');
 define('INFO_TEXT_HAS_SENT','te ha enviado un mensaje.');

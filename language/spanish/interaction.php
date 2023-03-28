@@ -36,7 +36,7 @@ define('INFO_TEXT_VIEW_DATE_REPORT','Solicitantes aplicados con prudencia');
 define('INFO_TEXT_DELETE',' Borrar');
 
 
-define('ERROR_APPLICATION_NOT_EXIST','¡Oops! Esta aplicación ya no se encuentra. El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
+define('ERROR_APPLICATION_NOT_EXIST','¡Oops! Esta aplicación ya no se encuentra. Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
 define('ENTRY_MESSAGE_ERROR',' Ingresa el mensaje');
 define('ENTRY_SUBJECT_ERROR', 'Ingresa el asunto.');
 

@@ -17,7 +17,7 @@ define('TABLE_HEADING_APPLICATION_ID', 'ID de aplicación');
 define('TABLE_HEADING_MAIL_SUBJECT', 'Sujeto');
 define('TABLE_HEADING_MAIL_INSERTED', 'Fecha');
 
-define('ERROR_MAIL_NOT_EXIST','¡Oops! El correo no existe. Si el problema persiste, comunícate con el Equipo WaoJobs AQUÍ.');
+define('ERROR_MAIL_NOT_EXIST','¡Oops! El correo no existe. Si el problema persiste, comunícate con Nuestro Equipo AQUÍ.');
 define('MESSAGE_SUCCESS_MARKED','Tu correo se marcó correctamente');
 define('MESSAGE_SUCCESS_DELETED','Tu correo se borró con éxito');
 define('MESSAGE_SUCCESS_RESTORE','Tu correo se restauró con éxito en la bandeja de entrada');

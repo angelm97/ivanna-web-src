@@ -37,7 +37,7 @@ define('INFO_TEXT_LIST_OF_SAVED_SEARCHES','Mis búsquedas guardadas');
 define('INFO_TEXT_JOB_ALERT_AGENT','Alertas');
 define('INFO_TEXT_CHANGE_PASSWORD','Cambiar contraseña');
 
-define('INFO_TEXT_AVAILABILITY','Establecer mi estado como disponible');
+define('INFO_TEXT_AVAILABILITY','Establecer mi estado como en busqueda activa');
 define('STATUS_NOT_AVAILABLE', 'Establecer estado como No disponible');
 define('STATUS_NOT_AVAILABLITY', 'No disponible');
 define('STATUS_AVAILABLE', 'Disponible');

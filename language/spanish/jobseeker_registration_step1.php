@@ -40,7 +40,7 @@ define('CONFIRM_EMAIL_ADDRESS_INVALID_ERROR','¡Oops! Tu dirección de correo el
 define('EMAIL_ADDRESS_MATCH_ERROR','¡Oops! Tu dirección de correo electrónico y la confirmación de dirección de correo electrónico no coinciden.');
 define('MIN_PASSWORD_ERROR','¡Oops! Tu contraseña debe contener un mínimo de ' . MIN_PASSWORD_LENGTH . ' characters.');
 define('MIN_CONFIRM_PASSWORD_ERROR','¡Oops! Tu confirmación de contraseña debe contener un mínimo de ' . MIN_PASSWORD_LENGTH . ' characters.');
-define('PASSWORD_MATCH_ERROR','¡Oops! Tu contraseña y la confirmación de contraseña no coinciden. El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
+define('PASSWORD_MATCH_ERROR','¡Oops! Tu contraseña y la confirmación de contraseña no coinciden. Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
 define('MIN_ADDRESS_LINE1_ERROR','Tu dirección postal debe contener un mínimo de ' . MIN_ADDRESS_LINE1_LENGTH . ' characters.');
 define('ENTRY_COUNTRY_ERROR', 'Selecciona el país del menú desplegable.');
 

@@ -16,7 +16,7 @@ define('TITLE_BILLING_ADDRESS', 'Dirección de envio:');
 define('TABLE_HEADING_PAYMENT_METHOD', 'Selecciona la forma de pago');
 define('TEXT_SELECT_PAYMENT_METHOD', '¿Cuál es el método de pago que quieres utilizar?.');
 define('TITLE_PLEASE_SELECT', 'Por favor selecciona');
-define('TEXT_ENTER_PAYMENT_INFORMATION', '¡Oops! Cambia el método de pago. Si no puedes, el Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
+define('TEXT_ENTER_PAYMENT_INFORMATION', '¡Oops! Cambia el método de pago. Si no puedes, Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
 
 define('TABLE_HEADING_COMMENTS', 'Aquí puedes añadir comentarios sobre tu pedido');
 

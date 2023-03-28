@@ -23,7 +23,7 @@ define('STATUS_JOB_ACTIVATE', '¿Activar?');
 
 
 
-define('MESSAGE_JOB_ERROR','¡Oops! Esta oportunidad laboral no se encuentra o no se puede volver a publicar, si existe, espera hasta que caduque. Comunícate con el Equipo WaoJobs AQUÍ, estamos para ayudarte.');
+define('MESSAGE_JOB_ERROR','¡Oops! Esta oportunidad laboral no se encuentra o no se puede volver a publicar, si existe, espera hasta que caduque. Comunícate con Nuestro Equipo AQUÍ, estamos para ayudarte.');
 
 define('MESSAGE_SUCCESS_STATUS_UPDATED','Trabajo actualizado correctamente.');
 

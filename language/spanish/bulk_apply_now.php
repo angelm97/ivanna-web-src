@@ -13,7 +13,7 @@ define('INFO_TEXT_VIEW_CV_LINK','Para ver mi hoja de vida, haz clic en el siguie
 define('ERROR_RESUME_NOT_EXIST','¡Oops! Primero debes agregar tu hoja de vida.');
 define('ERROR_JOB_NOT_EXIST','¡Oops! Esta oportunidad laboral ya no se encuentra.');
 define('INFO_TEXT_CV','Adjunta tu hoja de vida: ');
-define('INFO_TEXT_DEFALUT_COVER_LETTER',' Me encantaría participar en el proceso de selección para la oportunidad laboral que postularon en Waojobs.com. Pueden ver mi hoja de vida.');
+define('INFO_TEXT_DEFALUT_COVER_LETTER',' Me encantaría participar en el proceso de selección para la oportunidad laboral que postularon en cuchumil.com. Pueden ver mi hoja de vida.');
 define('INFO_TEXT_DEFALUT_COVER_LETTER1',' [ La carta de presentación anterior es una guía. Puedes modificarla o crear una nueva en panel de control para que te salga automáticamente en todas las aplicaciones. ] %s');
 
 define('MESSAGE_SUCCESS_APPLED','¡Cada vez más cerca al trabajo de tus sueños!');

@@ -34,6 +34,6 @@ define('INFO_TEXT_VIEW_SAVE_ORGANISATION','Ver, guardar y organizar hojas de vid
 define('INFO_TEXT_GET_ACCESS_TO_RESUME','Obtén acceso a la base de datos de hojas de vida al instante');
 define('INFO_TEXT_USE_APPLICANT_TRACKING','Utiliza la herramienta de seguimiento de candidatos para preseleccionar los mejores');
 define('INFO_TEXT_FOR_OTHER_OPTIONS','¿Tienes alguna duda?');
-define('INFO_TEXT_CONTACT_US','El Equipo WaoJobs está para ayudarte, haz clic AQUÍ.');
+define('INFO_TEXT_CONTACT_US','Nuestro Equipo está para ayudarte, haz clic AQUÍ.');
 define('BUY_NOW','¡Quiero este!');
 ?>

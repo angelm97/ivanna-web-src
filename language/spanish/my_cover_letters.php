@@ -39,7 +39,7 @@ define('MESSAGE_SUCCESS_UPDATED','Tu carta de presentación se ha actualizado.')
 define('MESSAGE_SUCCESS_DELETED','¡Listo! La carta de presentación se ha eliminado correctamente.');
 define('MESSAGE_SUCCESS_DUPLICATED','Tu carta de presentación se ha duplicado.');
 
-define('MESSAGE_COVER_LETTER_ERROR','¡Oops! Esta carta de presentación no existe. Si el problema persiste, comunícate con el Equipo WaoJobs AQUÍ.');
+define('MESSAGE_COVER_LETTER_ERROR','¡Oops! Esta carta de presentación no existe. Si el problema persiste, comunícate con Nuestro Equipo AQUÍ.');
 define('IMAGE_UPDATE','Actualizar');
 define('IMAGE_SAVE','Ahorrar');
 define('IMAGE_CANCEL','Cancelar');

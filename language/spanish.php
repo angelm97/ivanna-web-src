@@ -7,20 +7,20 @@
 define('RATE_DIRECTION','rates.php');
 define('TARIFAS_WAO_REF','<a href='.tep_href_link(RATE_DIRECTION).'>AQUÍ</a>');
 define('CONTACT_ADMIN','<a href='.tep_href_link(FILENAME_CONTACT_US).'>AQUÍ</a>');
-define('EMAIL_NOT_FOUND','¡Oops! No encontramos la dirección de tu correo electrónico <font color="#001080"><b>%s</b></font> ¡Oops! ¿No puedes iniciar sesión? El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ : '.CONTACT_ADMIN);
+define('EMAIL_NOT_FOUND','¡Oops! No encontramos la dirección de tu correo electrónico <font color="#001080"><b>%s</b></font> ¡Oops! ¿No puedes iniciar sesión? Nuestro Equipo está para ayudarte, escríbenos AQUÍ : '.CONTACT_ADMIN);
 define('LOGON_FIRST_MESSAGE','¡Oops! Inicia sesión.');
 define('MESSAGE_JOBSEEKER_PRIVACY','--oculto--');
-define('INFO_TEXT_HEADER_ANY_QUESTION','¿Tienes alguna inquietud? / El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ.');
-define('SORRY_PAYMENT_METHOD','¡Oops! ¿Tienes alguna duda con el método de pago disponible? El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ : '.CONTACT_ADMIN);
+define('INFO_TEXT_HEADER_ANY_QUESTION','¿Tienes alguna inquietud? / Nuestro Equipo está para ayudarte, escríbenos AQUÍ.');
+define('SORRY_PAYMENT_METHOD','¡Oops! ¿Tienes alguna duda con el método de pago disponible? Nuestro Equipo está para ayudarte, escríbenos AQUÍ : '.CONTACT_ADMIN);
 
 define('SORRY_ADMIN_LOGIN_MATCH','¡Oops! Tu nombre de usuario o contraseña parecen ser incorrectos..');
-define('SORRY_LOGIN_MATCH','¡Oops! ¿Tienes alguna duda con tu usuario o contraseña? El Equipo WaoJobs está para ayudarte, escríbenos : '.CONTACT_ADMIN);
+define('SORRY_LOGIN_MATCH','¡Oops! ¿Tienes alguna duda con tu usuario o contraseña? Nuestro Equipo está para ayudarte, escríbenos : '.CONTACT_ADMIN);
 
 define('STRING_PASSWORD_SEND','¡Listo! Hemos enviado tu contraseña a tu correo electrónico.');
 define('ERROR_WRONG_TAG','¡Oops! Cambia las etiquetas.');
 
 define('ERROR_WRONG_FILENAME','¡Oops! Cambia el nombre de archivo.');
-define('ERROR_DATABASE','¡Oops! ¿Tienes algun inconveniente con tu solicitud? El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ. '.CONTACT_ADMIN);
+define('ERROR_DATABASE','¡Oops! ¿Tienes algun inconveniente con tu solicitud? Nuestro Equipo está para ayudarte, escríbenos AQUÍ. '.CONTACT_ADMIN);
 define('ERROR_SUBSCRIPTION','¡Oops, aún no has adquirido un Plan Wao, puedes verlos '.TARIFAS_WAO_REF).'!';
 define('MESSAGE_JOB_UNSUCCESS_INSERTED','¡Oops! Reduce la fecha de cierre de la oportunidad laboral. ');
 
@@ -29,8 +29,8 @@ define('SUCCESS_PASSWORD_CHANGE','¡Listo! Tu contraseña se cambió correctamen
 define('SORRY_PRODUCT_NOT_EXIST','¡Oops! El producto que has elegido no existe.');
 
 define('COUNTRY_PULL_DOWN_DEFAULT','Por favor selecciona un país...');
-define('MESSAGE_JOBSEEKER_ERROR','¡Oops! ¿El talento no existe? El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ. '.CONTACT_ADMIN);
-define('MESSAGE_RESUME_ERROR','¡Oops! ¿Esta hoja de vida no existe? El Equipo WaoJobs está para ayudarte, escríbenos AQUÍ. '.CONTACT_ADMIN);
+define('MESSAGE_JOBSEEKER_ERROR','¡Oops! ¿El talento no existe? Nuestro Equipo está para ayudarte, escríbenos AQUÍ. '.CONTACT_ADMIN);
+define('MESSAGE_RESUME_ERROR','¡Oops! ¿Esta hoja de vida no existe? Nuestro Equipo está para ayudarte, escríbenos AQUÍ. '.CONTACT_ADMIN);
 define('MESSAGE_FIRST_FORM_NOT_FILL_UP_ERROR','¡Oops! Completa el formulario.');
 define('ACCESS_DENIED','¡Oops! Esta página no está disponible.');
 define('MESSAGE_RECRUITER_ERROR','¡Oops! No hay reclutador.');
@@ -325,7 +325,7 @@ define('CURRENCY_SERVER_PRIMARY', 'oanda');
 define('CURRENCY_SERVER_BACKUP', 'xe');
 
 define('ADMIN_EMAIL_SUBJECT', 'Cambio de información personal');
-define('ADMIN_EMAIL_TEXT', 'Hi %s,' . "\n\n" . 'Tu información personal, ha sido modificada. Si no fuiste tú, comúnicate de inmediato con nuestro Equipo WaoJobs AQUÍ.' . "\n\n" . 'Sitio web: %s' . "\n" . 'Nombre de usuario: %s' . "\n" . 'Contraseña: %s' . "\n\n" . '¡Gracias!' . "\n" . '%s' . "\n\n" . 'Esta respuesta es automática, ¡No te preocupes por responder!');
+define('ADMIN_EMAIL_TEXT', 'Hi %s,' . "\n\n" . 'Tu información personal, ha sido modificada. Si no fuiste tú, comúnicate de inmediato con nuestro Equipo AQUÍ.' . "\n\n" . 'Sitio web: %s' . "\n" . 'Nombre de usuario: %s' . "\n" . 'Contraseña: %s' . "\n\n" . '¡Gracias!' . "\n" . '%s' . "\n\n" . 'Esta respuesta es automática, ¡No te preocupes por responder!');
 define('HEADER_TITLE_ACCOUNT', 'Mi cuenta');
 define('HEADER_TITLE_LOGOFF', 'Cerrar sesión');
 define('FOOTER_TITLE_CONTROL_PANEL', 'Panel de control');

@@ -14,6 +14,6 @@ define('TABLE_HEADING_EXPIRED', 'Expira el');
 define('TABLE_HEADING_DELETE', 'Borrar');
 define('TABLE_HEADING_APPLY', '¡Aplicar!');
 define('MESSAGE_SUCCESS_DELETED','¡Listo! Trabajo eliminado correctamente.');
-define('MESSAGE_JOB_ERROR','¡Oops! Este oportunidad laboral ya no se encuentra. Si el problema persiste, comunícate con el Equipo WaoJobs AQUÍ.');
+define('MESSAGE_JOB_ERROR','¡Oops! Este oportunidad laboral ya no se encuentra. Si el problema persiste, comunícate con Nuestro Equipo AQUÍ.');
 define('INFO_TEXT_APPLY_NOW','¡Aplica ya!');
 ?>
