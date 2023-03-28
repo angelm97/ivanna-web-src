@@ -283,7 +283,7 @@ $template->assign_vars(array(
  'INFO_TEXT_RATE_CHART1'=>'',
 'RATE_CARD'=>'<a href="'.tep_href_link(FILENAME_RECRUITER_RATES).'">
                                                 <i class="fa fa-shopping-cart" aria-hidden="true">
-                                                </i> Planes Wao
+                                                </i> Planes Cuchumil
                                               </a>',
  'INFO_TEXT_JOIN_FORUM'    =>'<a href="'.tep_href_link(PATH_TO_FORUM).'" class="style39">'.INFO_TEXT_JOIN_FORUM.'</a>',
  'INFO_TEXT_LIST_OF_APPLICATIONS'=>tep_draw_form('search_applicant',FILENAME_RECRUITER_SEARCH_APPLICANT,'','post').tep_draw_hidden_field('action1','search').'<i class="fa fa-angle-right icon-page-title" aria-hidden="true"></i><button class="btn submitbutton" type="submit">'.INFO_TEXT_LIST_OF_APPLICATIONS.'</button> ('.$no_of_applicant.')</form>'.(($no_of_applicant>0)?'':''),

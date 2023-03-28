@@ -170,7 +170,7 @@ $template->assign_vars(array(
 	'INFO_TEXT_JOBS_BY_KEYWORD'=>'<a href="'.tep_href_link(FILENAME_JOB_SEARCH).'" class="style39">'.INFO_TEXT_JOBS_BY_KEYWORD.'</a>',
 'JOB_ALERT_BOX'=>'Destaca tu perfil frente a la empresa ideal. ',
 'JOB_ALERT_BOX5'=>'<a href="'.tep_href_link(FILENAME_JOBSEEKER_RATES).'"><i class="fa fa-shopping-cart" aria-hidden="true">
-                                                </i>  Planes Wao</a>',
+                                                </i>  Planes Cuchumil</a>',
 
  'LEFT_BOX_WIDTH'=>LEFT_BOX_WIDTH1,
  'RIGHT_BOX_WIDTH'=>RIGHT_BOX_WIDTH1,

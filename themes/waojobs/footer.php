@@ -54,8 +54,8 @@ define('FOOTER_HTML','
             <img src="'.tep_href_link('img/'.DEFAULT_SITE_LOGO).'" alt="Jobboard Logo" class="internal-logo">
             </a>
             <div class="mb-2 font-weight-bold">Síguenos</div>
-            <p>'.$social_footer_button.' <a href="mailto:info@ejobsitesoftware.com"><i id="social-em" class="fa fa2 fa-envelope-square fa-3x social"></i></a> <a href="'.tep_href_link(FILENAME_INDUSTRY_RSS).'"><i id="social-em" class="fa fa2 fa-rss-square fa-3x social"></i></a></p>
-            <p class="copyright PY-3">&copy; <a href="'.tep_href_link('').'"> '.SITE_TITLE.' </a></p>
+           
+            <p class="copyright PY-3">&copy; <a href="'.tep_href_link('').'"> Cuchumil </a></p>
         
         </div>
         </div>
