@@ -20,7 +20,7 @@ Recordamos tu información: <br><br>
 
 Usuario : %s<br>
 Contraseña : %s <br><br>
-Cualquier pregunta que tengas, escríbenos '.stripslashes(CONTACT_ADMIN).', estamos para apoyarte.
+Cualquier pregunta que tengas, escríbenos <a href="https://cuchumilempleos.com/contact_us.php">Aqui</a>, estamos para apoyarte.
 <br><br>
 Un saludo,<br><br>
 

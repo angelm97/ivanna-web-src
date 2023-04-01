@@ -526,18 +526,18 @@ function tep_mail($to_name, $to_email_address, $email_subject, $email_text, $fro
 	$mail = new PHPMailer(true);
   
 	try {
-		//Server settings
+		//Server settings xxx aqui
     $mail->CharSet = 'UTF-8';
 		$mail->SMTPDebug = 0;                                               //Enable verbose debug output
 		$mail->isSMTP();                                                   //Send using SMTP
 		$mail->Host       = 'smtp.gmail.com';                     		  //Set the SMTP server to send through
 		$mail->SMTPAuth   = true;                                   	 //Enable SMTP authentication
-		$mail->Username   = 'hola@waojobs.com';                //SMTP username
-		$mail->Password   = 'Wao12345678';                               //SMTP password
+		$mail->Username   = 'Hola@cuchumilempleos.com';                //SMTP username
+		$mail->Password   = 'bjemjucdcdedzacp';                               //SMTP password
 		$mail->SMTPSecure = 'tls';      						      //Enable implicit TLS encryption
 		$mail->Port       = 587;                           	       
 		//Recipients
-		$mail->setFrom('hola@waojobs.com', 'waojobs');
+		$mail->setFrom('Hola@cuchumilempleos.com', 'Cuchumil');
 		$mail->addAddress($to_email_address); 
     
     //Add a recipient             //Name is optional
@@ -553,9 +553,11 @@ function tep_mail($to_name, $to_email_address, $email_subject, $email_text, $fro
 		$mail->Body    = $email_text;
     
 		$mail->send();
-	//	echo 'Message has been sent';
+		//echo 'Message has been sent';
+    
 	} catch (Exception $e) {
-	//	echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+	   //echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+  
 	}
 
 }

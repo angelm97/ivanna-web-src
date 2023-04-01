@@ -9,17 +9,17 @@ $action = (isset($_POST['action']) ? $_POST['action'] : '');
 /////////////////////////////////////////////////////
  include_once "class/reCaptcha.php";
  $g_captcha =true;
- $reCaptcha=new reCaptcha();
+ //$reCaptcha=new reCaptcha();
 
 ////////////////////////////////////////////////////////
 if($action=="send")
 {
  $from_email_name    = tep_db_prepare_input($_POST['TR_full_name']);
  $from_email_address = tep_db_prepare_input($_POST['TREF_email_address']);
- $to_name            = SITE_OWNER;
- $to_email_address   = ADMIN_EMAIL;
+ $to_name            = 'formulario de contacto';
+ $to_email_address   = 'hola@cuchumilempleos.com';
  $email_subject      = tep_db_prepare_input($_POST['TR_subject']);
- $email_text         = tep_db_prepare_input($_POST['TR_message']);
+ $email_text         = tep_db_prepare_input($_POST['TR_message']) . "<br> <br> " . "Nombre del usuario : " . $from_email_name . "<br> " . "Email del usuario : " . $from_email_address ;
 // $security_code1     = tep_db_prepare_input($_POST['TR_security_code']);
 
  $error =false;
@@ -50,6 +50,7 @@ if($action=="send")
  }
 */
 /////////////////////////////////////////////
+/*
 if(MODULE_G_CAPTCHA_PLUGIN=='enable')
 if(!$reCaptcha->reCaptchaVerify())
       {
@@ -57,7 +58,7 @@ if(!$reCaptcha->reCaptchaVerify())
        $messageStack->add(CAPTCHA_ERROR,'jobseeker_account');
 	  }
 
-
+*/
 ////////////////////////////////////////////////
 
  if(!$error)
@@ -81,7 +82,8 @@ if(!$reCaptcha->reCaptchaVerify())
 $gogle_captcha='';
 if(MODULE_G_CAPTCHA_PLUGIN=='enable')
 
- $gogle_captcha=''.$reCaptcha->reCaptchaGetCaptcha().'';
+// descomentar para que funcione el captcha
+ //$gogle_captcha=''.$reCaptcha->reCaptchaGetCaptcha().'';
 $template->assign_vars(array(
  'FIRST_PARAGRAPH'         => FIRST_PARAGRAPH,
  'HEADING_TITLE'           => HEADING_TITLE,
