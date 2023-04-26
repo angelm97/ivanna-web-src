@@ -16,7 +16,7 @@ define('SUCCESS_RESUME_SEND','Reanudar el envío con éxito.');
 ////
 define('IMAGE_CONFIRM','¡Quiero aplicar!');
 define('INFO_TEXT_MESSAGE','Mensaje');
-define('INFO_TEXT_UPLOAD_RESUME_HELP','Subir formato txt / doc / docx / pdf');
+define('INFO_TEXT_UPLOAD_RESUME_HELP','Subir formato txt / doc / docx / pdf / 22');
 define('CAPTCHA_ERROR_1','Selecciona el archivo para cargar');
 define('INFO_TEXT_SECURITY_CODE','Código de seguridad:');
 define('INFO_TEXT_TYPE_CODE','Escribe el código mostrado');

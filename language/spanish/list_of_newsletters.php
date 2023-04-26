@@ -6,7 +6,7 @@
 **********************************************************/
 
 
-define('HEADING_TITLE','Noticias Wao');
+define('HEADING_TITLE','Noticias Cuchumil');
 define('TABLE_HEADING_TITLE', 'Título');
 define('TABLE_HEADING_INSERTED', 'Fecha');
 define('TABLE_HEADING_VIEW', 'Vista');

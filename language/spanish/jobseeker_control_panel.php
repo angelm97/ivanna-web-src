@@ -44,7 +44,7 @@ define('STATUS_AVAILABLE', 'Disponible');
 define('STATUS_AVAILABLITY', 'Establecer estado como disponible');
 define('MESSAGE_SUCCESS_UPDATED_AVAILABLE', 'Ahora las empresas sabrán que estás en <b>búsqueda de oportunidad laboral.</b>');
 define('MESSAGE_SUCCESS_UPDATED_NOT_AVAILABLE', 'Éxito: estado de reanudación establecido en <b>NO DISPONIBLE</b>. Recuerda que ahora tus hojas de vida están fuera del motor de búsqueda.');
-define('INFO_TEXT_NEWSLETTER','Noticias Wao');
+define('INFO_TEXT_NEWSLETTER','Noticias Cuchumil');
 define('INFO_TEXT_MY_MAILS','Interacciones con empresas');
 define('INFO_TEXT_CONTACT_LIST','Lista de contactos');
 define('INFO_TEXT_VIDEO_RESUME','Reanudar video');

@@ -48,8 +48,8 @@ define('BOX_RECRUITER_PARTICIPATE_JOBFAIR','Reclutadores');
 define('BOX_RECRUITERS','Reclutadores');
 define('BOX_RECRUITER_IMPORT','Importar reclutadores');
 
-define('BOX_HEADING_NEWSLETTER','Noticias Wao');
-define('BOX_NEWS_LETTER_MANAGER','Editar Noticias Wao');
+define('BOX_HEADING_NEWSLETTER','Noticias Cuchumil');
+define('BOX_NEWS_LETTER_MANAGER','Editar Noticias Cuchumil');
 define('BOX_JOBSEEKER_NEWS_LETTER','Boletín de búsqueda de empleo');
 define('BOX_RECRUITER_NEWS_LETTER','Boletín de reclutadores');
 
@@ -248,7 +248,7 @@ define('WARNING_FILE_UPLOADS_DISABLED', '¡Oops! La subida de archivos esta desa
 
 ////
 define('TEXT_RESULT_PAGE', 'Página %s de %d');
-define('TEXT_DISPLAY_NUMBER_OF_NEWSLETTERS', 'Vista <b>%d</b> de <b>%d</b> ( <b>%d</b> Noticias Wao)');
+define('TEXT_DISPLAY_NUMBER_OF_NEWSLETTERS', 'Vista <b>%d</b> de <b>%d</b> ( <b>%d</b> Noticias Cuchumil)');
 define('TEXT_DISPLAY_NUMBER_OF_JOB_TYPES', 'Vista <b>%d</b> de <b>%d</b> ( <b>%d</b> tipos de oportunidades laborales)');
 define('TEXT_DISPLAY_NUMBER_OF_JOB_CATEGORIES', 'Vista <b>%d</b> de <b>%d</b> ( <b>%d</b> categorías de oportunidades laborales)');
 define('TEXT_DISPLAY_NUMBER_OF_JOB_TITLES', 'Vista <b>%d</b> de <b>%d</b> ( <b>%d</b> títulos de oportunidades laborales)');
@@ -390,7 +390,7 @@ define('INFO_TEXT_L_COMPANY_DESCRIPTION','Descripción de la compañía');
 define('INFO_TEXT_L_ORDER_HISTORY','Historial de pedidos');
 define('INFO_TEXT_MANAGE_USERS','Administrar usuarios');
 define('INFO_TEXT_L_CONTACT_LIST','Lista de contactos');
-define('INFO_TEXT_L_NEWS_LETTER','Noticias Wao');
+define('INFO_TEXT_L_NEWS_LETTER','Noticias Cuchumil');
 define('INFO_TEXT_L_CHANGE_PASSWORD','Cambiar la contraseña');
 define('INFO_TEXT_L_LOG_OUT','Cerrar sesión');
 define('INFO_TEXT_RATE_CARD','Planes Wao');
@@ -409,7 +409,7 @@ define('INFO_TEXT_MY_APPLICATIONS','Mis aplicaciónes');
 define('INFO_TEXT_RESPONSE_FROM_EMPLOYER','Respuesta de la empresa');
 define('INFO_TEXT_L_EDIT_PERSONAL_DETAILS','Editar datos personales');
 define('INFO_TEXT_MY_COVER_LETTERS','Mi carta de presentación');
-define('INFO_TEXT_NEWSLETTERS','Noticias Wao');
+define('INFO_TEXT_NEWSLETTERS','Noticias Cuchumil');
 define('INFO_TEXT_L_VIDEO_RESUME','Mis hojas de vida');
 define('INFO_TEXT_L_SEARCH_JOBS','Busca Oportunidades');
 define('INFO_TEXT_JOBS_BY_LOCATION','Oportunidades laborales por ubicación');

@@ -10,7 +10,7 @@ define('INFO_TEXT_RESUME_NAME','Nombre de hoja de vida :');
 define('INFO_TEXT_UPLOAD_RESUME','Tu hoja de vida:');
 define('INFO_TEXT_UPLOAD_RESUME_HELP','Aún no has adjuntado ningún archivo Recuerda subir en formato txt / doc / docx / pdf');
 define('INFO_TEXT_UPLOAD_PHOTO','Tu foto:');
-define('INFO_TEXT_UPLOAD_PHOTO_HELP','Aún no has adjuntado ningún archivo Recuerda subir en formato txt / doc / docx / pdf:');
+define('INFO_TEXT_UPLOAD_PHOTO_HELP','Aún no has adjuntado ningún archivo Recuerda subir en formato gif / jpg / png ');
 define('INFO_TEXT_CUT_PASTE_CV','Subir :');
 define('INFO_TEXT_RESUME_DESCRIPTION','Descripción:');
 define('INFO_TEXT_ADD_VIDEO','Ir a Youtube :');

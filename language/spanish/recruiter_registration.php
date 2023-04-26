@@ -76,7 +76,7 @@ define('CAPTCHA_ERROR','Error de CAPTCHA');
 define('INFO_PERSONAL_DETAILS','Información de tu cuenta');
 define('INFO_COMPANY_DETAILS','Información de la empresa');
 define('INFO_UPLOAD_GIF','Aún no has seleccionado ningún archivo formato gif / jpg / jpeg / png');
-define('INFO_TEXT_NEWSLETTER','¡Noticias Wao!');
+define('INFO_TEXT_NEWSLETTER','¡Noticias Cuchumil!');
 define('INFO_TEXT_CONTINUE','Al continuar, aceptas nuestros ');
 define('INFO_AND','y ');
 define('INFO_PREVIEW','Logo actual');

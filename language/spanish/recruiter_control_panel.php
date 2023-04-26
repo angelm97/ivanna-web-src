@@ -47,7 +47,7 @@ define('INFO_TEXT_COMPANY_DESCRIPTION','Descripción de la compañía');
 define('INFO_TEXT_ORDER_HISTORY','Historial de pedidos');
 define('INFO_TEXT_MANAGED_USERS','Administrar usuarios');
 define('INFO_TEXT_CONTACT_LIST','Lista de contactos');
-define('INFO_TEXT_NEWSLETTER','Noticias Wao');
+define('INFO_TEXT_NEWSLETTER','Noticias Cuchumil');
 define('INFO_TEXT_CHANGE_PASSWORD','Cambiar la contraseña');
 define('INFO_TEXT_LOG_OUT','Cerrar sesión');
 define('INFO_TEXT_RATE_CHART','Planes Wao');

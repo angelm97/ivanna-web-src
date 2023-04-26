@@ -17,6 +17,7 @@ define('SECTION_ACCOUNT_DETAILS','Información de tu cuenta');
 define('SECTION_CONTACT_DETAILS','Información personal');
 define('INFO_TEXT_UPLOAD_RESUME','Subir mi hoja de vida:');
 define('INFO_TEXT_UPLOAD_RESUME_HELP','Subir formato txt / doc / docx / pdf');
+define('INFO_TEXT_UPLOAD_PHOTO_HELP','Subir formato gif / png / jpg');
 define('SECTION_ACCOUNT_PRIVACY','Configuración de privacidad');
 define('INFO_TEXT_PRIVACY_HIDE_ALL','Ocultar mi información de contacto a todas las empresas.');
 define('INFO_TEXT_PRIVACY_HIDE_CONTACT','Mostrar mi información de contacto a las empresas a las que he solicitado.');
@@ -51,7 +52,7 @@ define('MIN_CITY_ERROR','La ciudad debe contener un mínimo de ' . MIN_CITY_LENG
 define('MIN_ZIP_ERROR', 'El código postal debe contener un mínimo de ' . MIN_ZIP_LENGTH . ' characters.');
 define('ENTRY_HOME_PHONE_ERROR', 'Completa el número de teléfono principal.');
 
-define('INFO_TEXT_NEWS_LETTER','¡Noticias Wao!');
+define('INFO_TEXT_NEWS_LETTER','¡Noticias Cuchumil!');
 define('INFO_TEXT_AGREEMENT','Al continuar, aceptas nuestros <a href="'.FILENAME_TERMS.'">Términos y Condiciones </a> y <a href="'.FILENAME_PRIVACY.'">Política de privacidad</a>.');
 
 
