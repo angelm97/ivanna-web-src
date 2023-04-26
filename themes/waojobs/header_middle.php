@@ -17,13 +17,13 @@ if(strtolower($_SERVER['PHP_SELF'])=="/".PATH_TO_MAIN.FILENAME_INDEX)
 		<div class="col jobseeker-bg">
 			<h2><span class="text-white text-shadow">Busco</span> <span class="text-yellow2 text-shadow">Trabajo</span> </h2>
 			<p class="text-white para-xl">Cumple tus sueños</p>
-			<a href="'.tep_href_link(FILENAME_JOBSEEKER_REGISTER1).'" class="btn-no-bg">Regístrate aquí</a>
+			<a href="'.tep_href_link(FILENAME_JOBSEEKER_REGISTER1).'" style="background: #17cbaa !important; " class="btn-no-bg">Regístrate aquí</a>
 		</div>
-
-		<div class="col employer-bg">
+		
+		<div class="col employer-bg" style=" background: #17cbaa url(https://cuchumilempleos.com/themes/waojobs/images/recruiter.png) no-repeat center top !important;">
 		<h2><span class="text-white text-shadow">Busco</span> <span class="text-yellow text-shadow">Talento</span> </h2>
 		<p class="text-white para-xl">Crece tu empresa</p>
-		<a href="'.tep_href_link(FILENAME_RECRUITER_LOGIN).'" class="btn-no-bg2">Publica tu oportunidad</a>
+		<a href="'.tep_href_link(FILENAME_RECRUITER_LOGIN).'" style="background: #0D134A !important; " class="btn-no-bg2">Publica tu oportunidad</a>
 		</div>
 	</div>
  </div>
@@ -35,13 +35,13 @@ if(strtolower($_SERVER['PHP_SELF'])=="/".PATH_TO_MAIN.FILENAME_INDEX)
 		<div class="col jobseeker-bg">
 			<h2><span class="text-white text-shadow">Busco</span> <span class="text-yellow2 text-shadow">Trabajo</span> </h2>
 			<p class="text-white para-xl">Cumple tus sueños</p>
-			<a href="'.tep_href_link(FILENAME_JOBSEEKER_REGISTER1).'" class="btn-no-bg">Regístrate aquí</a>
+			<a href="'.tep_href_link(FILENAME_JOBSEEKER_REGISTER1).'"  style="background: #17cbaa !important; " class="btn-no-bg">Regístrate aquí</a>
 		</div>
 
-		<div class="col employer-bg">
+		<div class="col employer-bg"  style=" background: #17cbaa url(https://cuchumilempleos.com/themes/waojobs/images/recruiter.png) no-repeat center top !important;">
 		<h2><span class="text-white text-shadow">Busco</span> <span class="text-yellow text-shadow">Talento</span> </h2>
 		<p class="text-white para-xl">Crece tu empresa</p>
-		<a href="'.tep_href_link(FILENAME_RECRUITER_LOGIN).'" class="btn-no-bg2">Publica tu oportunidad</a>
+		<a href="'.tep_href_link(FILENAME_RECRUITER_LOGIN).'" style="background: #0D134A !important; " class="btn-no-bg2">Publica tu oportunidad</a>
 		</div>
 	</div>
  </div>
@@ -56,7 +56,7 @@ if(strtolower($_SERVER['PHP_SELF'])=="/".PATH_TO_MAIN.FILENAME_INDEX)
                         <div class="row">
                             <div class="col-md-12 mb-3">
 								<!--<div class="para-xl">Encuentra tu próxima oportunidad laboral</div>-->
-                                <h3 class="font-weight-bold theme4-display">Encuentra tu próxima oportunidad laboral</h3>
+                                <h3 style="color: #2a9dfa !important" class="font-weight-bold theme4-display">Encuentra tu próxima oportunidad laboral</h3>
                             </div>
 
                         </div>

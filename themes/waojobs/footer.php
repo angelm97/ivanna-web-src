@@ -24,7 +24,7 @@ define('FOOTER_HTML','
                 <p>'.(check_login("jobseeker")?'<a href="'.tep_href_link(FILENAME_JOBSEEKER_CONTROL_PANEL).'">Panel de control</a>':'<a href="'.tep_href_link(FILENAME_JOBSEEKER_REGISTER1).'">Regístrate ahora</a>').'</p>
                 <p>'.(check_login("jobseeker")?'<a href="'.tep_href_link(FILENAME_LOGOUT).'">Cerrar sesión</a>':'<a href="'.tep_href_link(FILENAME_JOBSEEKER_LOGIN).'">Inicia sesión</a>').'
                 <p><a href="'.tep_href_link(FILENAME_JOB_SEARCH).'">Busca oportunidades laborales</a></p>
-                <p><a href="'.tep_href_link('blog/').'">Educación laboral a tu alcance</a></p>
+                <p><a href="'.tep_href_link('article.php').'">Educación laboral a tu alcance</a></p>
             </div>
 
             <div class=" col-12 col-lg-3 mobile-col-md-3">
@@ -36,7 +36,7 @@ define('FOOTER_HTML','
                 <p><a href="'.tep_href_link(FILENAME_RECRUITER_POST_JOB).'">Publica una oportunidad laboral</a></p>
                 <p><a href="'.tep_href_link(FILENAME_RECRUITER_SEARCH_RESUME).'">Encuentra el talento ideal</a></p>
                 <p><a href="'.tep_href_link(FILENAME_RECRUITER_SAVE_RESUME).'">Selecciona el paquete de tu preferencia</a></p>
-                <p><a href="'.tep_href_link(FILENAME_RECRUITER_REGISTRATION).'">Educación laboral a tu alcance</a></p>
+                <p><a href="'.tep_href_link('article.php').'">Educación laboral a tu alcance</a></p>
             </div>
 
             <div col-12  class="col-lg-3 mobile-col-md-3 mobile-margin-top">
@@ -55,7 +55,7 @@ define('FOOTER_HTML','
             </a>
             <div class="mb-2 font-weight-bold" style="margin-left: 29px">Síguenos</div>
            
-            <p class="copyright PY-3"  style="margin-left: 29px">&copy; <a href="'.tep_href_link('').'"> Cuchumil </a></p>
+            <p class="copyright PY-3"  style="margin-left: 29px">&copy; <a href="https://www.instagram.com/cuchumil/"> Cuchumil </a></p>
         
         </div>
         </div>

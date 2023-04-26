@@ -322,7 +322,19 @@ define('HEADER_HTML','
         <link rel="stylesheet" href="'.tep_href_link("css/cookiealert.css").'">
         <script language="javascript" type="text/javascript" src="'.tep_href_link("themes/theme5/tab.js").'"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            
+    
+        <style>
+      
+        a.btn-no-bg2:hover{
+            background: white;
+            color: #0ab4e7 !important;
+        }
+        .Full-time {
+            color: #fff;
+            background-color: #17cbaa;
+            border: 2px solid #17cbaa;
+        }
+        </style>
     </head>
 
     <body onLoad="body_load();">
