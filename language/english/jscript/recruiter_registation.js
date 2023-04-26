@@ -251,7 +251,7 @@ function ValidateForm(objFrm)
 				 validformFile = /(.gif|.jpg|.png|.jpeg)$/i;
 				 if(!validformFile.test(objFrm[i].value))
 				 {
-				 	alert("Only gif/jpg/png file is supported. Please try again");
+				 	alert("Solo archivos gif/jpg/png son soportados.");
 				 	objFrm[i].focus();
 				 	objFrm[i].select();
 				 	return false;

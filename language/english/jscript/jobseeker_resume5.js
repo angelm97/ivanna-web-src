@@ -76,10 +76,10 @@ function ValidateForm(objFrm)
     }    
     else if(objFrm[i].name=='my_photo')
     {
-     validformFile = /(.gif|.Gif|.GIf|.GiF|.gIf|.GIF|.jpg|.Jpg|.JPg|.JpG|.jPg|.JPG|.png|.Png|.PNg|.PnG|.pNg|.PNG)$/;
+     validformFile = /(.gif|.Gif|.GIf|.GiF|.gIf|.GIF|.jpg|.Jpg|.JPg|.JpG|.jPg|.JPG|.png|.Png|.PNg|.PnG|.pNg|.PNG|.jfif)$/;
      if(!validformFile.test(objFrm[i].value))
      {
-      alert("Only gif/jpg/png file is supported. Please try again");
+      alert("Solo archivos gif/jpg/png son soportados.");
       objFrm[i].focus();
       objFrm[i].select();
       return false;

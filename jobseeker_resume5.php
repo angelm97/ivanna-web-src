@@ -86,7 +86,7 @@ if(tep_not_null($action))
    $photo='';
    if($_FILES['my_photo']['name']!="")
    {
-    if($obj_photo = new upload('my_photo', PATH_TO_MAIN_PHYSICAL_PHOTO,'644',array('gif','jpg','png')))
+    if($obj_photo = new upload('my_photo', PATH_TO_MAIN_PHYSICAL_PHOTO,'644',array('gif','jpg','png','jfif','heic')))
     {
      $photo=tep_db_input($obj_photo->filename);
      if(is_file(PATH_TO_MAIN_PHYSICAL_PHOTO.$resume_photo_check['jobseeker_photo']))
