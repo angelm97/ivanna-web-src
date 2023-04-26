@@ -1,11 +1,12 @@
 <?
 $social_footer_button='';
  if(tep_not_null(MODULE_FACEBOOK_FOOTER_LINK))
- $social_footer_button.=' <a href="'.MODULE_FACEBOOK_FOOTER_LINK.'"><i id="social-fb" class="fa fa2 fa-facebook-square fa-3x social"></i></a>';
+ $social_footer_button.=' <a href="https://www.instagram.com/cuchumil/"><i id="social-fb" class="fa fa2  fa-instagram fa-3x social"></i></a>';
 
+ /*
  if(tep_not_null(MODULE_LINKEDIN_FOOTER_LINK))
  $social_footer_button.='<a href="'.MODULE_LINKEDIN_FOOTER_LINK.'"><i id="social-ln" class="fa fa2 fa-linkedin-square fa-3x social"></i></a>';
-
+*/
  if(tep_not_null(MODULE_TWITTER_FOOTER_LINK))
  $social_footer_button.='<a href="'.MODULE_TWITTER_FOOTER_LINK.'"><i id="social-tw" class="fa fa2 fa-twitter-square fa-3x social"></i></a>';
 
@@ -54,7 +55,7 @@ define('FOOTER_HTML','
             <img src="'.tep_href_link('img/'.DEFAULT_SITE_LOGO).'" alt="Jobboard Logo" class="internal-logo">
             </a>
             <div class="mb-2 font-weight-bold" style="margin-left: 29px">Síguenos</div>
-           
+            <p style="margin-left: 35px;">'.$social_footer_button.' <a href="mailto:Hola@cuchumilempleos.com"><i id="social-em" class="fa fa2 fa-envelope-square fa-3x social"></i></a> </p>
             <p class="copyright PY-3"  style="margin-left: 29px">&copy; <a href="https://www.instagram.com/cuchumil/"> Cuchumil </a></p>
         
         </div>
