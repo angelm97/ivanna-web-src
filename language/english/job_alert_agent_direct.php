@@ -85,6 +85,6 @@ define('INFO_TEXT_SEARCH_COUNTRY_STATE','Country/State');
 define('INFO_TEXT_EMAIL_THIS_JOB','Email This Job');
 define('MORE_DETAILS','More Details');
 define('INFO_TEXT_APPLY_TO_THIS_JOB','Apply');
-define('ENTER_AGENT_NAME_ERROR','Please enter Agent name');
+define('ENTER_AGENT_NAME_ERROR','Ingrese el nombre del agente');
 define('MESSAGE_SUCCESS_DELETED','You are Unsubscribed from the List of Job Alerts. You will no longer receive Job Alerts.');
 ?>

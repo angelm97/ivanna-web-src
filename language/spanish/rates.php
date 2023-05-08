@@ -6,7 +6,7 @@
 **********************************************************/
 
 
-define('HEADING_TITLE','Planes Wao');
+define('HEADING_TITLE','Planes Cuchumil');
 
 define('TABLE_HEADING_PLAN_TYPE_NAME','Plan');
 define('TABLE_HEADING_PLAN_TYPE_TIME_PERIOD','Duración');

@@ -50,7 +50,7 @@ define('INFO_TEXT_CONTACT_LIST','Lista de contactos');
 define('INFO_TEXT_NEWSLETTER','Noticias Cuchumil');
 define('INFO_TEXT_CHANGE_PASSWORD','Cambiar la contraseña');
 define('INFO_TEXT_LOG_OUT','Cerrar sesión');
-define('INFO_TEXT_RATE_CHART','Planes Wao');
+define('INFO_TEXT_RATE_CHART','Planes Cuchumil');
 
 define('INFO_TEXT_CURRENT_STATUS','Estado actual');
 define('INFO_TEXT_TOTAL_JOBS','Total de oportunidades laborales publicadas:');

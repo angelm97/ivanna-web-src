@@ -471,11 +471,11 @@ if(tep_not_null($action))
 					}
 					$template->assign_vars(array('pages'=>$obj->anchors,'total_pages'=>$obj->total));
 					$plural=($x1=="1")?INFO_TEXT_JOB:INFO_TEXT_JOBS;
-					$template->assign_vars(array('total'=>SITE_TITLE." ".INFO_TEXT_HAS_MATCHED." <font color='red'><b>$x1</b></font> ".$plural." ".INFO_TEXT_TO_YOUR_SEARCH_CRITERIA));
+					$template->assign_vars(array('total'=>" ".INFO_TEXT_HAS_MATCHED." <font color='red'><b>$x1</b></font> ".$plural." ".INFO_TEXT_TO_YOUR_SEARCH_CRITERIA));
 				}
 				else
 				{
-					$template->assign_vars(array('total'=>SITE_TITLE." ".INFO_TEXT_HAS_NOT_MATCHED." <br><br>&nbsp;&nbsp;&nbsp;"));
+					$template->assign_vars(array('total'=>" ".INFO_TEXT_HAS_NOT_MATCHED." <br><br>&nbsp;&nbsp;&nbsp;"));
 				}
 				if(!$error)
 				{
@@ -561,7 +561,7 @@ else
  $search_zip_code=1;
 }
 
-define('INFO_TEXT_STATE1',LIST_SET_DATA(ZONES_TABLE,"",'zone_name','zone_id',"zone_name",'name="state" class="form-control"',"state",'',$state_value)." ");
+define('INFO_TEXT_STATE1',LIST_SET_DATA(ZONES_TABLE,"",'zone_name','zone_id',"zone_name",'name="state" class="form-control"',"Ciudad",'',$state_value)." ");
 
 //$cat_array=tep_get_diving_main_categories(DIVING_CATEGORY_TABLE);
 $cat_array=tep_get_categories(JOB_CATEGORY_TABLE);

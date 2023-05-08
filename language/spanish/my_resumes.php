@@ -24,7 +24,7 @@ define('INFO_TEXT_DUPLICATE', 'Duplicar');
 define('MESSAGE_SUCCESS_UPDATED', '¡Listo! Hoja de vida actualizada.');
 define('MESSAGE_SUCCESS_DELETED', '¡Listo! Hoja de vida eliminada.');
 define('MESSAGE_SUCCESS_DUPLICATED', '¡Listo! Hoja de vida duplicada.');
-define('INFO_TEXT_MAX_RESUME', 'Recuerda, puedes crear hasta % perfiles u hojas de vida diferentes');
+define('INFO_TEXT_MAX_RESUME', 'Recuerda, puedes crear perfiles u hojas de vida diferentes');
 define('TABLE_HEADING_SEARCHABLE', '¿Visible?');
 
 define('STATUS_RESUME_NOT_SEARCH', '¿No se puede buscar?');

@@ -448,7 +448,7 @@ else
     $lower = $lower + 1;
   }
    $plural=($x1=="1")?INFO_TEXT_MAIL:INFO_TEXT_MAILS;
-   $template->assign_vars(array('total'=>SITE_TITLE.' '.INFO_TEXT_HAS_FOUND." <b>$x1</b> ".$plural."."));
+   $template->assign_vars(array('total'=>' '.INFO_TEXT_HAS_FOUND." <b>$x1</b> ".$plural."."));
   $check_link='<a href="#" onclick="checkall()">'.INFO_TEXT_CHECK_ALL.'</a> / <a href="#" onclick="uncheckall()">'.INFO_TEXT_UNCHECK_ALL.'</a>';
   if($show_mail_status==INFO_INBOX)
   {
@@ -484,7 +484,7 @@ else
  }
  else
  {
-    $template->assign_vars(array('total'=>SITE_TITLE.' '.INFO_TEXT_HAS_NOT_FOUND." .<br><br>&nbsp;&nbsp;&nbsp;"));
+    $template->assign_vars(array('total'=>' '.INFO_TEXT_HAS_NOT_FOUND." .<br><br>&nbsp;&nbsp;&nbsp;"));
  }
  see_page_number();
  tep_db_free_result($result);

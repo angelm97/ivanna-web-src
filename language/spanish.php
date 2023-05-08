@@ -393,7 +393,7 @@ define('INFO_TEXT_L_CONTACT_LIST','Lista de contactos');
 define('INFO_TEXT_L_NEWS_LETTER','Noticias Cuchumil');
 define('INFO_TEXT_L_CHANGE_PASSWORD','Cambiar la contraseña');
 define('INFO_TEXT_L_LOG_OUT','Cerrar sesión');
-define('INFO_TEXT_RATE_CARD','Planes Wao');
+define('INFO_TEXT_RATE_CARD','Planes Cuchumil');
 define('INFO_TEXT_SEARCH_RESUME','Búsqueda de hojas de vida');
 define('INFO_TEXT_L_CURRENT_STATUS','Estado actual');
 
