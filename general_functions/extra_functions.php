@@ -530,10 +530,10 @@ function tep_mail($to_name, $to_email_address, $email_subject, $email_text, $fro
     $mail->CharSet = 'UTF-8';
 		$mail->SMTPDebug = 0;                                               //Enable verbose debug output
 		$mail->isSMTP();                                                   //Send using SMTP
-		$mail->Host       = 'smtp.gmail.com';                     		  //Set the SMTP server to send through
+		$mail->Host       = 'smtpout.secureserver.net';                     		  //Set the SMTP server to send through
 		$mail->SMTPAuth   = true;                                   	 //Enable SMTP authentication
 		$mail->Username   = 'Hola@cuchumilempleos.com';                //SMTP username
-		$mail->Password   = 'bjemjucdcdedzacp';                               //SMTP password
+		$mail->Password   = 'FreddyArturo2023@';                               //SMTP password
 		$mail->SMTPSecure = 'tls';      						      //Enable implicit TLS encryption
 		$mail->Port       = 587;                           	       
 		//Recipients
@@ -553,11 +553,12 @@ function tep_mail($to_name, $to_email_address, $email_subject, $email_text, $fro
 		$mail->Body    = $email_text;
     
 		$mail->send();
-		//echo 'Message has been sent';
+		// echo 'Message has been sent';
+    // die();
     
 	} catch (Exception $e) {
-	   //echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-  
+	  //  echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    //  die();
 	}
 
 }

@@ -76,8 +76,8 @@ define('INFO_TEXT_NEWS_LETTER','Boletin informativo : ');
 
 define('INFO_TEXT_AGREEMENT','<br><b>Nota : </b>Cuando haces clic en el siguiente <b>botón</b>, significa que ha aceptado nuestros <a href="'.FILENAME_TERMS.'" target="terms">Términos y condiciones </a>y <a href="'.FILENAME_PRIVACY.'" target="terms">Política de privacidad</a>');
 
-define('NEW_JOBSEEKER_SUBJECT','Gracias por registrarte en '.SITE_TITLE);
-define('NEW_JOBSEEKER_EMAIL_TEXT','Querido/a <b>%s</b>,'."\n\n".'Gracias por registrarte en '.SITE_TITLE."\n\n".'Tu nombre de usuario: <b>%s</b>'."\n\n".'Tu contraseña: <b>%s</b>'."\n\n".'Puedes acceder a nuestro sitio con este nombre de usuario / contraseña.'. "\n\n" .'¡Gracias!' . "\n" . '%s ( Admin )'."\n\n" . 'Esta respuesta es automática, ¡No te preocupes por responder!');
+define('NEW_JOBSEEKER_SUBJECT','Gracias por registrarte en '.'Cuchumil');
+define('NEW_JOBSEEKER_EMAIL_TEXT','Querido/a <b>%s</b>,'."\n\n".'Gracias por registrarte en '.'Cuchumil'."\n\n".'Tu nombre de usuario: <b>%s</b>'."\n\n".'Tu contraseña: <b>%s</b>'."\n\n".'Puedes acceder a nuestro sitio con este nombre de usuario / contraseña.'. "\n\n" .'¡Gracias!' . "\n" . '%s ( Admin )'."\n\n" . 'Esta respuesta es automática, ¡No te preocupes por responder!');
 
 define('MESSAGE_SUCCESS_UPDATED','¡Listo! Cuenta actualizada.');
 define('MESSAGE_SUCCESS_INSERTED','¡Listo! Cuenta ingresada.');

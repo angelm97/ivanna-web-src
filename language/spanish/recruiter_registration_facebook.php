@@ -63,7 +63,7 @@ define('INFO_TEXT_AGREEMENT','<br><b>Nota: </b>Cuando haces clic en lo siguiente
 define('MESSAGE_SUCCESS_UPDATED','¡Listo! Cuenta actualizada.');
 define('MESSAGE_SUCCESS_INSERTED','Cuenta ingresada.');
 
-define('NEW_RECRUITER_SUBJECT','Gracias por registrarte en '.SITE_TITLE);
+define('NEW_RECRUITER_SUBJECT','Gracias por registrarte en '.'Cuchumil');
 
 define('IMAGE_INSERT','Insertar');
 define('IMAGE_UPDATE','Actualizar');
